@@ -1,8 +1,8 @@
 # IPv6 signatures file (unwanted cloud services and non-human endpoints).
 # Canonical link to the online version of this file: https://github.com/CIDRAM/CIDRAM/blob/v3/vault/signatures/ipv6.dat
 
-# Version: 2024.303.0
-# Last modified: 2024.10.30
+# Version: 2024.308.0
+# Last modified: 2024.11.04
 
 # False positive risk (an approximate, rough estimate only):
 # Standard usage (i.e., used with standard CIDRAM features, default bypasses, etc): « [x]Low [ ]Medium [ ]High »
@@ -232,14 +232,14 @@ Profile: Dedicated;Tor endpoints here;Webhosting
 Tag: GoDaddy.com, LLC
 
 
-# ASNs 8560, 54548 ("IONOS SE").
-# Inc. "IONOS", "Fasthosts", "Arsys", "1&1 Mail and Media", "1&1 Telecom",
-# "1&1 Internet SE", "ProfitBricks".
-# Stop Forum Spam (SFS) listings: 1,315 (AS8560), 121 (AS54548).
-# Updated: 2024.10.30
+# ASNs 6724, 8560, 54548 ("Strato AG", "IONOS SE", "IONOS Cloud Inc").
+# Inc. "Strato AG", "IONOS", "Fasthosts", "Arsys", "1&1 Mail and Media",
+# "1&1 Telecom", "1&1 Internet SE", "ProfitBricks".
+# Stop Forum Spam (SFS) listings: 4 (AS6724), 1,316 (AS8560), 121 (AS54548).
+# Updated: 2024.11.04
 
 2001:8d8::/32 Deny Cloud
-2a01:239::/32 Deny Cloud
+2a01:238::/29 Deny Cloud
 2a02:2478::/29 Deny Cloud
 2a0d:7f00::/29 Deny Cloud
 Origin: DE
@@ -252,8 +252,8 @@ Origin: GB
 2607:b500:400::/39 Deny Cloud
 2607:f1c0::/32 Deny Cloud
 Origin: US
-Profile: Dedicated;Tor endpoints here;Webhosting
-Tag: IONOS SE
+Profile: Dedicated;Infrastructure/Transit;Tor endpoints here;Webhosting
+Tag: Strato/IONOS
 
 
 # ASN 27823 ("Dattatec.com").
@@ -5354,11 +5354,12 @@ Tag: MnogoByte LLC
 
 
 # ASN 29014 ("ScaleUp Technologies GmbH & Co. KG").
-# Updated: 2023.11.11
+# Updated: 2024.11.03
 
 2a0e:37c0::/32 Deny Cloud
 Origin: AT
 2001:678:df0::/48 Deny Cloud
+2001:67c:2e78::/48 Deny Cloud
 2a00:12e8::/32 Deny Cloud
 2a00:1c38::/47 Deny Cloud
 2a00:1c39::/32 Deny Cloud
@@ -5811,16 +5812,6 @@ Tag: DataClub S.A
 Origin: DE
 Profile: Infrastructure/Transit;Webhosting
 Tag: comtrance GmbH
-
-
-# ASN 6724 ("Strato AG").
-# Stop Forum Spam (SFS) listings: 4.
-# Updated: 2020.12.03 / Checked: 2024.10.30
-
-2a01:238::/29 Deny Cloud
-Origin: DE
-Profile: Dedicated;Infrastructure/Transit;Webhosting
-Tag: Strato AG
 
 
 # ASN 8001 ("Cologix, Inc").
@@ -8479,13 +8470,13 @@ Tag: Root Level Technology
 
 # ASN 48282 ("Hosting technology LTD").
 # Dedicated webhosting provider and a significant source of spam.
-# Stop Forum Spam (SFS) listings: 260,071.
-# Updated: 2024.07.02
+# Stop Forum Spam (SFS) listings: 207,351.
+# Updated: 2024.07.02 / Checked: 2024.11.04
 
 2a0d:8480::/48 Deny Cloud
 2a0d:8480:2::/48 Deny Cloud
 Origin: AE
-Profile: Dedicated;Webhosting
+Profile: Dedicated;Frequent changes;Webhosting
 Tag: Hosting technology LTD
 
 
@@ -9581,9 +9572,9 @@ Tag: EasyDataHost S.L
 
 # ASNs 39486, 44144, 46516, 133499, 134450, 203020, 204287, 207990 ("HostRoyale
 # Technologies Pvt Ltd"). Dedicated webhosting provider.
-# Stop Forum Spam (SFS) listings: 10,312 (AS39486), 36 (AS44144),
-# 3,307 (AS46516), 19 (AS134450), 30,716 (AS203020), 799 (AS207990).
-# Updated: 2024.04.21
+# Stop Forum Spam (SFS) listings: 2,465 (AS39486), 105 (AS44144),
+# 1,067 (AS46516), 2 (AS134450), 18,415 (AS203020), 3 (AS204287), 272 (AS207990).
+# Updated: 2024.11.04
 
 2402:bd80::/31 Deny Cloud
 2a05:6700::/29 Deny Cloud
@@ -9596,6 +9587,10 @@ Tag: EasyDataHost S.L
 2a06:3040:f::/48 Deny Cloud
 2a06:3040:10::/47 Deny Cloud
 2a06:3040:12::/48 Deny Cloud
+2a06:3040:15::/48 Deny Cloud
+2a06:3040:c001::/48 Deny Cloud
+2a06:3040:c002::/48 Deny Cloud
+2a06:3040:ca00::/48 Deny Cloud
 2a06:46c0::/29 Deny Cloud
 2a06:5700::/29 Deny Cloud
 2a06:df80::/29 Deny Cloud
@@ -9607,12 +9602,10 @@ Tag: EasyDataHost S.L
 2a0b:3f40::/29 Deny Cloud
 2a0c:d8c0::/29 Deny Cloud
 2a0c:ec40::/29 Deny Cloud
-2a12:adc0::/29 Deny Cloud
 Origin: IN
 2a13:c44::/30 Deny Cloud
 Origin: LT
 2402:bd82::/31 Deny Cloud
-Origin: NZ
 2600:2900::/30 Deny Cloud
 Origin: US
 Profile: Dedicated;Frequent changes;Webhosting
@@ -12545,10 +12538,15 @@ Tag: PeaceWeb
 # ASN 202505 ("NETBUDUR TELEKOMUNIKASYON LIMITED SIRKETI").
 # WordPress/XMLRPC, SSH, FTP, brute-force, and webapp attacks, port scans,
 # hacking, and spam detected from here.
-# Stop Forum Spam (SFS) listings: 53.
-# Updated: 2023.11.11
+# Stop Forum Spam (SFS) listings: 1.
+# Updated: 2024.11.03
 
+2a06:f7c0::/30 Deny Cloud
+2a06:f7c4::/31 Deny Cloud
+2a06:f7c6::/32 Deny Cloud
 2a10:7f40::/29 Deny Cloud
+2a10:7fc0::/29 Deny Cloud
+2a11:d100::/29 Deny Cloud
 Origin: TR
 Profile: Webhosting
 Tag: NETBUDUR
@@ -13659,8 +13657,8 @@ Tag: KINAKO NETWORK LLC
 # ASN 12616 ("Filanco LLC").
 # Russian domain registrar. Brute-force, DDoS, SSH, and webapp attacks,
 # hacking, port scans, and spam detected from here.
-# Stop Forum Spam (SFS) listings: 9.
-# Updated: 2023.11.11
+# Stop Forum Spam (SFS) listings: 4.
+# Updated: 2023.11.11 / Checked: 2024.11.03
 
 2a00:13c0:201::/48 Deny Cloud
 Origin: RU

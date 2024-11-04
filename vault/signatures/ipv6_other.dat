@@ -1,8 +1,8 @@
 # IPv6 signatures file (CIDRs for proxies, VPNs and other miscellaneous unwanted services).
 # Canonical link to the online version of this file: https://github.com/CIDRAM/CIDRAM/blob/v3/vault/signatures/ipv6_other.dat
 
-# Version: 2024.244.0
-# Last modified: 2024.09.01
+# Version: 2024.308.0
+# Last modified: 2024.11.04
 
 # False positive risk (an approximate, rough estimate only):
 # Standard usage (i.e., used with standard CIDRAM features, default bypasses, etc): « [x]Low [ ]Medium [ ]High »
@@ -51,7 +51,7 @@ Tag: Emerald Onion
 # you are not allowed to redistribute the feed to other networks. The export of
 # these feeds/prefixes to other networks is prohibited.
 # Excerpt from: https://www.spamhaus.org/bgpf/
-# Updated: 2024.09.01
+# Updated: 2024.11.04
 
 2001:678:6c4::/48 Deny Spam
 2001:678:724::/48 Deny Spam
@@ -115,7 +115,6 @@ Tag: Emerald Onion
 2a0e:b107:1574::/48 Deny Spam
 2a0e:b107:1a10::/44 Deny Spam
 2a0e:d601:7220::/48 Deny Spam
-2a0e:d604:1::/48 Deny Spam
 2a0e:fa00::/29 Deny Spam
 2a10:2f01:215::/48 Deny Spam
 2a10:9700::/29 Deny Spam
@@ -123,6 +122,7 @@ Tag: Emerald Onion
 2a12:2640::/29 Deny Spam
 2a12:6740::/30 Deny Spam
 2a12:dd47:8500::/40 Deny Spam
+2a12:dd47:db00::/40 Deny Spam
 2a13:df80:a800::/38 Deny Spam
 2a13:df84::/32 Deny Spam
 2a13:df87:b600::/39 Deny Spam
@@ -157,8 +157,9 @@ Tag: Applied Privacy
 # ASNs 50495, 62874, 199438, 204646 ("Web2Objects LLC").
 # Provides anonymous proxy services. Spam, hacking, probing for
 # vulnerabilities, and other kinds of unwanted traffic detected from here.
-# Stop Forum Spam (SFS) listings: 768 (AS50495), 4,062 (AS62874).
-# Updated: 2024.06.07
+# Flooding from Anthill bot detected from here.
+# Stop Forum Spam (SFS) listings: 726 (AS50495), 1,142 (AS62874).
+# Updated: 2024.06.07 / Checked: 2024.11.04
 
 2a00:f826:11::/48 Deny Proxy
 2a06:ef40::/32 Deny Proxy
