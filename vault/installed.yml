@@ -563,13 +563,13 @@ Common Classes Package:
    Checksum: "b631df2c710889778dd89b08d9dbfabb0fc9cc07f8d0dab010001eee61a2f156:52377"
 IPv4:
  False Positive Risk: "Medium"
- Version: "2024.308.0"
+ Version: "2024.310.0"
  Dependencies:
   Bypasses: ">=2023.95"
  Files:
   signatures/ipv4.dat:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/signatures/ipv4.dat"
-   Checksum: "16f447dc3ba283845fb57b41ebcd095176a082a4af7139ea28f53db2b36fbe34:1518331"
+   Checksum: "defa150dcb082478cf96331e1e5f3062663ff7efdc52fbd70716b6be736beb8c:1526940"
    Used with: "ipv4"
 IPv4-Bogons:
  False Positive Risk: "Low"
@@ -607,13 +607,13 @@ IPv4-Other:
    Used with: "ipv4"
 IPv6:
  False Positive Risk: "Low"
- Version: "2024.308.0"
+ Version: "2024.310.0"
  Dependencies:
   Bypasses: ">=2023.95"
  Files:
   signatures/ipv6.dat:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/signatures/ipv6.dat"
-   Checksum: "73d47fd62542c146003c0bc85c00d9e6046c2075bc4d72174f1192be85b0084f:473579"
+   Checksum: "c4783c5d5a312d886a80a0e403280f7371e55bc5613f789f415ee6c4394078ce:474147"
    Used with: "ipv6"
 IPv6-Bogons:
  False Positive Risk: "Low"
