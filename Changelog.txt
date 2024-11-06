@@ -31,6 +31,8 @@ Detailed version release guidelines for CIDRAM can be found at:
 
 - [2024.10.16; Maikuolan]: Verification update.
 
+- [2024.11.06; Maikuolan]: Added PHP 8.4 to workflows.
+
 === Version/Release 2.15.3 ===
 PATCH RELEASE.
 
