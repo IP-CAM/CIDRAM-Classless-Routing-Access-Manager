@@ -380,4 +380,5 @@
 - [2024.09.22]: Trigger notifications can now be triggered manually, via the API (#231).
 - [2024.10.14]: Strictened typing for the aggregator.
 - [2024.10.16]: Verification update.
+- [2024.11.06]: Added PHP 8.4 to workflows.
 - *Plus all the regular signature updates.*
