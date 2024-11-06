@@ -1,8 +1,8 @@
 # IPv6 signatures file (unwanted cloud services and non-human endpoints).
 # Canonical link to the online version of this file: https://github.com/CIDRAM/CIDRAM/blob/v3/vault/signatures/ipv6.dat
 
-# Version: 2024.308.0
-# Last modified: 2024.11.04
+# Version: 2024.310.0
+# Last modified: 2024.11.06
 
 # False positive risk (an approximate, rough estimate only):
 # Standard usage (i.e., used with standard CIDRAM features, default bypasses, etc): « [x]Low [ ]Medium [ ]High »
@@ -1285,7 +1285,7 @@ Tag: IDEAL HOSTING
 # ASN 54489 ("CoreSpace, Inc").
 # Subtract 44.0.0.0/9, 44.128.0.0/10 (clean).
 # Stop Forum Spam (SFS) listings: 2.
-# Updated: 2016.01.22 / Checked: 2023.11.11
+# Updated: 2016.01.22 / Checked: 2024.11.06
 
 2604:7780::/32 Deny Cloud
 Origin: US
@@ -1881,7 +1881,7 @@ Tag: Performive LLC
 # 39783, 44273, 61157, 200386 ("Host Europe GmbH", "PlusServer GmbH").
 # Extremely large international, dedicated webhosting provider, and a
 # significant source of various nefarious traffic over the course of many years
-# including DDoS, XMLRPC/WordPress, SSH, and webapp attacks, phishing,
+# including DDoS, WordPress/XMLRPC, SSH, and webapp attacks, phishing,
 # scraping, hacking, spam, and more.
 # Updated: 2024.04.09
 
@@ -8457,17 +8457,6 @@ Profile: Webhosting
 Tag: Vivid Hosting
 
 
-# ASN 394844 ("Root Level Technology, LLC").
-# Dedicated server farm/lease and an occasional source of spam.
-# Updated: 2019.12.26 / Checked: 2023.11.11
-
-2605:2080:8000::/34 Deny Cloud
-2607:d100::/32 Deny Cloud
-Origin: US
-Profile: Dedicated;Webhosting
-Tag: Root Level Technology
-
-
 # ASN 48282 ("Hosting technology LTD").
 # Dedicated webhosting provider and a significant source of spam.
 # Stop Forum Spam (SFS) listings: 207,351.
@@ -8481,7 +8470,7 @@ Tag: Hosting technology LTD
 
 
 # ASN 265839 ("HOSTING.CL").
-# XMLRPC/WordPress attacks regularly detected from here.
+# WordPress/XMLRPC attacks regularly detected from here.
 # Updated: 2019.12.27 / Checked: 2024.07.22
 
 2803:6580::/32 Deny Cloud
@@ -9484,7 +9473,7 @@ Tag: Beijing Qihu
 
 
 # ASN 55803 ("Hostopia Australia Web Pty Ltd").
-# Dedicated cloud provider. SQLi, XMLRPC/WordPress, and webapp attacks
+# Dedicated cloud provider. SQLi, WordPress/XMLRPC, and webapp attacks
 # persistently detected from here.
 # Stop Forum Spam (SFS) listings: 12.
 # Updated: 2023.08.14 / Checked: 2024.07.25
@@ -9614,7 +9603,7 @@ Tag: HostRoyale LLC
 
 # ASN 15691 ("Leonet4cloud srl").
 # Regular flow of brute-force and SSH attacks seen from this network.
-# Updated: 2020.09.01 / Checked: 2023.11.11
+# Updated: 2020.09.01 / Checked: 2024.11.06
 
 2a01:bf40::/32 Deny Cloud
 Origin: IT
@@ -10209,13 +10198,13 @@ Tag: Packethub s.a
 
 
 # ASN 207569 ("I-SERVERS LTD").
-# Stop Forum Spam (SFS) listings: 1.
-# Updated: 2024.03.30
+# Stop Forum Spam (SFS) listings: 15.
+# Updated: 2024.03.30 / Checked: 2024.11.06
 
 2a0a:9300:1::/48 Deny Cloud
 Origin: SC
 Profile: Webhosting
-Tag: Ihor Hosting LLC
+Tag: I-SERVERS LTD
 
 
 # ASN 206446 ("Evgeni Barabash trading as Active Cloud").
@@ -10447,7 +10436,7 @@ Tag: IP Volume inc
 
 
 # ASN 203461 ("REGISTER S.P.A").
-# Webhosting company. Brute-force, XMLRPC/WordPress, and webapp attacks, port
+# Webhosting company. Brute-force, WordPress/XMLRPC, and webapp attacks, port
 # scans, hacking, and spam detected from here.
 # Stop Forum Spam (SFS) listings: 42.
 # Updated: 2021.03.18 / Checked: 2024.09.21
@@ -10793,7 +10782,7 @@ Tag: Octopuce s.a.r.l
 
 
 # ASNs 197155, 200088 ("Artnet Sp. z o.o").
-# Dedicated webhosting provider. Brute-force, DDoS, XMLRPC/WordPress, SQLi, and
+# Dedicated webhosting provider. Brute-force, DDoS, WordPress/XMLRPC, SQLi, and
 # webapp attacks, port scans, hacking, and spam detected from here.
 # Stop Forum Spam (SFS) listings: 60 (AS197155), 290 (AS200088).
 # Updated: 2024.06.29
@@ -11470,10 +11459,9 @@ Tag: DediOutlet, LLC
 # Server farm/leaser. Brute-force, webapp attacks, hacking, port scans, and
 # spam detected from here. Caught trying to hack Git servers and sniffing for
 # unsecured Git credentials.
-# Stop Forum Spam (SFS) listings: 535.
-# Updated: 2022.01.07 / Checked: 2023.11.11
+# Stop Forum Spam (SFS) listings: 74.
+# Updated: 2024.11.06
 
-2a04:1740::/29 Deny Cloud
 2a07:c800::/29 Deny Cloud
 Origin: UA
 Profile: Dedicated;Infrastructure/Transit;Tor endpoints here;Webhosting
@@ -11626,32 +11614,24 @@ Tag: Melbikomas UAB
 # Russian dedicated webhosting provider. Brute-force, SQLi, DDoS, and webapp
 # attacks, hacking, port scans, and spam detected from here. Caught
 # masquerading as Googlebot.
-# Stop Forum Spam (SFS) listings: 10,712 (AS210352), 39,991 (AS210644), 251 (AS216246).
-# Updated: 2024.07.02
+# Stop Forum Spam (SFS) listings: 8,530 (AS210352), 64,009 (AS210644), 1,559 (AS216246).
+# Updated: 2024.11.06
 
 2a0e:b107:2780::/46 Deny Cloud
 Origin: CH
 2a0f:cdc6:2020::/44 Deny Cloud
 Origin: LV
-2a0b:4140:1000::/36 Deny Cloud
-2a0b:4140:2000::/35 Deny Cloud
-2a0b:4140:4000::/34 Deny Cloud
+2a0b:4140::/32 Deny Cloud
 2a11:fc80::/29 Deny Cloud
 2a12:5940:1::/48 Deny Cloud
-2a12:5940:3::/48 Deny Cloud
-2a12:5940:5::/48 Deny Cloud
-2a12:5940:7::/48 Deny Cloud
-2a12:5940:11::/48 Deny Cloud
-2a12:5940:18::/48 Deny Cloud
 2a12:5940:1000::/36 Deny Cloud
 2a12:5940:2000::/35 Deny Cloud
 2a12:5940:4000::/34 Deny Cloud
 2a12:5940:8000::/33 Deny Cloud
 Origin: RU
-2a0e:d602:1::/48 Deny Cloud
-2a0e:d602:2::/48 Deny Cloud
 2a0e:d606::/48 Deny Cloud
 2a0f:4f80::/29 Deny Cloud
+2a12:ecc7::/32 Deny Cloud
 Origin: SC
 Profile: Dedicated;Frequent changes;Infrastructure/Transit;Webhosting
 Tag: AEZA GROUP Ltd
@@ -11669,7 +11649,7 @@ Tag: 282, Sector 19
 
 
 # ASN 41909 ("PINVDS OU").
-# Russian corporate VDS provider. Brute-force, XMLRPC/WordPress, tinymce, and
+# Russian corporate VDS provider. Brute-force, WordPress/XMLRPC, tinymce, and
 # webapp attacks, port scans, and hacking detected from here.
 # Updated: 2023.02.24 / Checked: 2023.12.24
 
@@ -11680,7 +11660,7 @@ Tag: PINVDS OU
 
 
 # ASN 133296 ("Web Werks India Pvt. Ltd").
-# Indian server farm. Brute-force, XMLRPC/WordPress, and webapp attacks, port
+# Indian server farm. Brute-force, WordPress/XMLRPC, and webapp attacks, port
 # scans, hacking, and spam detected from here.
 # Stop Forum Spam (SFS) listings: 133.
 # Updated: 2024.10.06
@@ -11710,7 +11690,7 @@ Tag: Web Werks India
 
 # ASN 134366 ("Cloud Computing HK Limited").
 # Hong Kong cloud and webhosting provider. Brute-force, SSH, DDoS,
-# XMLRPC/WordPress, and webapp attacks, port scans, scraping, hacking, and spam
+# WordPress/XMLRPC, and webapp attacks, port scans, scraping, hacking, and spam
 # detected from here.
 # Stop Forum Spam (SFS) listings: 12.
 # Updated: 2023.02.28 / Checked: 2023.12.21
@@ -11841,7 +11821,7 @@ Tag: 1GSERVERS, LLC
 
 
 # ASN 140570 ("Hong Kong Beecloud System Technology Services Limited").
-# Hong Kong computing and data center. Brute-force, XMLRPC/WordPress, and
+# Hong Kong computing and data center. Brute-force, WordPress/XMLRPC, and
 # webapp attacks, scanning for vulnerabilities, port scans, hacking, and spam
 # detected from here.
 # Updated: 2022.04.16 / Checked: 2024.01.19
@@ -12482,8 +12462,8 @@ Tag: DFW Datacenter
 # ASN 48551 ("Sindad Network Technology Ltd").
 # WordPress/XMLRPC, SSH, brute-force, and webapp attacks, port scans, hacking,
 # and spam detected from here.
-# Stop Forum Spam (SFS) listings: 16.
-# Updated: 2023.01.01 / Checked: 2023.11.11
+# Stop Forum Spam (SFS) listings: 6.
+# Updated: 2023.01.01 / Checked: 2024.11.06
 
 2a0d:9500::/29 Deny Cloud
 Origin: IR
@@ -14251,7 +14231,7 @@ Tag: Pfcloud UG
 
 
 # ASN 215987 ("Taylan Gueler trading as Soliaweb").
-# Brute-force, SSH, DDoS, webapp, and XMLRPC/WordPress attacks, port scans,
+# Brute-force, SSH, DDoS, webapp, and WordPress/XMLRPC attacks, port scans,
 # hacking, and spam detected from here.
 # Stop Forum Spam (SFS) listings: 4.
 # Updated: 2024.05.29
@@ -14327,7 +14307,7 @@ Tag: SpectraIP B.V
 
 # ASN 216024 ("ALEKSEI FEDOROV PR KRUSEVAC").
 # Port scans and hacking detected from here.
-# Updated: 2024.06.10
+# Updated: 2024.06.10 / Checked: 2024.11.06
 
 2a0f:cdc6:2030::/45 Deny Cloud
 Origin: LV
@@ -15540,6 +15520,54 @@ Tag: Enteghal Dadeh Mahan
 Origin: US
 Profile: Webhosting
 Tag: Poppy Inc
+
+
+# ASN 209854 ("Cyberzone S.A").
+# Brute-force, RDP, SQLi, webapp attacks, and spam detected from here.
+# Updated: 2024.11.06
+
+2a09:a702::/47 Deny Cloud
+2a09:a707::/47 Deny Cloud
+2a09:a707:ffff::/48 Deny Cloud
+Origin: PA
+Profile: Restricted/Unidentifiable
+Tag: Cyberzone S.A
+
+
+# ASN 47987 ("Zemlyaniy Dmitro Leonidovich").
+# Brute-force attacks, port scans, hacking, and spam detected from here.
+# Stop Forum Spam (SFS) listings: 11.
+# Updated: 2024.11.06
+
+2a04:1740::/29 Deny Cloud
+Origin: UA
+Profile: Webhosting
+Tag: Z.D.Leonidovich
+
+
+# ASN 197795 ("EDGOO NETWORKS UNIPESSOAL LDA").
+# Brute-force, SSH, WordPress/XMLRPC, and webapp attacks, hacking, and spam
+# detected from here.
+# Updated: 2024.11.06
+
+2001:b18:1017::/48 Deny Cloud
+Origin: PT
+Profile: Restricted/Unidentifiable
+Tag: EDGOO NETWORKS
+
+
+# ASN 215730 ("H2NEXUS LTD").
+# Brute-force, SSH, SQLi, and webapp attacks, hacking, and spam detected from
+# here.
+# Stop Forum Spam (SFS) listings: 31.
+# Updated: 2024.11.06
+
+2a0b:4142::/32 Deny Cloud
+Origin: RU
+2a0e:d604:1::/48 Deny Cloud
+Origin: SC
+Profile: Webhosting
+Tag: H2NEXUS LTD
 
 
 # ---
