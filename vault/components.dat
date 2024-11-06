@@ -236,7 +236,7 @@ CIDRAM Front-End:
  Reannotate: "components.dat"
 Common Classes Package:
  Name: "Common Classes Package"
- Version: "2.12.2"
+ Version: "2.12.3"
  Dependencies:
   PHP: "^7.2|^8"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v2/vault/components.dat"
@@ -270,8 +270,8 @@ Common Classes Package:
    - "classes/Maikuolan/Request.php"
    - "classes/Maikuolan/YAML.php"
   Checksum:
-   - "6a8c08d3283f1c7b2746d5037623e4e74bb5192583c674b16380727ea19d2003:42690"
-   - "2c2b6f1b92629c3c1ccdd37cbcb63a05bfffaec7a5d7e714f01f471b9f751438:2388"
+   - "2e5b634f21786c40ea29feb1e357b2762e0f22a03100baf2abb21430910a1105:42691"
+   - "d3e1697a1760c277e1786313b230ed115abc258422131d5f36958bf039caa99a:2388"
    - "823edaec75178e8c56ad0accec030cbee543e6ad1a36340a2e2a12c2e2106fbb:3872"
    - "c2c8f79e3d85b9c9e08b89a516724e0b9db23688ba7be5132e720faa85534d83:4900"
    - "c59d3b9d21c0a7aee52b55c5da5febbac8477a4fc389dab35a01692236746dfe:30476"
