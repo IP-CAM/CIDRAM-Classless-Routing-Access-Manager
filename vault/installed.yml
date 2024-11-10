@@ -563,13 +563,13 @@ Common Classes Package:
    Checksum: "b631df2c710889778dd89b08d9dbfabb0fc9cc07f8d0dab010001eee61a2f156:52377"
 IPv4:
  False Positive Risk: "Medium"
- Version: "2024.310.0"
+ Version: "2024.314.0"
  Dependencies:
   Bypasses: ">=2023.95"
  Files:
   signatures/ipv4.dat:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/signatures/ipv4.dat"
-   Checksum: "defa150dcb082478cf96331e1e5f3062663ff7efdc52fbd70716b6be736beb8c:1526940"
+   Checksum: "bbe42663111137cd088217bc55d7294044203c510694dd7d363ff6361bcac941:1534686"
    Used with: "ipv4"
 IPv4-Bogons:
  False Positive Risk: "Low"
@@ -581,13 +581,13 @@ IPv4-Bogons:
    Used with: "ipv4"
 IPv4-ISPs:
  False Positive Risk: "Medium"
- Version: "2024.308.0"
+ Version: "2024.314.0"
  Dependencies:
   Bypasses: ">=2023.95"
  Files:
   signatures/ipv4_isps.dat:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/signatures/ipv4_isps.dat"
-   Checksum: "74d3663a7881131c2e40ec9159e66bcfa6a52d42bb7acac86958ff24da015ad6:789524"
+   Checksum: "624cb1e8137893613cbc552d90ff4aed144d8bd1eaa30051038b23ce6605c6e5:788433"
    Used with: "ipv4"
 IPv4-Nonblocking:
  False Positive Risk: "Low"
@@ -607,13 +607,13 @@ IPv4-Other:
    Used with: "ipv4"
 IPv6:
  False Positive Risk: "Low"
- Version: "2024.310.0"
+ Version: "2024.314.0"
  Dependencies:
   Bypasses: ">=2023.95"
  Files:
   signatures/ipv6.dat:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/signatures/ipv6.dat"
-   Checksum: "c4783c5d5a312d886a80a0e403280f7371e55bc5613f789f415ee6c4394078ce:474147"
+   Checksum: "d208acc6f926535adf0dd34b0e57687df9473d1d4f6d1bcfa30c55bc470bf3f4:476276"
    Used with: "ipv6"
 IPv6-Bogons:
  False Positive Risk: "Low"
@@ -625,13 +625,13 @@ IPv6-Bogons:
    Used with: "ipv6"
 IPv6-ISPs:
  False Positive Risk: "Medium"
- Version: "2024.295.0"
+ Version: "2024.310.0"
  Dependencies:
   Bypasses: ">=2023.95"
  Files:
   signatures/ipv6_isps.dat:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/signatures/ipv6_isps.dat"
-   Checksum: "a1458ae895e1be57a2edfe98515dba009a37927c3ab185299b35c340f6a5cb3f:20877"
+   Checksum: "61e483d4c3905558b71ca64b01ce0772ad3f3d892081b71139f74f98b8280951:20877"
    Used with: "ipv6"
 IPv6-Nonblocking:
  False Positive Risk: "Low"
