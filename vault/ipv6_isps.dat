@@ -1,8 +1,8 @@
 # IPv6 signatures file (dangerous and spammy ISPs).
 # Canonical link to the online version of this file: https://github.com/CIDRAM/CIDRAM/blob/v3/vault/signatures/ipv6_isps.dat
 
-# Version: 2024.295.0
-# Last modified: 2024.10.22
+# Version: 2024.310.0
+# Last modified: 2024.11.06
 
 # False positive risk (an approximate, rough estimate only):
 # Standard usage (i.e., used with standard CIDRAM features, default bypasses, etc): « [ ]Low [x]Medium [ ]High »
@@ -425,7 +425,7 @@ Tag: Orange S.A
 
 
 # ASN 9123 ("OOO TimeWeb").
-# Russian multiplay network. Brute-force, XMLRPC/WordPress, and webapp attacks,
+# Russian multiplay network. Brute-force, WordPress/XMLRPC, and webapp attacks,
 # hacking, port scans, and spam detected from here.
 # Listing just the affected ranges/addresses only.
 # Stop Forum Spam (SFS) listings: 1,165.
@@ -449,7 +449,7 @@ Tag: STAYNET
 
 
 # ASN 812 ("Rogers Communications Canada Inc").
-# Canadian domestic ISP. Brute-force, XMLRPC/WordPress, SQLi, manifest, and
+# Canadian domestic ISP. Brute-force, WordPress/XMLRPC, SQLi, manifest, and
 # webapp attacks, port scans, hacking, and spam detected from here.
 # Listing just the affected ranges/addresses only.
 # Stop Forum Spam (SFS) listings: 336.
