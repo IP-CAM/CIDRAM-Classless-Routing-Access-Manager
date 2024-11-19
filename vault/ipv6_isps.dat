@@ -1,8 +1,8 @@
 # IPv6 signatures file (dangerous and spammy ISPs).
 # Canonical link to the online version of this file: https://github.com/CIDRAM/CIDRAM/blob/v3/vault/signatures/ipv6_isps.dat
 
-# Version: 2024.310.0
-# Last modified: 2024.11.06
+# Version: 2024.317.0
+# Last modified: 2024.11.13
 
 # False positive risk (an approximate, rough estimate only):
 # Standard usage (i.e., used with standard CIDRAM features, default bypasses, etc): « [ ]Low [x]Medium [ ]High »
@@ -407,21 +407,6 @@ Tag: TATA SKY BROADBAND PRIVATE LIMITED
 Origin: DE
 Profile: Domestic ISP;Mobile ISP;Multiplay
 Tag: Vodafone Deutschland GmbH
-
-
-# ASNs 3215, 5511 ("Orange S.A").
-# French domestic/mobile ISP. Listing just the affected ranges/addresses only.
-# Stop Forum Spam (SFS) listings: 1,547 (AS3215), 5 (AS5511).
-# Updated: 2024.01.28
-
-2a01:cb05:f:f400::/64 Deny Spam
-2a01:cb0c:70b:7b01::/64 Deny Spam
-2a01:cb15:211:7800::/64 Deny Spam
-2a01:cb19:8ef5:200::/64 Deny Spam
-2a01:cb1d:a93:3b00::/64 Deny Spam
-Origin: FR
-Profile: Domestic ISP;Mobile ISP
-Tag: Orange S.A
 
 
 # ASN 9123 ("OOO TimeWeb").
