@@ -1,7 +1,7 @@
 ---
 CIDRAM Core:
  Name: "CIDRAM Core"
- Version: "2.15.4-DEV+242600"
+ Version: "2.15.4-DEV+243280"
  Dependencies:
   PHP: "^7.2|^8"
   Common Classes Package: "^2.11"
@@ -61,7 +61,7 @@ CIDRAM Core:
    - "9ab659234ae95c2727ddb54166822b2be3e2075281835c72a3d56d24828ded4f:45411"
    - "e48dc4d8b942bc26580caebdfc7ff79bfbb3807003c918c739c9e7dfdb61bf5e:1204"
    - "67dbe791d181719036b31e00056ac418e2a9633a5ab9d8b82a18369aabe1e6c6:2434"
-   - "ac8e56530974ef237756f1f94b8b9d1e8be2214f8d208a70287bb169b26a53f5:12367"
+   - "1eb722657cf3128bad7cf3a2f002ea2f12affcafd56f02e9ce0cbc264764b2be:12389"
  Reannotate: "components.dat"
 CIDRAM Front-End:
  Name: "CIDRAM Front-End"
@@ -287,7 +287,7 @@ Common Classes Package:
 IPv4:
  Extended Description: "Default IPv4 signatures normally included with the main package. Blocks unwanted cloud services and non-human endpoints."
  False Positive Risk: "Medium"
- Version: "2024.323.0"
+ Version: "2024.328.0"
  Dependencies:
   CIDRAM Core: ">=1"
   Bypasses: ">=2023.95"
@@ -299,7 +299,7 @@ IPv4:
   To:
    - "ipv4.dat"
   Checksum:
-   - "248d64a02ade55f21c8f033fe1d71e7cd75b424ca2f06ed15accda01b051bfa4:1536129"
+   - "b83635cf4831c22aa464d74a49d9c24733d0cca78a5fbc0f9fef0efdd14c5ac1:1542236"
  Used with: "ipv4"
  Reannotate: "components.dat"
 IPv4-Bogons:
@@ -322,7 +322,7 @@ IPv4-Bogons:
 IPv4-ISPs:
  Extended Description: "Default IPv4 signatures normally included with the main package. Blocks dangerous and spammy ISPs."
  False Positive Risk: "Medium"
- Version: "2024.323.0"
+ Version: "2024.328.0"
  Dependencies:
   CIDRAM Core: ">=1"
   Bypasses: ">=2023.95"
@@ -334,7 +334,7 @@ IPv4-ISPs:
   To:
    - "ipv4_isps.dat"
   Checksum:
-   - "dd2e2912b9a4b5192649713de3dbc7b7bce1bbed130a6fd40a619e37c77d8b4f:787250"
+   - "4e3869c5f33f18a2388f48558b88c703864fe934d7cd4278f28deac430a188e6:786443"
  Used with: "ipv4"
  Reannotate: "components.dat"
 IPv4-Nonblocking:
@@ -374,7 +374,7 @@ IPv4-Other:
 IPv6:
  Extended Description: "Default IPv6 signatures normally included with the main package. Blocks unwanted cloud services and non-human endpoints."
  False Positive Risk: "Low"
- Version: "2024.323.0"
+ Version: "2024.328.0"
  Dependencies:
   CIDRAM Core: ">=1"
   Bypasses: ">=2023.95"
@@ -386,7 +386,7 @@ IPv6:
   To:
    - "ipv6.dat"
   Checksum:
-   - "8bd79a8f48693f5165957a9e1b941998f300fa95897cb99f4e431c97fab580d4:476829"
+   - "c08d825b55a3aca6e4a1e78ea348ba5f9c6965b5f7f7cd0718428cfd12501549:477050"
  Used with: "ipv6"
  Reannotate: "components.dat"
 IPv6-Bogons:
