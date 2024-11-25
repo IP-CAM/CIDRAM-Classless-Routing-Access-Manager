@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data for the front-end (last modified: 2024.09.17).
+# This file: English language data for the front-end (last modified: 2024.11.25).
 ##/
 
 Abuse category:
@@ -95,6 +95,7 @@ Name:
  Optional security extras module: "Optional security extras module."
  Project Honeypot module: "Project Honeypot module."
  Protocol blocker module: "Protocol blocker module."
+ Quic cloud compatibility module: "Quic cloud compatibility module."
  Referrer spam module: "Referrer spam module."
  Stop Forum Spam module: "Stop Forum Spam module."
  Tor blocker module: "Tor blocker module."
@@ -276,6 +277,8 @@ config:
  protocol: "Configuration for the protocol blocker module."
  protocol_blocked: "Selected protocols will be blocked. Note: Won't have any effect for those websites routing through services which rewrite requests to all use the exact same protocol, such as Cloudflare."
  protocol_reason_message: "The reason message displayed when such requests are blocked."
+ quic: "Quic cloud compatibility module configuration."
+ quic_positive_action: "Which action should CIDRAM perform when it encounters a request from Quic cloud? Default action = Bypass."
  rate_limiting: "Configuration for rate limiting (not recommended for general use)."
  rate_limiting_allowance_period: "The duration to track usage. Default = 0°0′0″."
  rate_limiting_exceptions: "Exceptions (i.e., requests which shouldn't be rate limited). Relevant only when rate limiting is enabled."

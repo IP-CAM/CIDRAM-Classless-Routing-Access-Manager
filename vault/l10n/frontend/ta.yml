@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data for the front-end (last modified: 2024.09.25).
+# This file: Tamil language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "விருப்ப பாதுகாப்பு கூடுதல் தொகுதி."
  Project Honeypot module: "Project Honeypot தொகுதி."
  Protocol blocker module: "புரோட்டோகால் தடுப்பான் தொகுதி."
+ Quic cloud compatibility module: "Quic cloud பொருந்தக்கூடிய தொகுதி."
  Referrer spam module: "குறிப்பு ஸ்பேம் தொகுதி."
  Stop Forum Spam module: "Stop Forum Spam தொகுதி."
  Tor blocker module: "Tor தடுப்பான் தொகுதி."
@@ -265,6 +266,8 @@ config:
  protocol: "நெறிமுறை தடுப்பான் தொகுதிக்கான உள்ளமைவு."
  protocol_blocked: "தேர்ந்தெடுக்கப்பட்ட நெறிமுறைகள் தடுக்கப்படும். குறிப்பு: சில சேவைகள் (எ.கா., Cloudflare) எல்லா கோரிக்கைகளும் ஒரே நெறிமுறையைப் பயன்படுத்துகின்றன. அத்தகைய சேவைகளைப் பயன்படுத்தும் இணையதளங்கள் தொகுதியால் பாதிக்கப்படாது."
  protocol_reason_message: "அத்தகைய கோரிக்கைகள் தடுக்கப்படும் போது காட்டுவதற்கான காரணம் செய்தி."
+ quic: "Quic cloud பொருந்தக்கூடிய தொகுதி உள்ளமைவு."
+ quic_positive_action: "Quic cloud இலிருந்து ஒரு கோரிக்கையை எதிர்கொள்ளும்போது CIDRAM எந்தச் செயலைச் செய்ய வேண்டும்? இயல்புநிலை நடவடிக்கை = பைபாஸ்."
  rate_limiting: "வீத வரம்புக்கு உள்ளமைவு (பொது பயன்பாட்டிற்கு பரிந்துரைக்கப்படவில்லை)."
  rate_limiting_allowance_period: "பயன்பாட்டைக் கண்காணிக்கும் காலம். இயல்புநிலை = 0°0′0″."
  rate_limiting_exceptions: "விதிவிலக்குகள் (அதாவது, அந்த கோரிக்கைகள் மட்டுப்படுத்தப்படக்கூடாது). வீத வரம்பு இயக்கப்பட்டால் மட்டுமே தொடர்புடையது."

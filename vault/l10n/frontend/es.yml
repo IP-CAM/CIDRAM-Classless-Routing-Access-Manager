@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Spanish language data for the front-end (last modified: 2024.09.17).
+# This file: Spanish language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "Extras de seguridad módulo opcional."
  Project Honeypot module: "Módulo Project Honeypot."
  Protocol blocker module: "Módulo bloqueador de protocolos."
+ Quic cloud compatibility module: "Quic cloud módulo de compatibilidad."
  Referrer spam module: "Módulo de spam de referencia."
  Stop Forum Spam module: "Módulo Stop Forum Spam."
  Tor blocker module: "Módulo bloqueador de Tor."
@@ -265,6 +266,8 @@ config:
  protocol: "Configuración para el módulo bloqueador de protocolos."
  protocol_blocked: "Los protocolos seleccionados serán bloqueados. Nota: No tendrá ningún efecto para los sitios web que se enrutan a través de servicios que reescriben las solicitudes para que usen exactamente el mismo protocolo, como Cloudflare."
  protocol_reason_message: "El mensaje de motivo que se muestra cuando se bloquean dichas solicitudes."
+ quic: "Configuración para el módulo de compatibilidad de Quic cloud."
+ quic_positive_action: "¿Qué acción debe realizar CIDRAM cuando encuentra una solicitud de Quic cloud? Acción predefinido = Bypassear."
  rate_limiting: "Configuración para limitar la tasa de acceso (no recomendado para uso general)."
  rate_limiting_allowance_period: "La duración para monitorear el uso. Predefinido = 0°0′0″."
  rate_limiting_exceptions: "Excepciones (es decir, solicitudes que no deberían limitada). Relevante solo cuando la limitación de tasa está habilitada."

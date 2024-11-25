@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data for the front-end (last modified: 2024.09.17).
+# This file: French language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "Module optionnel pour la sécurité supplémentaire."
  Project Honeypot module: "Module Project Honeypot."
  Protocol blocker module: "Module bloqueur de protocoles."
+ Quic cloud compatibility module: "Quic cloud module de compatibilité."
  Referrer spam module: "Module spam référent."
  Stop Forum Spam module: "Module Stop Forum Spam."
  Tor blocker module: "Module bloqueur de Tor."
@@ -265,6 +266,8 @@ config:
  protocol: "Configuration pour le module bloqueur de protocole."
  protocol_blocked: "Les protocoles sélectionnés seront bloqués. Remarque\_: N'aura aucun effet pour les sites Web qui acheminent via des services qui réécrivent les requêtes pour tous utiliser exactement le même protocole, tel que Cloudflare."
  protocol_reason_message: "Le message de raison affiché lorsque de telles requêtes sont bloquées."
+ quic: "Configuration pour le module de compatibilité Quic cloud."
+ quic_positive_action: "Quelle action le CIDRAM doit-il effectuer lorsqu'il rencontre une requête de Quic cloud\_? Action par défaut = Contourner."
  rate_limiting: "Configuration pour la limitation du débit (non recommandé pour d'utilisation générale)."
  rate_limiting_allowance_period: "La durée pour surveiller l'utilisation Défaut = 0°0′0″."
  rate_limiting_exceptions: "Exceptions (c'est à dire, requêtes qui ne devraient pas être limitées). Pertinent uniquement lorsque la limitation du débit est activé."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data for the front-end (last modified: 2024.09.17).
+# This file: Turkish language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "İsteğe bağlı güvenlik ekstrası modülü."
  Project Honeypot module: "Project Honeypot modülü."
  Protocol blocker module: "Protokol engelleyici modülü."
+ Quic cloud compatibility module: "Quic cloud uyumluluk modülü."
  Referrer spam module: "Yönlendiren spam modülü."
  Stop Forum Spam module: "Stop Forum Spam modülü."
  Tor blocker module: "Tor engelleyici modülü."
@@ -265,6 +266,8 @@ config:
  protocol: "Protokol engelleyici modülü için yapılandırma."
  protocol_blocked: "Seçilen protokoller engellenecektir. Not: Cloudflare gibi tamamen aynı protokolü kullanacak şekilde istekleri yeniden yazan hizmetler aracılığıyla yönlendirilen web siteleri için herhangi bir etkisi olmayacaktır."
  protocol_reason_message: "Bu tür istekler engellendiğinde görüntülenen neden mesajı."
+ quic: "Quic cloud uyumluluk modülü için yapılandırma."
+ quic_positive_action: "CIDRAM, Quic cloud'den bir istekle karşılaştığında hangi eylemi gerçekleştirmelidir? Varsayılan aksiyon = Atlayın."
  rate_limiting: "Hız sınırlaması için yapılandırma (genel kullanım için önerilmez)."
  rate_limiting_allowance_period: "Kullanımı izlemek için süre. Varsayılan = 0°0′0″."
  rate_limiting_exceptions: "İstisnalar (yani oran sınırlı olmaması gereken istekler). Yalnızca sınırlaması etkin olduğunda geçerlidir."

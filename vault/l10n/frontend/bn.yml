@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bangla language data for the front-end (last modified: 2024.09.17).
+# This file: Bangla language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "ঐচ্ছিক নিরাপত্তা অতিরিক্ত মডিউল।"
  Project Honeypot module: "Project Honeypot মডিউল।"
  Protocol blocker module: "প্রোটোকল অবরোধকারী মডিউল।"
+ Quic cloud compatibility module: "Quic cloud সামঞ্জস্য মডিউল।"
  Referrer spam module: "রেফারার স্প্যাম মডিউল।"
  Stop Forum Spam module: "Stop Forum Spam মডিউল।"
  Tor blocker module: "টর অবরোধকারী মডিউল।"
@@ -265,6 +266,8 @@ config:
  protocol: "প্রোটোকল ব্লকার মডিউলের জন্য কনফিগারেশন।"
  protocol_blocked: "নির্বাচিত প্রোটোকল ব্লক করা হবে। দ্রষ্টব্য: ওয়েবসাইটগুলিকে প্রভাবিত করবে না যা পরিষেবাগুলির মাধ্যমে রুট করে (যেমন, Cloudflare) যা একই প্রোটোকল ব্যবহার করে সকলের কাছে অনুরোধগুলি পুনর্লিখন করে৷।"
  protocol_reason_message: "এই ধরনের অনুরোধ ব্লক করা হয় যখন প্রদর্শিত কারণ বার্তা।"
+ quic: "Quic cloud সামঞ্জস্য মডিউল কনফিগারেশন।"
+ quic_positive_action: "Quic cloud থেকে অনুরোধের সম্মুখীন হলে CIDRAM কোন কাজটি সম্পাদন করা উচিত? ডিফল্ট অ্যাকশন = অনুরোধ বাইপাস।"
  rate_limiting: "হার সীমাবদ্ধ করার জন্য কনফিগারেশন (সাধারণ ব্যবহারের জন্য প্রস্তাবিত নয়)।"
  rate_limiting_allowance_period: "ব্যবহার ট্র্যাক করার সময়কাল। ডিফল্ট = 0°0′0″।"
  rate_limiting_exceptions: "ব্যতিক্রম (অনুরোধগুলি যা রেট সীমাবদ্ধ করা উচিত নয়)। রেট সীমাবদ্ধ সক্ষম থাকলেই প্রাসঙ্গিক।"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data for the front-end (last modified: 2024.09.17).
+# This file: Arabic language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "المكون اشياء الأمن اختياري."
  Project Honeypot module: "Project Honeypot المكون."
  Protocol blocker module: "المكون مانع البروتوكول."
+ Quic cloud compatibility module: "المكون التوافق Quic cloud."
  Referrer spam module: "المكون للإحالة البريد المزعج."
  Stop Forum Spam module: "Stop Forum Spam المكون."
  Tor blocker module: "المكون مانع Tor."
@@ -265,6 +266,8 @@ config:
  protocol: "التكوين لوحدة مانع البروتوكول."
  protocol_blocked: "سيتم حظر البروتوكولات المحددة. ملاحظة: لن تؤثر على مواقع الويب التي توجه من خلال الخدمات التي تعيد كتابة الطلبات للجميع باستخدام نفس البروتوكول، مثل Cloudflare."
  protocol_reason_message: "رسالة السبب التي يتم عرضها عند حظر مثل هذه الطلبات."
+ quic: "التكوين لوحدة التوافق Quic cloud."
+ quic_positive_action: "ما الإجراء الذي يجب أن يقوم به CIDRAM عندما يواجه طلبًا من Quic cloud؟ الإجراء القياسي = تجاوز."
  rate_limiting: "التكوين للحد من معدل (غير مستحسن للاستخدام العام)."
  rate_limiting_allowance_period: "المدة لمراقبة الاستخدام. افتراضي = 0°0′0″."
  rate_limiting_exceptions: "استثناءات (بمعنى آخر، الطلبات التي لا ينبغي أن تكون محدودة). له تأثير فقط عند تمكين الحد."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data for the front-end (last modified: 2024.09.17).
+# This file: Japanese language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "オプショナル・セキュリティ・エクストラス・モジュール。"
  Project Honeypot module: "Project Honeypot モジュール。"
  Protocol blocker module: "プロトコル・ブロッカー・モジュール。"
+ Quic cloud compatibility module: "Quic cloud互換モジュール。"
  Referrer spam module: "リファラー・スパム・モジュール。"
  Stop Forum Spam module: "Stop Forum Spam モジュール。"
  Tor blocker module: "Ｔｏｒブロッカー・モジュール。"
@@ -265,6 +266,8 @@ config:
  protocol: "プロトコル・ブロッカー・モジュールの設定。"
  protocol_blocked: "選択したプロトコルがブロックされます。​注：すべての要求をまったく同じプロトコルを使用するように書き換えるサービスを（例:Cloudflare）介してルーティングするウェブサイトには影響しません。"
  protocol_reason_message: "そのようなリクエストがブロックされたときに表示される理由メッセージ。"
+ quic: "Quic cloud互換性モジュールの設定。"
+ quic_positive_action: "Quic cloudからの要求に遭遇した場合、CIDRAMはどのアクションを実行する必要がありますか？ デフォルト・アクション = バイパスする。"
  rate_limiting: "レート制限の設定（一般的な使用には推奨されません）。"
  rate_limiting_allowance_period: "使用状況を監視する期間。​Default/デフォルルト = 0°0′0″。"
  rate_limiting_exceptions: "例外（すなわち、レート制限されるべきではないリクエスト）。​レート制限が有効な場合にのみ効果があります。"

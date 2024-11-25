@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data for the front-end (last modified: 2024.09.17).
+# This file: Hindi language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "वैकल्पिक सुरक्षा एक्स्ट्रा मॉड्यूल।"
  Project Honeypot module: "Project Honeypot मॉड्यूल।"
  Protocol blocker module: "प्रोटोकॉल अवरोधक मॉड्यूल।"
+ Quic cloud compatibility module: "Quic cloud संगतता मॉड्यूल।"
  Referrer spam module: "रेफ़रर स्पैम मॉड्यूल।"
  Stop Forum Spam module: "Stop Forum Spam मॉड्यूल।"
  Tor blocker module: "टोर ब्लॉकर मॉड्यूल।"
@@ -265,6 +266,8 @@ config:
  protocol: "प्रोटोकॉल ब्लॉकर मॉड्यूल के लिए कॉन्फ़िगरेशन।"
  protocol_blocked: "चयनित प्रोटोकॉल ब्लॉक कर दिए जाएंगे। नोट: कुछ सेवाएं (जैसे., Cloudflare) यह लागू करती हैं कि सभी अनुरोध एक ही प्रोटोकॉल का उपयोग करते हैं। ऐसी सेवाओं का उपयोग करने वाली वेबसाइटें मॉड्यूल से प्रभावित नहीं होंगी।"
  protocol_reason_message: "इस तरह के अनुरोधों को ब्लॉक किए जाने पर प्रदर्शित होने का कारण संदेश।"
+ quic: "Quic cloud संगतता मॉड्यूल के लिए कॉन्फ़िगरेशन।"
+ quic_positive_action: "Quic cloud से अनुरोध मिलने पर CIDRAM को कौन सी कार्रवाई करनी चाहिए? डिफ़ॉल्ट क्रिया = बाईपास करें।"
  rate_limiting: "दर सीमित करने के लिए कॉन्फ़िगरेशन (सामान्य उपयोग के लिए अनुशंसित नहीं है)।"
  rate_limiting_allowance_period: "उपयोग को ट्रैक करने की अवधि। डिफ़ॉल्ट = 0°0′0″।"
  rate_limiting_exceptions: "अपवाद (अर्थात, अनुरोध जो दर सीमित नहीं होने चाहिए)। केवल एक प्रभाव है जब दर सीमित करने में सक्षम है।"

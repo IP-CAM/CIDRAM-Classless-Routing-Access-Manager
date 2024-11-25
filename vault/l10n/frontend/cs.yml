@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data for the front-end (last modified: 2024.09.17).
+# This file: Czech language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "Volitelný doplňkový bezpečnostní modul."
  Project Honeypot module: "Modul Project Honeypot."
  Protocol blocker module: "Modul blokování protokolů."
+ Quic cloud compatibility module: "Modul kompatibility Quic cloud."
  Referrer spam module: "Modul odkazujícího spamu."
  Stop Forum Spam module: "Modul Stop Forum Spam."
  Tor blocker module: "Modul blokování Tor."
@@ -265,6 +266,8 @@ config:
  protocol: "Konfigurace pro modul pro blokování protokolů."
  protocol_blocked: "Vybrané protokoly budou blokovány. Poznámka: Nebude to mít žádný vliv na ty webové stránky směrující přes služby, které přepisují požadavky, aby všechny používaly přesně stejný protokol, jako je Cloudflare."
  protocol_reason_message: "Zpráva o důvodu která se zobrazí, když jsou takové požadavky zablokovány."
+ quic: "Konfigurace pro modul kompatibility Quic cloud."
+ quic_positive_action: "Jakou akci by měl CIDRAM provést, když narazí na požadavek od Quic cloud? Standardní akce = Bypass."
  rate_limiting: "Konfigurace pro omezení rychlosti (nedoporučuje se pro obecné použití)."
  rate_limiting_allowance_period: "Doba sledování využití. Standardní = 0°0′0″."
  rate_limiting_exceptions: "Výjimky (t.j., požadavky, které by neměly být omezení rychlosti). Relevantní pouze v případě že je aktivováno omezení rychlosti."

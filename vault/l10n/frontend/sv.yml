@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data for the front-end (last modified: 2024.09.17).
+# This file: Swedish language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "Valfri säkerhetstillbehörsmodul."
  Project Honeypot module: "Project Honeypot modul."
  Protocol blocker module: "Protokollblockeringsmodul."
+ Quic cloud compatibility module: "Quic cloud-kompatibilitetsmodul."
  Referrer spam module: "Referensspam-modul."
  Stop Forum Spam module: "Stop Forum Spam modul."
  Tor blocker module: "Tor blockeringsmodul."
@@ -265,6 +266,8 @@ config:
  protocol: "Konfiguration för protokollblockeringsmodulen."
  protocol_blocked: "Valda protokoll kommer att blockeras. Obs: Kommer inte ha någon effekt för de webbplatser som dirigerar genom tjänster som skriver om förfrågningar till att alla använder exakt samma protokoll, sådan som Cloudflare."
  protocol_reason_message: "Orsaksmeddelandet visas när sådana förfrågningar blockeras."
+ quic: "Konfiguration för Quic cloud-kompatibilitetsmodulen."
+ quic_positive_action: "Vilken åtgärd ska CIDRAM utföra när det stöter på en begäran från Quic cloud? Standardåtgärd = Bypassera."
  rate_limiting: "Konfiguration för hastighetsbegränsning (rekommenderas inte för allmänt bruk)."
  rate_limiting_allowance_period: "Varaktigheten för att spåra användning. Standard = 0°0′0″."
  rate_limiting_exceptions: "Undantagen (d.v.s., förfrågningar som inte bör vara begränsade). Relevant endast när hastighetsbegränsning är aktiverad."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Croatian language data for the front-end (last modified: 2024.10.10).
+# This file: Croatian language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "Opcijski sigurnosni dodaci modul."
  Project Honeypot module: "Project Honeypot modul."
  Protocol blocker module: "Modul za blokiranje protokola."
+ Quic cloud compatibility module: "Modul za Quic cloud kompatibilnost."
  Referrer spam module: "Modul za spam preporuke."
  Stop Forum Spam module: "Stop Forum Spam modul."
  Tor blocker module: "Tor blokatorski modul."
@@ -265,6 +266,8 @@ config:
  protocol: "Konfiguracija za modul za blokiranje protokola."
  protocol_blocked: "Odabrani protokoli bit će blokirani. Bilješka: Neće imati nikakvog učinka za ona web stranicu koja usmjeravaju kroz usluge koje prepisuju zahtjeve tako da svi koriste potpuno isti protokol, kao što je Cloudflare."
  protocol_reason_message: "Poruka o razlogu koja se prikazuje kada su takvi zahtjevi blokirani."
+ quic: "Konfiguracija za Quic cloud modul kompatibilnosti."
+ quic_positive_action: "Koju radnju CIDRAM treba izvršiti kada naiđe na zahtjev od Quic cloud-a? Zadana radnja = Bypass."
  rate_limiting: "Konfiguracija za ograničavanje brzine (ne preporučuje se za opću upotrebu)."
  rate_limiting_allowance_period: "Trajanje za praćenje upotrebe. Zadano = 0°0′0″."
  rate_limiting_exceptions: "Iznimke (tj. zahtjevi koji ne bi trebali biti ograničeni brzinom). Relevantno samo kada je omogućeno ograničenje brzine."
@@ -343,8 +346,40 @@ field:
  Create new account: "Napravi novi račun"
  Currently active signature files: "Trenutno aktivne datoteke potpisa"
  Deactivate: "Deaktivirajte"
+ Delete account: "Izbriši račun"
+ Delete: "Izbriši"
+ Direct input: "Izravni unos"
+ Directory: "Imenik"
+ Download: "Preuzimanje"
+ Edit: "Uredi"
+ Execute: "Izvršite"
+ Execution order: "Redoslijed izvršenja:"
+ Expiry: "Datum isteka"
+ False (False): "False (Lažno)"
+ File: "Datoteka"
+ Filename: "Naziv datoteke:"
+ Generate output as CIDRs: "Generirajte izlaz kao CIDR-ove"
+ Generate output as netmasks: "Generirajte izlaz kao mrežne maske"
+ Immediately: "Odmah."
+ Install: "Instalirajte"
+ Latest version: "Najnovija verzija"
+ Log In: "Prijavite se"
+ Macro: "Makro"
+ New name: "Novo ime:"
+ Non-clickable text: "Tekst na koji se ne može kliknuti"
+ Not tracking: "Ne prati se."
+ Only when triggered manually: "Samo kada se pokrene ručno (npr., putem crona)."
+ Options: "Opcije"
+ Password: "Lozinka"
+ Permissions: "Dozvole"
+ Preserve tags and comments: "Sačuvajte oznake i komentare"
+ Range (First Last): "Raspon (Prvi – Zadnji)"
+ Rename: "Preimenuj"
+ Repair all: "Popravi sve"
+ Repair: "Popravi"
+ Requests to the CIDRAM front-end: "Zahtjevi na CIDRAM front-end"
 tip:
- IP Tracking: "The IP tracking page allows you to check the tracking status of IP addresses, to check which of them have been banned, and to unban/untrack them if you want to do so."
+ Greeting: "Zdravo, %s."
  Intersector: "Intersektor se može koristiti za određivanje zajedničkih faktora iz dva skupa raspona."
  Logs: "Odaberite datoteku dnevnika s donjeg popisa kako biste vidjeli sadržaj te datoteke dnevnika."
  Number of seconds until it expires: "Broj sekundi do isteka."

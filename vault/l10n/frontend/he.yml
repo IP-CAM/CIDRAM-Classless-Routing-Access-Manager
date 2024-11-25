@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data for the front-end (last modified: 2024.09.17).
+# This file: Hebrew language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "מודול תוספות אבטחה אופציונליות."
  Project Honeypot module: "מודול Project Honeypot."
  Protocol blocker module: "מודול חוסם פרוטוקול."
+ Quic cloud compatibility module: "מודול תאימות של Quic cloud."
  Referrer spam module: "מודול ספאם מפנה."
  Stop Forum Spam module: "מודול Stop Forum Spam."
  Tor blocker module: "מודול חוסם Tor."
@@ -265,6 +266,8 @@ config:
  protocol: "תצורה עבור מודול חוסם הפרוטוקולים."
  protocol_blocked: "הפרוטוקולים שנבחרו ייחסמו. הערה: לא ישפיע על אתרים שמנתבים דרך שירותים המשכתבים בקשות לכולן משתמשות באותו פרוטוקול, כגון Cloudflare."
  protocol_reason_message: "הודעת הסיבה המוצגת כאשר בקשות כאלה נחסמות."
+ quic: "תצורת מודול תאימות של Quic cloud."
+ quic_positive_action: "איזו פעולה על CIDRAM לבצע כאשר הוא נתקל בבקשה מ- Quic cloud? סטנדרטי = לעקוף את זה."
  rate_limiting: "תצורה להגבלת קצב (לא מומלץ לשימוש כללי)."
  rate_limiting_allowance_period: "משך הזמן למעקב אחר השימוש. סטנדרטי = 0°0′0″."
  rate_limiting_exceptions: "חריגים (כלומר, בקשות שלא צריכות להיות מוגבלות בתעריף). רלוונטי רק כאשר הגבלת תעריפים מופעלת."

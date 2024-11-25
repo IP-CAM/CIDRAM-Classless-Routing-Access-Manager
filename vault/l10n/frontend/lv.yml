@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Latvian language data for the front-end (last modified: 2024.09.17).
+# This file: Latvian language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "Neobligāts drošības ekstras modulis."
  Project Honeypot module: "Project Honeypot modulis."
  Protocol blocker module: "Protokolu bloķētāja modulis."
+ Quic cloud compatibility module: "Quic cloud saderības modulis."
  Referrer spam module: "Novirzītāja surogātpastu modulis."
  Stop Forum Spam module: "Stop Forum Spam modulis."
  Tor blocker module: "Tor bloķētāja modulis."
@@ -265,6 +266,8 @@ config:
  protocol: "Protokolu bloķētāja moduļa konfigurācija."
  protocol_blocked: "Atlasītie protokoli tiks bloķēti. Piezīme: Tas neietekmēs vietnes, kas maršrutē caur pakalpojumiem, kas pārraksta pieprasījumus visiem, izmantojot tieši to pašu protokolu (piem., Cloudflare)."
  protocol_reason_message: "Iemesla ziņojums, kas tiek parādīts, kad šādi pieprasījumi ir bloķēti."
+ quic: "Quic cloud saderības moduļa konfigurācija."
+ quic_positive_action: "Kura darbība CIDRAM jāveic, kad tiek saņemts pieprasījums no Quic cloud? Noklusējuma darbība = Apietu."
  rate_limiting: "Likmes ierobežojumu konfigurācija (nav ieteicams vispārējai lietošanai)."
  rate_limiting_allowance_period: "Lietošanas izsekošanas ilgums. Noklusējuma = 0°0′0″."
  rate_limiting_exceptions: "Izņēmumi (t.i., pieprasījumiem, kuriem nevajadzētu būt ierobežotiem). Attiecas tikai tad, ja ir iespējota likmes ierobežošana."

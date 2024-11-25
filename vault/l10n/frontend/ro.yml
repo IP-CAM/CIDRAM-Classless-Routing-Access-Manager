@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data for the front-end (last modified: 2024.09.17).
+# This file: Romanian language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "Modul suplimentar de securitate opțional."
  Project Honeypot module: "Modul Project Honeypot."
  Protocol blocker module: "Modul de blocare a protocolului."
+ Quic cloud compatibility module: "Modul de compatibilitate Quic cloud."
  Referrer spam module: "Modul de spam referitor."
  Stop Forum Spam module: "Modul Stop Forum Spam."
  Tor blocker module: "Modul de blocare Tor."
@@ -265,6 +266,8 @@ config:
  protocol: "Configurare pentru modulul de blocare a protocolului."
  protocol_blocked: "Protocoalele selectate vor fi blocate. Notă: Nu va avea niciun efect pentru acele site-uri web de rutare prin servicii care rescriu solicitările pentru a folosi exact același protocol, cum ar fi Cloudflare."
  protocol_reason_message: "Mesajul motivului afișat atunci când astfel de solicitări sunt blocate."
+ quic: "Configurarea modulului de compatibilitate Quic cloud."
+ quic_positive_action: "Ce acțiune ar trebui să efectueze CIDRAM atunci când întâlnește o solicitare de la Quic cloud? Acțiune implicită = Bypass."
  rate_limiting: "Configurație pentru limitarea ratei (nu este recomandată pentru utilizare generală)."
  rate_limiting_allowance_period: "Durata de urmărire a utilizării. Implicit = 0°0′0″."
  rate_limiting_exceptions: "Excepții (adică solicitări care nu ar trebui să fie limitate la tarife). Relevant numai atunci când limitarea ratei este activată."

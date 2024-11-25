@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bulgarian language data for the front-end (last modified: 2024.09.17).
+# This file: Bulgarian language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "Допълнителен модул за сигурност."
  Project Honeypot module: "Project Honeypot модул."
  Protocol blocker module: "Модул за блокиране на протоколи."
+ Quic cloud compatibility module: "Quic cloud модул за съвместимост."
  Referrer spam module: "Модул за референт спам."
  Stop Forum Spam module: "Stop Forum Spam модул."
  Tor blocker module: "Модул за блокиране на Tor."
@@ -265,6 +266,8 @@ config:
  protocol: "Конфигурация за модула за блокиране на протоколи."
  protocol_blocked: "Избраните протоколи ще бъдат блокирани. Забележка: Няма да има ефект за тези уебсайтове, маршрутизиращи през услуги, които пренаписват заявки, така че всички да използват абсолютно същия протокол, като Cloudflare."
  protocol_reason_message: "Съобщението за причина, което се показва, когато такива заявки са блокирани."
+ quic: "Конфигурация на модул за съвместимост на Quic cloud."
+ quic_positive_action: "Кое действие трябва да извърши CIDRAM, когато срещне заявка от Quic cloud? Стандартно действие = Bypass."
  rate_limiting: "Конфигурация за ограничаване на скоростта (не се препоръчва за обща употреба)."
  rate_limiting_allowance_period: "Продължителността за проследяване на използването. Стандарт = 0°0′0″."
  rate_limiting_exceptions: "Изключения (т.е. заявки, които не трябва да бъдат ограничени по скорост). Уместно само когато е активирано ограничаване на скоростта."

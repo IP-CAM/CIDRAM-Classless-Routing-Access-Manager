@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Russian language data for the front-end (last modified: 2024.09.17).
+# This file: Russian language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "Модуль необязательный дополнительные безопасности."
  Project Honeypot module: "Модуль Project Honeypot."
  Protocol blocker module: "Модуль блокировщика протоколов."
+ Quic cloud compatibility module: "Модуль совместимости Quic cloud."
  Referrer spam module: "Модуль реферера спама."
  Stop Forum Spam module: "Модуль Stop Forum Spam."
  Tor blocker module: "Модуль блокатор Tor."
@@ -265,6 +266,8 @@ config:
  protocol: "Конфигурация для модуля блокировщика протоколов."
  protocol_blocked: "Выбранные протоколы будут заблокированы. Примечание: Не будет иметь никакого эффекта для тех веб-сайтов, которые маршрутизируют через службы, которые переписывают запросы, чтобы все использовали один и тот же протокол, например Cloudflare."
  protocol_reason_message: "Сообщение о причине, отображаемое при блокировке таких запросов."
+ quic: "Конфигурация для модуля совместимости Quic cloud."
+ quic_positive_action: "Какое действие должен выполнить CIDRAM при получении запроса от Quic cloud? Стандартное действие = Обходите."
  rate_limiting: "Конфигурация для ограничения скорости (не рекомендуется для общего пользования)."
  rate_limiting_allowance_period: "Продолжительность мониторинга использования. Стандарт = 0°0′0″."
  rate_limiting_exceptions: "Исключения (т.е., запросы, которые не должны ограничиваться). Действует только при включенном ограничении скорости."

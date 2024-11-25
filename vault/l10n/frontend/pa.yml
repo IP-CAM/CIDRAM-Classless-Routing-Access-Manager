@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Punjabi language data for the front-end (last modified: 2024.09.17).
+# This file: Punjabi language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "ਵਿਕਲਪਿਕ ਸੁਰੱਖਿਆ ਵਾਧੂ ਮੋਡੀਊਲ।"
  Project Honeypot module: "Project Honeypot ਮੋਡੀਊਲ।"
  Protocol blocker module: "ਪ੍ਰੋਟੋਕੋਲ ਬਲੌਕਰ ਮੋਡੀਊਲ।"
+ Quic cloud compatibility module: "Quic cloud ਅਨੁਕੂਲਤਾ ਮੋਡੀਊਲ।"
  Referrer spam module: "ਰੈਫਰਰ ਸਪੈਮ ਮੋਡੀਊਲ।"
  Stop Forum Spam module: "Stop Forum Spam ਮੋਡੀਊਲ।"
  Tor blocker module: "Tor ਬਲੌਕਰ ਮੋਡੀਊਲ।"
@@ -265,6 +266,8 @@ config:
  protocol: "ਪ੍ਰੋਟੋਕੋਲ ਬਲੌਕਰ ਮੋਡੀਊਲ ਲਈ ਕੌਂਫਿਗਰੇਸ਼ਨ।"
  protocol_blocked: "ਚੁਣੇ ਗਏ ਪ੍ਰੋਟੋਕੋਲ ਬਲੌਕ ਕੀਤੇ ਜਾਣਗੇ। ਨੋਟ: ਉਹਨਾਂ ਵੈਬਸਾਈਟਾਂ ਲਈ ਕੋਈ ਪ੍ਰਭਾਵ ਨਹੀਂ ਹੋਵੇਗਾ ਜੋ ਉਹਨਾਂ ਸੇਵਾਵਾਂ ਦੁਆਰਾ ਰੂਟ ਕਰਦੀਆਂ ਹਨ ਜੋ ਸਾਰੀਆਂ ਨੂੰ ਉਸੇ ਪ੍ਰੋਟੋਕੋਲ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ ਬੇਨਤੀਆਂ ਨੂੰ ਦੁਬਾਰਾ ਲਿਖਦੀਆਂ ਹਨ, ਜਿਵੇਂ ਕਿ Cloudflare।"
  protocol_reason_message: "ਅਜਿਹੀਆਂ ਬੇਨਤੀਆਂ ਨੂੰ ਬਲੌਕ ਕੀਤੇ ਜਾਣ 'ਤੇ ਪ੍ਰਦਰਸ਼ਿਤ ਕੀਤੇ ਜਾਣ ਦਾ ਕਾਰਨ ਸੁਨੇਹਾ।"
+ quic: "Quic cloud ਅਨੁਕੂਲਤਾ ਮੋਡੀਊਲ ਕੌਂਫਿਗਰੇਸ਼ਨ।"
+ quic_positive_action: "ਜਦੋਂ CIDRAM ਨੂੰ Quic cloud ਤੋਂ ਕੋਈ ਬੇਨਤੀ ਆਉਂਦੀ ਹੈ ਤਾਂ ਕਿਹੜੀ ਕਾਰਵਾਈ ਕਰਨੀ ਚਾਹੀਦੀ ਹੈ? ਡਿਫਾਲਟ ਕਿਰਿਆ = ਬਾਈਪਾਸ।"
  rate_limiting: "ਦਰ ਸੀਮਤ ਕਰਨ ਲਈ ਕੌਂਫਿਗਰੇਸ਼ਨ (ਆਮ ਵਰਤੋਂ ਲਈ ਸਿਫ਼ਾਰਸ਼ ਨਹੀਂ ਕੀਤੀ ਜਾਂਦੀ)।"
  rate_limiting_allowance_period: "ਵਰਤੋਂ ਨੂੰ ਟਰੈਕ ਕਰਨ ਦੀ ਮਿਆਦ। ਡਿਫਾਲਟ = 0°0′0″."
  rate_limiting_exceptions: "ਅਪਵਾਦ (ਭਾਵ, ਬੇਨਤੀਆਂ ਜਿਹਨਾਂ ਦੀ ਦਰ ਸੀਮਤ ਨਹੀਂ ਹੋਣੀ ਚਾਹੀਦੀ)। ਸਿਰਫ ਉਦੋਂ ਹੀ ਢੁਕਵਾਂ ਹੁੰਦਾ ਹੈ ਜਦੋਂ ਦਰ ਸੀਮਾ ਨੂੰ ਕਿਰਿਆਸ਼ੀਲ ਕੀਤਾ ਜਾਂਦਾ ਹੈ।"

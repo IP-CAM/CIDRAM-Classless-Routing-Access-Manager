@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data for the front-end (last modified: 2024.09.17).
+# This file: Malay language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "Modul tambahan keselamatan pilihan."
  Project Honeypot module: "Modul Project Honeypot."
  Protocol blocker module: "Modul penyekat protokol."
+ Quic cloud compatibility module: "Modul keserasian Quic cloud."
  Referrer spam module: "Modul spam perujuk."
  Stop Forum Spam module: "Modul Stop Forum Spam."
  Tor blocker module: "Modul penyekat Tor."
@@ -265,6 +266,8 @@ config:
  protocol: "Konfigurasi untuk modul penyekat protokol."
  protocol_blocked: "Protokol yang dipilih akan disekat. Nota: Tidak akan mempunyai sebarang kesan untuk laman web yang menghalakan melalui perkhidmatan yang menulis semula permintaan kepada semua menggunakan protokol yang sama, seperti Cloudflare."
  protocol_reason_message: "Mesej sebab dipaparkan apabila permintaan tersebut disekat."
+ quic: "Konfigurasi untuk modul keserasian Quic cloud."
+ quic_positive_action: "Tindakan manakah yang perlu CIDRAM lakukan apabila ia menghadapi permintaan daripada Quic cloud? Tindakan lalai = Memintasnya."
  rate_limiting: "Konfigurasi untuk mengehadkan kadar (tidak disyorkan untuk kegunaan umum)."
  rate_limiting_allowance_period: "Tempoh untuk menjejaki penggunaan. Lalai = 0°0′0″."
  rate_limiting_exceptions: "Pengecualian (iaitu, permintaan yang tidak sepatutnya dihadkan). Relevan hanya apabila pengehadan kadar diaktifkan."

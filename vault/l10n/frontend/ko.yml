@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data for the front-end (last modified: 2024.09.17).
+# This file: Korean language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "선택적 보안 엑스트라 스 모듈."
  Project Honeypot module: "Project Honeypot 모듈."
  Protocol blocker module: "프로토콜 차단기 모듈."
+ Quic cloud compatibility module: "Quic cloud 호환성 모듈."
  Referrer spam module: "리퍼러 스팸 모듈."
  Stop Forum Spam module: "Stop Forum Spam 모듈."
  Tor blocker module: "Tor 차단제 모듈."
@@ -265,6 +266,8 @@ config:
  protocol: "프로토콜 차단기 모듈에 대한 설정."
  protocol_blocked: "선택한 프로토콜이 차단됩니다. 참고\_: 일한 프로토콜을 사용하도록 요청을 시행하는 서비스를 (예: Cloudflare) 통해 라우팅 되는 웹사이트에는 영향을 미치지 않습니다."
  protocol_reason_message: "이러한 요청이 차단될 때 표시되는 이유 메시지입니다."
+ quic: "Quic cloud 호환 모듈 구성."
+ quic_positive_action: "CIDRAM은 Quic cloud의 요청을 만났을 때 어떤 작업을 수행해야 합니까? 기본 동작 = 우회."
  rate_limiting: "속도 제한 설정 (일반적인 사용에는 권장되지 않습니다)."
  rate_limiting_allowance_period: "사용량을 모니터 할 기간입니다. Default (기본 설정) = 0°0′0″."
  rate_limiting_exceptions: "예외 (즉, 속도 제한이 없어야하는 요청). 속도 제한이 활성화 된 경우에만 해당됩니다."

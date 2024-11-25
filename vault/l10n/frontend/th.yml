@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Thai language data for the front-end (last modified: 2024.09.17).
+# This file: Thai language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "โมดูลเสริมความปลอดภัยเพิ่มเติม."
  Project Honeypot module: "โมดูล Project Honeypot."
  Protocol blocker module: "โมดูลตัวบล็อกโปรโตคอล."
+ Quic cloud compatibility module: "โมดูลความเข้ากัน Quic cloud."
  Referrer spam module: "โมดูลสแปมผู้อ้างอิง."
  Stop Forum Spam module: "โมดูล Stop Forum Spam."
  Tor blocker module: "โมดูลตัวบล็อก Tor."
@@ -265,6 +266,8 @@ config:
  protocol: "การกำหนดค่าสำหรับโมดูลตัวบล็อกโปรโตคอล."
  protocol_blocked: "โปรโตคอลที่เลือกจะถูกบล็อก. หมายเหตุ: จะไม่ส่งผลกระทบต่อเว็บไซต์ที่ส่งผ่านบริการที่เขียนคำขอใหม่ทั้งหมดโดยใช้โปรโตคอลเดียวกัน เช่น Cloudflare."
  protocol_reason_message: "ข้อความเหตุผลที่จะแสดงเมื่อคำขอดังกล่าวถูกบล็อก."
+ quic: "การกำหนดค่าสำหรับโมดูลความเข้ากันได้ของ Quic cloud."
+ quic_positive_action: "CIDRAM ควรดำเนินการใดเมื่อพบคำขอจาก Quic cloud? การกระทำเริ่มต้น = บายพาส."
  rate_limiting: "การกำหนดค่าสำหรับการ การจำกัดอัตรา (ไม่แนะนำสำหรับการใช้งานทั่วไป)."
  rate_limiting_allowance_period: "ระยะเวลาในการติดตามการใช้งาน. ค่าเริ่มต้น = 0°0′0″."
  rate_limiting_exceptions: "ข้อยกเว้น (นั่นคือ คำขอที่ไม่ควรถูก จำกัด). มีความเกี่ยวข้องเฉพาะเมื่อเปิดใช้งานการ การจำกัดอัตรา."

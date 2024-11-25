@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Gujarati language data for the front-end (last modified: 2024.09.17).
+# This file: Gujarati language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "વૈકલ્પિક સુરક્ષા વધારાઓ મોડ્યુલ."
  Project Honeypot module: "Project Honeypot મોડ્યુલ."
  Protocol blocker module: "પ્રોટોકોલ બ્લોકર મોડ્યુલ."
+ Quic cloud compatibility module: "Quic cloud સુસંગતતા મોડ્યુલ."
  Referrer spam module: "રેફરર સ્પામ મોડ્યુલ."
  Stop Forum Spam module: "Stop Forum Spam મોડ્યુલ."
  Tor blocker module: "ટોર બ્લોકર મોડ્યુલ."
@@ -265,6 +266,8 @@ config:
  protocol: "પ્રોટોકોલ બ્લોકર મોડ્યુલ માટે રૂપરેખાંકન."
  protocol_blocked: "પસંદ કરેલ પ્રોટોકોલ અવરોધિત કરવામાં આવશે. નૉૅધ: કેટલીક સેવાઓ તમામ વિનંતીઓને સમાન પ્રોટોકોલનો ઉપયોગ કરવાની ફરજ પાડે છે. આવી સેવાઓનો ઉપયોગ કરતી વેબસાઇટ્સ માટે, તેની કોઈ અસર થશે નહીં."
  protocol_reason_message: "જ્યારે આવી વિનંતીઓ અવરોધિત કરવામાં આવે ત્યારે પ્રદર્શિત કરવાનો કારણ સંદેશ."
+ quic: "Quic cloud સુસંગતતા મોડ્યુલ રૂપરેખાંકન."
+ quic_positive_action: "જ્યારે CIDRAM ને Quic cloud તરફથી વિનંતી મળે ત્યારે કઈ ક્રિયા કરવી જોઈએ? ડિફૉલ્ટ ક્રિયા = બાયપાસ."
  rate_limiting: "દર મર્યાદા માટે રૂપરેખાંકન (સામાન્ય ઉપયોગ માટે આગ્રહણીય નથી)."
  rate_limiting_allowance_period: "ઉપયોગને ટ્રૅક કરવાની અવધિ. ડિફૉલ્ટ = 0°0′0″."
  rate_limiting_exceptions: "અપવાદો (એટલે કે, વિનંતીઓ કે જેનો દર મર્યાદિત ન હોવો જોઈએ). જ્યારે દર મર્યાદા સક્ષમ હોય ત્યારે જ સંબંધિત."

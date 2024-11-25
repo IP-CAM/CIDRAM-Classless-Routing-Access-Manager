@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Farsi language data for the front (last modified: 2024.09.17).
+# This file: Farsi language data for the front (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "ماژول اضافی امنیتی اختیاری."
  Project Honeypot module: "ماژول Project Honeypot."
  Protocol blocker module: "ماژول مسدود کننده پروتکل."
+ Quic cloud compatibility module: "ماژول سازگاری Quic cloud."
  Referrer spam module: "ماژول اسپم ارجاع دهنده."
  Stop Forum Spam module: "ماژول Stop Forum Spam."
  Tor blocker module: "ماژول مسدود کننده Tor."
@@ -265,6 +266,8 @@ config:
  protocol: "پیکربندی برای ماژول مسدود کننده پروتکل."
  protocol_blocked: "پروتکل های انتخاب شده مسدود خواهند شد. توجه داشته باشید: بر روی وب سایت هایی که از طریق سرویس هایی که درخواست ها را بازنویسی می کنند مسیریابی می کنند تا همه از پروتکل یکسان استفاده کنند (به عنوان مثال، Cloudflare) تأثیری نخواهد گذاشت."
  protocol_reason_message: "پیام دلیل نمایش داده شده زمانی که چنین درخواست هایی مسدود می شوند."
+ quic: "پیکربندی ماژول سازگاری Quic cloud."
+ quic_positive_action: "وقتی CIDRAM با درخواست Quic cloud مواجه می شود، کدام عمل را باید انجام دهد؟ اقدام پیش فرض = میان بر."
  rate_limiting: "پیکربندی برای محدود کردن نرخ (برای استفاده عمومی توصیه نمی شود)."
  rate_limiting_allowance_period: "مدت زمان برای ردیابی استفاده. پیش فرض = 0°0′0″."
  rate_limiting_exceptions: "استثناها (به عنوان مثال، درخواست هایی که نباید محدود به نرخ باشند). فقط زمانی مرتبط است که محدودیت نرخ فعال باشد."

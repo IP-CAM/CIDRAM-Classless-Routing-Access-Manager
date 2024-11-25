@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data for the front-end (last modified: 2024.09.17).
+# This file: Vietnamese language data for the front-end (last modified: 2024.11.25).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -103,6 +103,7 @@ Name:
  Optional security extras module: "Mô-đun tùy chọn cho bảo mật tính năng bổ sung."
  Project Honeypot module: "Mô-đun Project Honeypot."
  Protocol blocker module: "Mô-đun chặn giao thức."
+ Quic cloud compatibility module: "Mô-đun tương thích Quic cloud."
  Referrer spam module: "Mô-đun spam giới thiệu."
  Stop Forum Spam module: "Mô-đun Stop Forum Spam."
  Tor blocker module: "Mô-đun cho chặn Tor."
@@ -265,6 +266,8 @@ config:
  protocol: "Cấu hình cho mô-đun chặn giao thức."
  protocol_blocked: "Các giao thức đã chọn sẽ bị chặn. Ghi chú: Sẽ không có bất kỳ ảnh hưởng nào đối với các trang web đó định tuyến thông qua các dịch vụ viết lại các yêu cầu cho tất cả đều sử dụng cùng một giao thức, chẳng hạn như Cloudflare."
  protocol_reason_message: "Thông báo lý do hiển thị khi các yêu cầu đó bị chặn."
+ quic: "Cấu hình cho mô-đun tương thích Quic cloud."
+ quic_positive_action: "CIDRAM nên thực hiện hành động nào khi gặp yêu cầu từ Quic cloud? Hành động mặc định = Đường tránh."
  rate_limiting: "Cấu hình cho giới hạn tốc độ (không khuyến khích sử dụng chung)."
  rate_limiting_allowance_period: "Thời lượng để giám sát việc sử dụng. Mặc định = 0°0′0″."
  rate_limiting_exceptions: "Ngoại lệ (tức là, các yêu cầu không nên giới hạn). Chỉ có hiệu lực khi giới hạn tốc độ được kích hoạt."
