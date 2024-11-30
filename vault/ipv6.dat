@@ -1,8 +1,8 @@
 # IPv6 signatures file (unwanted cloud services and non-human endpoints).
 # Canonical link to the online version of this file: https://github.com/CIDRAM/CIDRAM/blob/v3/vault/signatures/ipv6.dat
 
-# Version: 2024.328.0
-# Last modified: 2024.11.24
+# Version: 2024.334.0
+# Last modified: 2024.11.30
 
 # False positive risk (an approximate, rough estimate only):
 # Standard usage (i.e., used with standard CIDRAM features, default bypasses, etc): « [x]Low [ ]Medium [ ]High »
@@ -809,15 +809,15 @@ Tag: Sedo Domain Parking
 
 
 # ASN 46475 ("Limestone Networks, Inc").
-# Stop Forum Spam (SFS) listings: 155.
-# Updated: 2023.11.26
+# Stop Forum Spam (SFS) listings: 1,003.
+# Updated: 2024.11.27
 
 2a11:840:34::/46 Deny Cloud
-2a11:840:38::/47 Deny Cloud
+2a11:840:38::/48 Deny Cloud
 Origin: CA
-2602:fe6b::/36 Deny Cloud
 2606:aec0:1000::/36 Deny Cloud
 2607:ff68::/32 Deny Cloud
+2620:a6:2001::/48 Deny Cloud
 Origin: US
 Profile: Dedicated;Infrastructure/Transit;Webhosting
 Tag: Limestone Networks
@@ -5400,13 +5400,12 @@ Tag: OPTICAL TECHNOLOGIES
 
 
 # ASNs 29302, 32780 ("Hosting Services Inc").
-# Stop Forum Spam (SFS) listings: 3 (AS29302), 410 (AS32780).
-# Updated: 2023.11.26
+# Stop Forum Spam (SFS) listings: 165 (AS32780).
+# Updated: 2024.11.30
 
-2602:ffb0:27::/48 Deny Cloud
-2602:ffb0:ffd::/48 Deny Cloud
-2606:2e00:8003::/48 Deny Cloud
 2606:2e00:8007::/48 Deny Cloud
+2a07:23c0::/48 Deny Cloud
+2a07:23c0:8::/47 Deny Cloud
 Origin: US
 Profile: Webhosting
 Tag: Hosting Services Inc
@@ -9142,13 +9141,14 @@ Tag: Leibniz-Rechenzentrum
 
 
 # ASN 11831 ("eSecureData").
-# Stop Forum Spam (SFS) listings: 219.
-# Updated: 2023.11.26
+# Stop Forum Spam (SFS) listings: 613.
+# Updated: 2024.11.30
 
 2605:80:6::/47 Deny Cloud
 2605:80:8::/48 Deny Cloud
 2605:80:18::/47 Deny Cloud
-2605:80:21::/48 Deny Cloud
+2605:80:20::/47 Deny Cloud
+2605:80:22::/48 Deny Cloud
 2a11:840:31::/48 Deny Cloud
 Origin: CA
 Profile: Dedicated;Infrastructure/Transit;VPNs here;Webhosting
@@ -10905,14 +10905,12 @@ Tag: Sefroyek Pardaz Engineering
 
 # ASN 12859 ("BIT BV").
 # WordPress and brute-force attacks detected from here.
-# Stop Forum Spam (SFS) listings: 1.
-# Updated: 2023.02.01 / Checked: 2023.11.26
+# Updated: 2024.11.30
 
 2001:67c:2d7c::/48 Deny Cloud
 2001:7b8::/29 Deny Cloud
 2a00:1e28::/32 Deny Cloud
 2a00:e480:1::/48 Deny Cloud
-2a01:7860::/32 Deny Cloud
 2a02:968::/32 Deny Cloud
 2a03:7e0::/32 Deny Cloud
 2a04:e1c0:1::/48 Deny Cloud
@@ -10924,6 +10922,7 @@ Tag: Sefroyek Pardaz Engineering
 2a0b:8f80:201::/48 Deny Cloud
 2a0b:8f80:301::/48 Deny Cloud
 2a0b:9cc0::/29 Deny Cloud
+2a14:5bc0::/29 Deny Cloud
 Origin: NL
 Profile: Dedicated;Webhosting
 Tag: BIT BV
@@ -11991,18 +11990,27 @@ Tag: VIDEOSAT
 
 # ASNs 48108, 208626 ("ServTech LTD").
 # Brute-force and webapp attacks, port scans, hacking, and spam detected here.
-# Stop Forum Spam (SFS) listings: 2 (AS48108), 81 (AS208626).
-# Updated: 2023.11.26
+# Stop Forum Spam (SFS) listings: 148 (AS208626).
+# Updated: 2024.11.30
 
 2001:678:e30::/48 Deny Cloud
-2a0c:7b85::/32 Deny Cloud
+2a06:c3c0:1::/48 Deny Cloud
+2a0a:2e80::/32 Deny Cloud
+2a0a:2e82::/32 Deny Cloud
 2a0c:dd80:1000::/47 Deny Cloud
-2a0e:6980::/29 Deny Cloud
+2a0d:3043:8c97::/48 Deny Cloud
 2a0e:dfc1::/32 Deny Cloud
+2a0f:4305::/32 Deny Cloud
 2a0f:c086::/32 Deny Cloud
 2a11:646::/32 Deny Cloud
-2a11:5a41::/32 Deny Cloud
-2a11:7e40::/32 Deny Cloud
+2a11:8442::/32 Deny Cloud
+2a11:8480::/31 Deny Cloud
+2a11:b781::/32 Deny Cloud
+2a11:cd03::/32 Deny Cloud
+2a12:1547::/32 Deny Cloud
+2a12:6940::/32 Deny Cloud
+2a12:6943::/32 Deny Cloud
+2a12:6944::/30 Deny Cloud
 Origin: RU
 Profile: Dedicated;Webhosting
 Tag: ServTech LTD
