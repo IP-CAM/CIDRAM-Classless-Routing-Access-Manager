@@ -1,8 +1,8 @@
 # IPv4 signatures file (unwanted cloud services and non-human endpoints).
 # Canonical link to the online version of this file: https://github.com/CIDRAM/CIDRAM/blob/v3/vault/signatures/ipv4.dat
 
-# Version: 2024.328.0
-# Last modified: 2024.11.24
+# Version: 2024.334.0
+# Last modified: 2024.11.30
 
 # False positive risk (an approximate, rough estimate only):
 # Standard usage (i.e., used with standard CIDRAM features, default bypasses, etc): « [ ]Low [x]Medium [ ]High »
@@ -3291,9 +3291,14 @@ Tag: Rackspace Hosting
 
 
 # ASN 46475 ("Limestone Networks, Inc").
-# Stop Forum Spam (SFS) listings: 155.
-# Updated: 2023.11.26
+# Stop Forum Spam (SFS) listings: 1,003.
+# Updated: 2024.11.27
 
+77.37.64.0/23 Deny Cloud
+93.127.222.0/23 Deny Cloud
+194.62.249.0/24 Deny Cloud
+194.62.250.0/23 Deny Cloud
+Origin: DE
 84.46.236.0/24 Deny Cloud
 84.46.239.0/24 Deny Cloud
 86.38.175.0/24 Deny Cloud
@@ -3315,12 +3320,14 @@ Tag: Rackspace Hosting
 89.116.193.0/24 Deny Cloud
 89.116.210.0/23 Deny Cloud
 89.116.220.0/24 Deny Cloud
+89.116.233.0/24 Deny Cloud
 89.116.243.0/24 Deny Cloud
 89.116.246.0/23 Deny Cloud
 89.117.0.0/24 Deny Cloud
 89.117.12.0/24 Deny Cloud
 89.117.30.0/24 Deny Cloud
 89.117.38.0/24 Deny Cloud
+89.117.67.0/24 Deny Cloud
 89.117.85.0/24 Deny Cloud
 89.117.94.0/24 Deny Cloud
 89.117.96.0/24 Deny Cloud
@@ -3329,19 +3336,31 @@ Tag: Rackspace Hosting
 89.117.124.0/24 Deny Cloud
 89.117.130.0/24 Deny Cloud
 89.117.134.0/24 Deny Cloud
+89.117.152.0/24 Deny Cloud
 89.117.158.0/24 Deny Cloud
 89.117.172.0/24 Deny Cloud
 89.117.217.0/24 Deny Cloud
 89.117.226.0/24 Deny Cloud
 Origin: LT
+45.81.253.0/24 Deny Cloud
+Origin: MD
+103.3.166.0/24 Deny Cloud
+Origin: SG
 23.131.216.0/24 Deny Cloud
+38.156.16.0/24 Deny Cloud
+45.74.17.0/24 Deny Cloud
 63.143.32.0/19 Deny Cloud
 64.31.0.0/18 Deny Cloud
+67.227.46.0/24 Deny Cloud
 69.162.64.0/18 Deny Cloud
 74.63.192.0/18 Deny Cloud
-103.3.166.0/24 Deny Cloud
+77.223.214.0/23 Deny Cloud
 135.84.217.0/24 Deny Cloud
+141.195.116.0/22 Deny Cloud
 162.253.40.0/22 Deny Cloud
+172.94.95.0/24 Deny Cloud
+174.140.230.0/24 Deny Cloud
+185.167.60.0/24 Deny Cloud
 192.169.80.0/20 Deny Cloud
 208.115.192.0/18 Deny Cloud
 216.144.240.0/20 Deny Cloud
@@ -17654,12 +17673,10 @@ Tag: OPTICAL TECHNOLOGIES
 
 
 # ASNs 29302, 32780 ("Hosting Services Inc").
-# Stop Forum Spam (SFS) listings: 3 (AS29302), 410 (AS32780).
-# Updated: 2023.11.26
+# Stop Forum Spam (SFS) listings: 165 (AS32780).
+# Updated: 2024.11.30
 
-191.101.174.0/24 Deny Cloud
-Origin: AE
-104.234.18.0/23 Deny Cloud
+104.234.120.0/24 Deny Cloud
 Origin: CA
 185.194.179.0/24 Deny Cloud
 Origin: ES
@@ -17676,10 +17693,8 @@ Origin: ES
 107.182.230.0/23 Deny Cloud
 107.182.236.0/23 Deny Cloud
 108.165.54.0/24 Deny Cloud
-139.177.147.0/24 Deny Cloud
+108.165.153.0/24 Deny Cloud
 146.185.16.0/20 Deny Cloud
-172.98.69.0/24 Deny Cloud
-173.239.210.0/24 Deny Cloud
 173.244.198.0/24 Deny Cloud
 173.244.200.0/23 Deny Cloud
 173.244.202.0/24 Deny Cloud
@@ -17688,12 +17703,11 @@ Origin: ES
 174.127.70.0/24 Deny Cloud
 198.145.239.0/24 Deny Cloud
 199.188.238.0/24 Deny Cloud
-204.14.72.0/23 Deny Cloud
+204.14.73.0/24 Deny Cloud
 206.190.154.0/24 Deny Cloud
 209.95.50.0/23 Deny Cloud
 209.95.52.0/24 Deny Cloud
 212.60.12.0/24 Deny Cloud
-216.235.87.0/24 Deny Cloud
 Origin: US
 Profile: Webhosting
 Tag: Hosting Services Inc
@@ -25170,45 +25184,6 @@ Origin: NL
 Origin: US
 Profile: Dedicated;Webhosting
 Tag: HostPalace
-
-
-# Announcing as: "WEBSITEWELCOME".
-# Various ASNs; Sourced from HE.
-# Updated: 2023.11.27
-
-50.116.64.0/21 Deny Cloud
-50.116.80.0/22 Deny Cloud
-50.116.88.0/21 Deny Cloud
-50.116.120.0/22 Deny Cloud
-96.125.174.0/23 Deny Cloud
-108.167.128.0/22 Deny Cloud
-108.167.133.0/24 Deny Cloud
-108.167.136.0/24 Deny Cloud
-108.167.140.0/22 Deny Cloud
-108.167.144.0/23 Deny Cloud
-108.167.152.0/22 Deny Cloud
-108.167.166.0/23 Deny Cloud
-108.167.190.0/23 Deny Cloud
-108.174.153.0/24 Deny Cloud
-108.174.154.0/23 Deny Cloud
-108.174.156.0/23 Deny Cloud
-108.179.200.0/22 Deny Cloud
-108.179.212.0/22 Deny Cloud
-108.179.228.0/22 Deny Cloud
-108.179.246.0/23 Deny Cloud
-192.185.129.0/24 Deny Cloud
-192.185.132.0/23 Deny Cloud
-192.185.135.0/24 Deny Cloud
-192.185.184.0/24 Deny Cloud
-192.185.224.0/19 Deny Cloud
-192.232.192.0/18 Deny Cloud
-192.254.128.0/17 Deny Cloud
-198.20.224.0/19 Deny Cloud
-198.154.192.0/18 Deny Cloud
-216.172.168.0/23 Deny Cloud
-Origin: US
-Profile: Webhosting
-Tag: WEBSITEWELCOME.COM
 
 
 # ASN 18229 ("CtrlS Datacenters Ltd").
@@ -33427,8 +33402,8 @@ Tag: Leibniz-Rechenzentrum
 
 
 # ASN 11831 ("eSecureData").
-# Stop Forum Spam (SFS) listings: 219.
-# Updated: 2023.02.05 / Checked: 2023.11.26
+# Stop Forum Spam (SFS) listings: 613.
+# Updated: 2023.02.05 / Checked: 2024.11.30
 
 23.111.76.0/22 Deny Cloud
 71.19.240.0/20 Deny Cloud
@@ -38540,18 +38515,23 @@ Tag: Techcrea Solutions SAS
 
 
 # ASN 21699 ("IO INC").
-# Updated: 2023.11.26
+# Stop Forum Spam (SFS) listings: 29.
+# Updated: 2024.11.27
 
 23.130.96.0/23 Deny Cloud
 45.41.212.0/24 Deny Cloud
-45.41.215.0/24 Deny Cloud
+45.41.214.0/23 Deny Cloud
+45.45.240.0/22 Deny Cloud
 64.187.216.0/21 Deny Cloud
-72.21.24.0/21 Deny Cloud
+72.21.24.0/22 Deny Cloud
+72.21.29.0/24 Deny Cloud
+72.21.30.0/23 Deny Cloud
 149.20.160.0/21 Deny Cloud
 149.20.184.0/21 Deny Cloud
-162.222.184.0/21 Deny Cloud
+162.222.184.0/24 Deny Cloud
+162.222.190.0/23 Deny Cloud
 192.234.202.0/23 Deny Cloud
-199.188.148.0/22 Deny Cloud
+199.188.150.0/24 Deny Cloud
 209.160.96.0/23 Deny Cloud
 Origin: US
 Profile: Dedicated;Infrastructure/Transit;Webhosting
@@ -41894,12 +41874,9 @@ Tag: GUTTI GLOBAL NETWORKS
 
 # ASN 12859 ("BIT BV").
 # WordPress and brute-force attacks detected from here.
-# Stop Forum Spam (SFS) listings: 1.
-# Updated: 2023.11.26
+# Updated: 2024.11.30
 
 2.56.226.0/23 Deny Cloud
-5.61.248.0/21 Deny Cloud
-45.146.208.0/22 Deny Cloud
 45.152.251.0/24 Deny Cloud
 45.153.16.0/23 Deny Cloud
 46.182.180.0/22 Deny Cloud
@@ -41918,15 +41895,15 @@ Tag: GUTTI GLOBAL NETWORKS
 185.63.152.0/22 Deny Cloud
 185.84.140.0/22 Deny Cloud
 185.103.172.0/22 Deny Cloud
+185.121.205.0/24 Deny Cloud
 185.121.224.0/24 Deny Cloud
-185.173.20.0/23 Deny Cloud
-185.173.22.0/24 Deny Cloud
+185.173.20.0/22 Deny Cloud
 185.188.141.0/24 Deny Cloud
 185.214.148.0/22 Deny Cloud
 188.241.247.0/24 Deny Cloud
 193.104.104.0/24 Deny Cloud
 193.109.122.0/24 Deny Cloud
-193.168.156.0/22 Deny Cloud
+193.160.154.0/24 Deny Cloud
 193.247.196.0/23 Deny Cloud
 194.33.112.0/23 Deny Cloud
 194.53.0.0/24 Deny Cloud
@@ -41938,8 +41915,6 @@ Tag: GUTTI GLOBAL NETWORKS
 213.136.0.0/19 Deny Cloud
 213.154.224.0/19 Deny Cloud
 Origin: NL
-185.121.205.0/24 Deny Cloud
-Origin: SE
 Profile: Dedicated;Webhosting
 Tag: BIT BV
 
@@ -45545,8 +45520,8 @@ Tag: Datatelekom Bilgisayar
 
 # ASNs 48108, 208626 ("ServTech LTD").
 # Brute-force and webapp attacks, port scans, hacking, and spam detected here.
-# Stop Forum Spam (SFS) listings: 2 (AS48108), 81 (AS208626).
-# Updated: 2023.11.26
+# Stop Forum Spam (SFS) listings: 148 (AS208626).
+# Updated: 2024.11.30
 
 2.58.98.0/24 Deny Cloud
 87.247.142.0/24 Deny Cloud
@@ -45557,29 +45532,27 @@ Tag: Datatelekom Bilgisayar
 194.93.0.0/24 Deny Cloud
 Origin: AE
 31.222.227.0/24 Deny Cloud
-45.89.69.0/24 Deny Cloud
-91.188.222.0/24 Deny Cloud
 91.203.235.0/24 Deny Cloud
 91.241.47.0/24 Deny Cloud
 94.247.137.0/24 Deny Cloud
 95.181.164.0/24 Deny Cloud
-146.19.84.0/24 Deny Cloud
-176.116.0.0/24 Deny Cloud
+176.53.146.0/23 Deny Cloud
 185.64.76.0/24 Deny Cloud
-185.120.56.0/22 Deny Cloud
+185.120.56.0/23 Deny Cloud
+185.120.58.0/24 Deny Cloud
+185.170.10.0/24 Deny Cloud
 185.235.230.0/24 Deny Cloud
-185.255.178.0/23 Deny Cloud
 193.19.110.0/24 Deny Cloud
 193.43.248.0/24 Deny Cloud
 193.232.53.0/24 Deny Cloud
 193.232.179.0/24 Deny Cloud
-194.176.118.0/24 Deny Cloud
 194.190.70.0/24 Deny Cloud
-195.242.147.0/24 Deny Cloud
 212.22.64.0/24 Deny Cloud
-212.22.75.0/24 Deny Cloud
 212.22.77.0/24 Deny Cloud
 Origin: RU
+45.89.69.0/24 Deny Cloud
+91.188.222.0/24 Deny Cloud
+Origin: SC
 Profile: Dedicated;Webhosting
 Tag: ServTech LTD
 
@@ -47244,8 +47217,8 @@ Tag: PENTECH BILISIM
 
 # ASNs 51734, 207326 ("HOSTLAB LLC", "HostLAB Bilisim Teknolojileri A.S").
 # Turkish webhosting provider. Webapp attacks and spam detected from here.
-# Stop Forum Spam (SFS) listings: 39.
-# Updated: 2023.11.26
+# Stop Forum Spam (SFS) listings: 27 (AS207326).
+# Updated: 2023.11.26 / Checked: 2024.11.27
 
 31.210.42.0/24 Deny Cloud
 31.210.55.0/24 Deny Cloud
