@@ -1,8 +1,8 @@
 # IPv6 signatures file (unwanted cloud services and non-human endpoints).
 # Canonical link to the online version of this file: https://github.com/CIDRAM/CIDRAM/blob/v3/vault/signatures/ipv6.dat
 
-# Version: 2024.334.0
-# Last modified: 2024.11.30
+# Version: 2024.339.0
+# Last modified: 2024.12.05
 
 # False positive risk (an approximate, rough estimate only):
 # Standard usage (i.e., used with standard CIDRAM features, default bypasses, etc): « [x]Low [ ]Medium [ ]High »
@@ -66,16 +66,15 @@ Tag: Multacom Corp
 # "Hybrid cloud integration" provider. Spam, port scans, hacking, and
 # brute-force, webapp, DDoS, and SSH attacks, hacking, and sniffing for
 # vulnerabilities detected from here.
-# Stop Forum Spam (SFS) listings: 4 (AS58879), 44 (AS137443).
-# Updated: 2023.12.03
+# Stop Forum Spam (SFS) listings: 2 (AS137443).
+# Updated: 2024.12.05
 
-2401:89c0::/48 Deny Cloud
 2403:a100::/48 Deny Cloud
+Origin: CN
 2404:de80::/39 Deny Cloud
 2404:de80:400::/39 Deny Cloud
-2404:de80:800::/39 Deny Cloud
 2406:9640::/32 Deny Cloud
-Origin: CN
+Origin: HK
 Profile: Commercial;Dedicated;Infrastructure/Transit
 Tag: 51idc
 
@@ -1064,15 +1063,17 @@ Tag: Root SA
 
 # ASN 11878 ("Tzulo Inc").
 # Dedicated cloud provider + source of forum and blog spam.
-# Stop Forum Spam (SFS) listings: 1,701.
-# Updated: 2023.12.03
+# Stop Forum Spam (SFS) listings: 1,393.
+# Updated: 2024.12.05
 
 2607:1e40::/47 Deny Cloud
 2607:2780::/48 Deny Cloud
 2607:5d40::/35 Deny Cloud
 2607:9000::/32 Deny Cloud
 Origin: US
-Profile: Dedicated;Infrastructure/Transit
+2620:15:6000::/48 Deny Cloud
+Origin: XR
+Profile: Dedicated;Infrastructure/Transit;Webhosting
 Tag: Tzulo Inc
 
 
@@ -2358,7 +2359,7 @@ Tag: Akamai Technologies
 
 
 # ASN 5693 ("Latisys-Irvine, LLC").
-# Updated: 2016.04.03 / Checked: 2023.12.01
+# Updated: 2016.04.03 / Checked: 2024.12.04
 
 2001:1990::/32 Deny Cloud
 Origin: US
@@ -9029,8 +9030,8 @@ Tag: Keminet SHPK
 
 # ASNs 60068, 212238 ("Datacamp Limited").
 # CDN, DDoS protection and cloud provider; Spambots detected at this network.
-# Stop Forum Spam (SFS) listings: 33,601 (AS60068), 225,363 (AS212238).
-# Updated: 2024.10.10
+# Stop Forum Spam (SFS) listings: 36,600 (AS60068), 224,765 (AS212238).
+# Updated: 2024.12.01
 
 2a05:6200:74::/48 Deny Cloud
 Origin: BZ
@@ -9038,14 +9039,11 @@ Origin: BZ
 2a10:9007:4::/47 Deny Cloud
 2a10:9007:6::/48 Deny Cloud
 Origin: CH
-2a14:30c1:23::/48 Deny Cloud
-2a14:30c1:25::/48 Deny Cloud
-Origin: DE
 2a10:13c0:da7a::/48 Deny Cloud
 Origin: FR
 2a02:6ea0:100::/40 Deny Cloud
 2a02:6ea0:200::/39 Deny Cloud
-2a02:6ea0:500::/40 Deny Cloud
+2a02:6ea0:400::/39 Deny Cloud
 2a02:6ea0:600::/40 Deny Cloud
 2a02:6ea0:1000::/37 Deny Cloud
 2a02:6ea0:1800::/38 Deny Cloud
@@ -9067,7 +9065,8 @@ Origin: FR
 2a02:6ea0:4800::/38 Deny Cloud
 2a02:6ea0:4f00::/40 Deny Cloud
 2a02:6ea0:5100::/40 Deny Cloud
-2a02:6ea0:5500::/40 Deny Cloud
+2a02:6ea0:5400::/39 Deny Cloud
+2a02:6ea0:5600::/40 Deny Cloud
 2a02:6ea0:babe::/48 Deny Cloud
 2a02:6ea0:c000::/37 Deny Cloud
 2a02:6ea0:c800::/38 Deny Cloud
@@ -9102,16 +9101,13 @@ Origin: GB
 2a12:8440::/29 Deny Cloud
 2a12:8dc0::/29 Deny Cloud
 Origin: LT
-2a0f:1201::/32 Deny Cloud
 2a0f:7d03::/32 Deny Cloud
 Origin: SC
 2400:52e0:1e00::/48 Deny Cloud
 Origin: SI
 2602:f7f8:1::/48 Deny Cloud
 2605:2c40:500::/48 Deny Cloud
-2606:b300:1000::/40 Deny Cloud
 2a05:e9c0:4400::/40 Deny Cloud
-2a05:e9c0:7400::/40 Deny Cloud
 Origin: US
 Profile: Content Delivery Network;Frequent changes;Infrastructure/Transit
 Tag: CDN77
@@ -11597,19 +11593,14 @@ Tag: Excellent Hosting Sweden AB
 # ASN 56630 ("Melbikomas UAB").
 # Dedicated servers and colo provider. SQLi and webapp attacks, hacking, port
 # scans, and spam detected from here.
-# Stop Forum Spam (SFS) listings: 1,135.
-# Updated: 2022.02.20 / Checked: 2023.12.01
+# Stop Forum Spam (SFS) listings: 130.
+# Updated: 2024.12.05
 
-2a03:f80:7::/48 Deny Cloud
-2a03:f80:70::/48 Deny Cloud
-2a03:f80:359::/48 Deny Cloud
-2a03:f80:370::/47 Deny Cloud
-2a03:f80:3991::/48 Deny Cloud
-Origin: AT
 2a06:f900::/36 Deny Cloud
 2a06:f900:4000::/36 Deny Cloud
 2a06:f901::/36 Deny Cloud
 2a06:f902::/36 Deny Cloud
+2a06:f902:c000::/36 Deny Cloud
 2a06:f903::/36 Deny Cloud
 2a06:f904::/36 Deny Cloud
 2a06:f905::/36 Deny Cloud
@@ -11915,7 +11906,7 @@ Tag: SPDNet
 
 # ASN 42821 ("K&K Kommunikationssysteme GmbH").
 # German webhosting provider. Some addresses here spamming adult content.
-# Updated: 2022.06.15 / Checked: 2023.12.01
+# Updated: 2022.06.15 / Checked: 2024.12.04
 
 2a04:29c2::/32 Deny Cloud
 2a04:29c7::/32 Deny Cloud
@@ -13772,32 +13763,9 @@ Profile: Webhosting
 Tag: Pembe Gul Isguzar Karagoz
 
 
-# ASN 216360 ("Civilized Hosting LLC").
-# SSH brute-forcing detected from here.
-# Updated: 2023.12.03
-
-2a13:df84:2002::/48 Deny Cloud
-2a13:df84:7001::/48 Deny Cloud
-2a13:df84:7002::/48 Deny Cloud
-2a13:df84:7ffd::/48 Deny Cloud
-2a13:df84:7ffe::/47 Deny Cloud
-Origin: GB
-2602:fa1c:120::/48 Deny Cloud
-2602:fa42:ff0::/44 Deny Cloud
-2a07:54c4:1762::/48 Deny Cloud
-2a07:54c7:6001::/48 Deny Cloud
-2a07:54c7:6002::/47 Deny Cloud
-2a07:54c7:6005::/48 Deny Cloud
-2a07:54c7:6d00::/40 Deny Cloud
-2a07:54c7:6f00::/40 Deny Cloud
-Origin: US
-Profile: Webhosting
-Tag: Civilized Hosting LLC
-
-
 # ASN 53427 ("TGLOBAL NETWORKS").
 # DNS poisoning and DDoS attacks detected from here.
-# Updated: 2023.12.03
+# Updated: 2023.12.03 / Checked: 2024.12.05
 
 2602:fa91::/40 Deny Cloud
 Origin: US
