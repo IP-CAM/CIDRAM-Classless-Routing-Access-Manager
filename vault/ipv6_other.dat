@@ -1,8 +1,8 @@
 # IPv6 signatures file (CIDRs for proxies, VPNs and other miscellaneous unwanted services).
 # Canonical link to the online version of this file: https://github.com/CIDRAM/CIDRAM/blob/v3/vault/signatures/ipv6_other.dat
 
-# Version: 2024.308.0
-# Last modified: 2024.11.04
+# Version: 2024.339.0
+# Last modified: 2024.12.05
 
 # False positive risk (an approximate, rough estimate only):
 # Standard usage (i.e., used with standard CIDRAM features, default bypasses, etc): « [x]Low [ ]Medium [ ]High »
@@ -15,8 +15,8 @@
 # DDoS, and phishing attacks, hacking, port scans, sniffing for
 # vulnerabilities, IMAP flooding, and spam detected from here.
 # Caught masquerading as Baidu while sniffing for vulnerabilities.
-# Stop Forum Spam (SFS) listings: 59,865.
-# Updated: 2021.08.26 / Modified: 2022.07.22 / Checked: 2023.11.11
+# Stop Forum Spam (SFS) listings: 3,483.
+# Updated: 2021.08.26 / Modified: 2022.07.22 / Checked: 2024.12.04
 
 2a0b:f4c0::/40 Deny Attacks
 2a0b:f4c0:100::/48 Deny Attacks
@@ -181,10 +181,12 @@ Tag: Web2Objects LLC
 
 # ASN 209854 ("Cyberzone S.A").
 # A paid VPN provider. Brute-force and SSH attacks detected from here.
-# Stop Forum Spam (SFS) listings: 1,749.
-# Updated: 2024.06.09
+# Stop Forum Spam (SFS) listings: 1,510.
+# Updated: 2024.12.01
 
-2a09:a700::/29 Deny Attacks
+2a09:a702::/47 Deny Attacks
+2a09:a707::/46 Deny Attacks
+2a09:a707:ffff::/48 Deny Attacks
 Origin: PA
 Profile: VPNs here
 Tag: Surfshark Ltd
