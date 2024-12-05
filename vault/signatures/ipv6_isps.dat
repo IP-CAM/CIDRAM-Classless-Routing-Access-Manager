@@ -1,8 +1,8 @@
 # IPv6 signatures file (dangerous and spammy ISPs).
 # Canonical link to the online version of this file: https://github.com/CIDRAM/CIDRAM/blob/v3/vault/signatures/ipv6_isps.dat
 
-# Version: 2024.317.0
-# Last modified: 2024.11.13
+# Version: 2024.339.0
+# Last modified: 2024.12.05
 
 # False positive risk (an approximate, rough estimate only):
 # Standard usage (i.e., used with standard CIDRAM features, default bypasses, etc): « [ ]Low [x]Medium [ ]High »
@@ -474,8 +474,8 @@ Tag: Smartlink Solutions
 
 # ASN 263744 ("Udasha S.A").
 # Honduran domestic ISP. Significant source of spam and other strange traffic.
-# Stop Forum Spam (SFS) listings: 1,762.
-# Updated: 2023.01.12 / Checked: 2023.11.15
+# Stop Forum Spam (SFS) listings: 3,114.
+# Updated: 2023.01.12 / Checked: 2024.12.04
 
 2803:5380::/32 Deny Attacks
 Origin: HN
