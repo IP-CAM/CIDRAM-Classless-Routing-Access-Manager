@@ -1,7 +1,7 @@
 ---
 CIDRAM Core:
  Name: "CIDRAM Core"
- Version: "2.15.4-DEV+243280"
+ Version: "2.15.4"
  Dependencies:
   PHP: "^7.2|^8"
   Common Classes Package: "^2.11"
@@ -56,7 +56,7 @@ CIDRAM Core:
    - "206c86a33cb9ea346dd41caa731b719eda52c530a62513ae69e99adbbc7269ae:7854"
    - "df9b98e8dfa5d34e472593509196cf7a6c649c0a6829cb65528bff4358581c43:25868"
    - "b1dc2bb73e579630013904ae4567d19acdf7b709ad38e92cb5ec850dca6e3c76:10063"
-   - "41ddc4f623afb0c6b0cd7a834ab50c75722f47fe1cb5d75ea4c2ee14e3e97360:104864"
+   - "0c31d0a4db7970d4addcc16d23eb9d170420b9f3c567122e14fa7643a7d6bb55:104779"
    - "8821191af5f524203f75ca81024cf0317c6629c3de6ac41634f665085361e319:5641"
    - "9ab659234ae95c2727ddb54166822b2be3e2075281835c72a3d56d24828ded4f:45411"
    - "e48dc4d8b942bc26580caebdfc7ff79bfbb3807003c918c739c9e7dfdb61bf5e:1204"
@@ -65,7 +65,7 @@ CIDRAM Core:
  Reannotate: "components.dat"
 CIDRAM Front-End:
  Name: "CIDRAM Front-End"
- Version: "2.15.4-DEV+242890"
+ Version: "2.15.4"
  Dependencies:
   PHP: "^7.2|^8"
   Common Classes Package: "^2.11"
