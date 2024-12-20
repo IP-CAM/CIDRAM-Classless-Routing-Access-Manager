@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The CIDRAM core (last modified: 2024.09.20).
+ * This file: The CIDRAM core (last modified: 2024.12.20).
  */
 
 namespace CIDRAM\CIDRAM;
@@ -527,10 +527,9 @@ class Core
     }
 
     /**
-     * Checks CIDRs (generally, potential factors expanded from IP addresses)
-     * against the IPv4/IPv6 signature files, and if any matches are found,
-     * increments `$this->BlockInfo['SignatureCount']`, and
-     * appends to `$this->BlockInfo['ReasonMessage']`.
+     * Checks CIDRs (the factors expanded from an IP address) against the
+     * signature files, and if any matches are found, performs the
+     * actions specified by the given matches.
      *
      * @param array $Files Which IPv4/IPv6 signature files to check against.
      * @param array $Factors Which CIDRs/factors to check against.
