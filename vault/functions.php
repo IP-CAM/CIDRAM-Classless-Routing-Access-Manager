@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Functions file (last modified: 2024.09.17).
+ * This file: Functions file (last modified: 2024.12.20).
  */
 
 /** Autoloader for CIDRAM classes. */
@@ -246,10 +246,9 @@ $CIDRAM['Getter'] = function (string $Haystack, int $Offset, string $Tag, string
 };
 
 /**
- * Checks CIDRs (generally, potential factors expanded from IP addresses)
- * against the IPv4/IPv6 signature files, and if any matches are found,
- * increments `$CIDRAM['BlockInfo']['SignatureCount']`, and
- * appends to `$CIDRAM['BlockInfo']['ReasonMessage']`.
+ * Checks CIDRs (the factors expanded from an IP address) against the signature
+ * files, and if any matches are found, performs the actions specified by the
+ * given matches.
  *
  * @param array $Files Which IPv4/IPv6 signature files to check against.
  * @param array $Factors Which CIDRs/factors to check against.
