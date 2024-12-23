@@ -10,7 +10,8 @@ Detailed version release guidelines for CIDRAM can be found at:
 
 === Changes made since last versioned release ===
 
-(none)
+- [2024.12.24]: Improved the access denied page messaging for rate limiting
+  block events.
 
 === Version/Release 1.28.4 ===
 PATCH RELEASE.

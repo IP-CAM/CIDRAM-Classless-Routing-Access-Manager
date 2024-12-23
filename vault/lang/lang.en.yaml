@@ -7,23 +7,10 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2024.08.14).
-#
-# Regarding translations: My native language is English. Because this is a free
-# and open-source hobby project which generates zero income, and translatable
-# content is likely to change as the features and functionality supported by
-# the project changes, it doesn't make sense for me to spend money for
-# translations. Because I'm the sole author/developer/maintainer for the
-# project and I'm not a ployglot, any translations I produce are very likely to
-# contain errors. Sorry, but realistically, that won't ever change. If you find
-# any such errors/typos/mistakes/etc, your assistance to correct them would be
-# very much appreciated. Pull requests are invited and encouraged. Otherwise,
-# if you find these errors too much to handle, just stick with the original
-# English source. If a translation is irredeemably incomprehensible, let me
-# know which, and I can delete it. If you're not sure how to perform pull
-# requests, ask. I can help.
+# This file: English language data (last modified: 2024.12.20).
 ##/
 
+%s seconds: ["%s second", "%s seconds"]
 Error_MissingRequire: "Required files are missing! Can't continue!"
 Error_WriteCache: "Unable to write to the cache! Please check your CHMOD file permissions!"
 MoreInfo: "For more information:"
@@ -33,16 +20,19 @@ ReasonMessage_BadIP: "Your access to this page was denied because you attempted 
 ReasonMessage_Banned: "Your access to this page was denied due to previous bad behaviour from your IP address."
 ReasonMessage_Bogon: "Your access to this page was denied because your IP address is recognised as a bogon address, and connecting from bogons to this website isn't permitted by the website owner."
 ReasonMessage_Cloud: "Your access to this page was denied because your IP address is recognised as belonging to a cloud service, and connecting to this website from cloud services isn't permitted by the website owner."
+ReasonMessage_Conflict: "Your request couldn't be processed at this time, as a resource needed to do so was unavailable. Likely caused by a conflict with another request, this problem is expected to be temporary. Try again after waiting a few seconds."
 ReasonMessage_Generic: "Your access to this page was denied because your IP address belongs to a network listed on a blacklist used by this website."
 ReasonMessage_Legal: "Your access to this page was denied due to legal obligations."
 ReasonMessage_Malware: "Your access to this page was denied because your IP address is considered a probable source of malware."
 ReasonMessage_Proxy: "Your access to this page was denied because your IP address is recognised as belonging to a proxy service or VPN, and connecting to this website from proxy services or VPNs isn't permitted by the website owner."
+ReasonMessage_RL: "You've exceeded the maximum bandwidth or number of requests permitted to be served at this time. Please wait at least %s before trying again."
 ReasonMessage_Spam: "Your access to this page was denied because your IP address is considered a probable source of spam."
 Short_Attacks: "Attacks"
 Short_BadIP: "Invalid IP"
 Short_Banned: "Banned"
 Short_Bogon: "Bogon IP"
 Short_Cloud: "Cloud service"
+Short_Conflict: "Conflict"
 Short_Fake_UA: "Fake %s"
 Short_Generic: "Generic"
 Short_Legal: "Legal"

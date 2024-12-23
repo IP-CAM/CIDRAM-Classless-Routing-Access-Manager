@@ -245,9 +245,9 @@ CIDRAM:
    - "bc9d7ffc39207565a9ba05acdfc3154b4e73e63c6cfc01adf825e9f08b4686e1:2302"
    - "b3fb9f798f7d08c48cbce135ee26d32eaa95c19476343e92147b490d15bac2e9:312979"
    - "9426ae8b881b5e50ceaf6382fdc94e59b7e7e54bfc31910b69411e85cd96950d:219191"
-   - "3b082ecccd05eebaccfa8b55d69b1d7d55df22240c26496d4ee3d9fe58891a2b:105933"
+   - "eef2cc72cf98ff1c26826bd160574665baaee4076fbe8467c3e003f1a8765f88:106572"
    - "96857bed2f4f6624becda34b2b68bbb9a7907f2a1179de9fa2b6a655b2c44f84:6340"
-   - "7df5d1e81853c887ca5b639b34820ac517db314626d9faa24fa583e4020c3242:45358"
+   - "b431e2ab4e771012fbe5dd1f04fdf7c70d02d68f9276a074362fec4cc6b80357:46082"
    - "ee98b16e3880618a5fbf6b7e70f89eb1dbd36ea4d83a91f0b0060f8830d461bc:1661"
    - "e48dc4d8b942bc26580caebdfc7ff79bfbb3807003c918c739c9e7dfdb61bf5e:1204"
    - "67dbe791d181719036b31e00056ac418e2a9633a5ab9d8b82a18369aabe1e6c6:2434"
@@ -451,7 +451,7 @@ Bypasses:
 l10n/en:
  Name: "L10N: English"
  Extended Description: "English language data"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -472,7 +472,7 @@ l10n/en:
 l10n/ar:
  Name: "L10N: العربية"
  Extended Description: "ملفات اللغة العربية"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -494,7 +494,7 @@ l10n/ar:
 l10n/bn:
  Name: "L10N: বাংলা"
  Extended Description: "বাংলা ভাষার তথ্য"
- Version: "2024.261.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -516,7 +516,7 @@ l10n/bn:
 l10n/de:
  Name: "L10N: Deutsche"
  Extended Description: "Deutsche Sprachdateien"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -538,7 +538,7 @@ l10n/de:
 l10n/es:
  Name: "L10N: Español"
  Extended Description: "Lingüísticos datos Español"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -560,7 +560,7 @@ l10n/es:
 l10n/fr:
  Name: "L10N: Français"
  Extended Description: "Linguistiques données en Français"
- Version: "2024.261.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -582,7 +582,7 @@ l10n/fr:
 l10n/hi:
  Name: "L10N: हिंदी"
  Extended Description: "हिंदी भाषा डाटा"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -604,7 +604,7 @@ l10n/hi:
 l10n/id:
  Name: "L10N: Bahasa Indonesia"
  Extended Description: "File Bahasa Indonesia"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -626,7 +626,7 @@ l10n/id:
 l10n/it:
  Name: "L10N: Italiana"
  Extended Description: "Linguistici dati Italiana"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -648,7 +648,7 @@ l10n/it:
 l10n/ja:
  Name: "L10N: 日本語"
  Extended Description: "日本語言語データ"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -670,7 +670,7 @@ l10n/ja:
 l10n/ko:
  Name: "L10N: 한국어"
  Extended Description: "한국어 언어 데이터"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -692,7 +692,7 @@ l10n/ko:
 l10n/nl:
  Name: "L10N: Nederlandse"
  Extended Description: "Nederlandse lokalisatie"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -714,7 +714,7 @@ l10n/nl:
 l10n/no:
  Name: "L10N: Norsk"
  Extended Description: "Norsk språkdata"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -736,7 +736,7 @@ l10n/no:
 l10n/pt:
  Name: "L10N: Português"
  Extended Description: "Linguagem dados Português"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -758,7 +758,7 @@ l10n/pt:
 l10n/ru:
  Name: "L10N: Русский"
  Extended Description: "Русском языковые файлы"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -780,7 +780,7 @@ l10n/ru:
 l10n/sv:
  Name: "L10N: Svenska"
  Extended Description: "Svenska språkdata"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -802,7 +802,7 @@ l10n/sv:
 l10n/th:
  Name: "L10N: ภาษาไทย"
  Extended Description: "ข้อมูลภาษาไทย"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -824,7 +824,7 @@ l10n/th:
 l10n/tr:
  Name: "L10N: Türkçe"
  Extended Description: "Türkçe dili verileri"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -846,7 +846,7 @@ l10n/tr:
 l10n/ur:
  Name: "L10N: اردو"
  Extended Description: "اردو زبان فائلوں"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -868,7 +868,7 @@ l10n/ur:
 l10n/vi:
  Name: "L10N: Tiếng Việt"
  Extended Description: "Dữ liệu tiếng Việt"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -890,7 +890,7 @@ l10n/vi:
 l10n/zh-TW:
  Name: "L10N: 中文（傳統）"
  Extended Description: "中文（傳統）語言數據"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -912,7 +912,7 @@ l10n/zh-TW:
 l10n/zh:
  Name: "L10N: 中文（简体）"
  Extended Description: "中文（简体）语言数据"
- Version: "2024.226.0"
+ Version: "2024.358.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"

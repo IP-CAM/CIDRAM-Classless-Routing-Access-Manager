@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Functions file (last modified: 2024.12.20).
+ * This file: Functions file (last modified: 2024.12.24).
  */
 
 /**
@@ -289,7 +289,7 @@ $CIDRAM['CheckFactors'] = function (array $Files, array $Factors) use (&$CIDRAM)
         if (!isset($CIDRAM['FileCache'][$Files[$FileIndex]])) {
             $CIDRAM['FileCache'][$Files[$FileIndex]] = $CIDRAM['ReadFile']($CIDRAM['Vault'] . $Files[$FileIndex]);
         }
-        if (!$Files[$FileIndex] = $CIDRAM['FileCache'][$Files[$FileIndex]]) {
+        if (($Files[$FileIndex] = $CIDRAM['FileCache'][$Files[$FileIndex]]) === '') {
             continue;
         }
         if (
@@ -1898,6 +1898,7 @@ $CIDRAM['GetStatusHTTP'] = function ($Status) {
         307 => 'Temporary Redirect',
         308 => 'Permanent Redirect',
         403 => 'Forbidden',
+        409 => 'Conflict',
         410 => 'Gone',
         418 => 'I\'m a teapot',
         429 => 'Too Many Requests',
@@ -2490,6 +2491,11 @@ $CIDRAM['RL_WriteEvent'] = function ($RL_Capture, $RL_Size) use (&$CIDRAM) {
  * @return void
  */
 $CIDRAM['RL_Clean'] = function () use (&$CIDRAM) {
+    /** Guard. */
+    if (!isset($CIDRAM['RL_Data'], $CIDRAM['RL_Expired'])) {
+        return;
+    }
+
     $Pos = 0;
     $EoS = strlen($CIDRAM['RL_Data']);
     while ($Pos < $EoS) {
@@ -2551,6 +2557,19 @@ $CIDRAM['RL_Get_Usage'] = function () use (&$CIDRAM) {
         $Requests++;
     }
     return ['Bytes' => $Bytes, 'Requests' => $Requests];
+};
+
+/**
+ * Get the requesting entity's oldest record.
+ *
+ * @return array The requesting entity's oldest record.
+ */
+$CIDRAM['RL_Get_Oldest'] = function () use (&$CIDRAM) {
+    if (($Pos = strpos($CIDRAM['RL_Data'], $CIDRAM['RL_Capture'])) !== false) {
+        $Bytes = unpack('l*', substr($CIDRAM['RL_Data'], $Pos - 4, 4));
+        $Time = unpack('l*', substr($CIDRAM['RL_Data'], $Pos - 8, 4));
+    }
+    return ['Bytes' => isset($Bytes[1]) ? $Bytes[1] : 0, 'Time' => isset($Time[1]) ? $Time[1] : 0];
 };
 
 /**
