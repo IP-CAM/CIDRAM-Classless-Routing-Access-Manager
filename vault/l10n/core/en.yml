@@ -7,9 +7,10 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data (last modified: 2024.08.14).
+# This file: English language data (last modified: 2024.12.20).
 ##/
 
+%s seconds: ["%s second", "%s seconds"]
 PrivacyPolicy: "Privacy Policy"
 ReasonMessage_Attacks: "Your access to this page was denied due to abnormal traffic detected previously from your IP address or network."
 ReasonMessage_BadIP: "Your access to this page was denied because you attempted to access this page using an invalid IP address."
@@ -22,18 +23,21 @@ ReasonMessage_Bogon:
 ReasonMessage_Cloud:
  en-AU: "Your access to this page was denied because your IP address is recognised as belonging to a cloud service, and connecting to this website from cloud services isn't permitted by the website owner."
  [en-CA, en-US]: "Your access to this page was denied because your IP address is recognized as belonging to a cloud service, and connecting to this website from cloud services isn't permitted by the website owner."
+ReasonMessage_Conflict: "Your request couldn't be processed at this time, as a resource needed to do so was unavailable. Likely caused by a conflict with another request, this problem is expected to be temporary. Try again after waiting a few seconds."
 ReasonMessage_Generic: "Your access to this page was denied because your IP address belongs to a network listed on a blacklist used by this website."
 ReasonMessage_Legal: "Your access to this page was denied due to legal obligations."
 ReasonMessage_Malware: "Your access to this page was denied because your IP address is considered a probable source of malware."
 ReasonMessage_Proxy:
  en-AU: "Your access to this page was denied because your IP address is recognised as belonging to a proxy service or VPN, and connecting to this website from proxy services or VPNs isn't permitted by the website owner."
  [en-CA, en-US]: "Your access to this page was denied because your IP address is recognized as belonging to a proxy service or VPN, and connecting to this website from proxy services or VPNs isn't permitted by the website owner."
+ReasonMessage_RL: "You've exceeded the maximum bandwidth or number of requests permitted to be served at this time. Please wait at least %s before trying again."
 ReasonMessage_Spam: "Your access to this page was denied because your IP address is considered a probable source of spam."
 Short_Attacks: "Attacks"
 Short_BadIP: "Invalid IP"
 Short_Banned: "Banned"
 Short_Bogon: "Bogon IP"
 Short_Cloud: "Cloud service"
+Short_Conflict: "Conflict"
 Short_Fake_UA: "Fake %s"
 Short_Generic: "Generic"
 Short_Legal: "Legal"

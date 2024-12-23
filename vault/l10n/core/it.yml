@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data (last modified: 2024.08.14).
+# This file: Italian language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,22 +24,26 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: ["%s secondo", "%s secondi"]
 PrivacyPolicy: "Politica sulla Privacy"
 ReasonMessage_Attacks: "Accesso a questa pagina è stato negato a causa di traffico anomalo rilevato in precedenza dal vostro indirizzo IP o dalla vostra rete."
 ReasonMessage_BadIP: "Accesso a questa pagina è stato negato perché si è tentato di accedere a questa pagina utilizzando un indirizzo IP non valido."
 ReasonMessage_Banned: "Accesso a questa pagina è stato negato a causa della precedente cattivo comportamento dal vostro indirizzo IP."
 ReasonMessage_Bogon: "Accesso a questa pagina è stato negato perché il suo indirizzo IP viene riconosciuto come un indirizzo bogone, e il collegamento da bogoni a questo sito web non è consentito dal proprietario del sito web."
 ReasonMessage_Cloud: "Accesso a questa pagina è stato negato perché il suo indirizzo IP viene riconosciuto come appartenente ad un servizio cloud, e il collegamento a questo sito web da servizi cloud non è consentito dal proprietario del sito web."
+ReasonMessage_Conflict: "Al momento non è stato possibile elaborare la tua richiesta perché una risorsa necessaria non è disponibile. Probabilmente causato da un conflitto con un'altra richiesta, si prevede che il problema sia temporaneo. Riprova dopo aver atteso qualche secondo."
 ReasonMessage_Generic: "Accesso a questa pagina è stato negato perché il suo indirizzo IP appartiene a una rete elencati in una lista nera utilizzato da questo sito web."
 ReasonMessage_Legal: "Accesso a questa pagina è stato negato a causa di obblighi legali."
 ReasonMessage_Malware: "Accesso a questa pagina è stato negato perché il suo indirizzo IP è considerato una probabile fonte di malware."
 ReasonMessage_Proxy: "Accesso a questa pagina è stato negato perché il suo indirizzo IP viene riconosciuto come appartenente ad un servizio proxy o una VPN, e il collegamento a questo sito web da servizi proxy o VPN non è consentito dal proprietario del sito web."
+ReasonMessage_RL: "Hai superato la larghezza di banda massima o il numero massimo di richieste che è possibile gestire in questo momento. Attendi almeno %s prima di riprovare."
 ReasonMessage_Spam: "Accesso a questa pagina è stato negato perché il suo indirizzo IP è considerato una probabile fonte di spam."
 Short_Attacks: "Attacchi"
 Short_BadIP: "IP non valido"
 Short_Banned: "Vietato"
 Short_Bogon: "Bogon IP"
 Short_Cloud: "Servizio cloud"
+Short_Conflict: "Conflitto"
 Short_Fake_UA: "Falsa %s"
 Short_Generic: "Generico"
 Short_Legal: "Legale"

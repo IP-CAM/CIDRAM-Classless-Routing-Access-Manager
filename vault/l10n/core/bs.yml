@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Bosnian language data (last modified: 2024.08.14).
+# This file: Bosnian language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,22 +24,26 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: ["%s sekundu", "%s sekunde", "%s sekundi"]
 PrivacyPolicy: "Politika privatnosti"
 ReasonMessage_Attacks: "Vaš pristup ovoj stranici je odbijen zbog nenormalnog saobraćaja koji je prethodno otkriven sa vaše IP adrese ili mreže."
 ReasonMessage_BadIP: "Vaš pristup ovoj stranici je odbijen jer ste pokušali pristupiti ovoj stranici koristeći nevažeću IP adresu."
 ReasonMessage_Banned: "Vaš pristup ovoj stranici je odbijen zbog prethodnog lošeg ponašanja sa vaše IP adrese."
 ReasonMessage_Bogon: "Vaš pristup ovoj stranici je odbijen jer je vaša IP adresa prepoznata kao bogon adresa, a povezivanje sa bogons na ovu web stranicu nije dozvoljeno od strane vlasnika web stranice."
 ReasonMessage_Cloud: "Vaš pristup ovoj stranici je odbijen jer je vaša IP adresa prepoznata kao pripadajući servisu u oblaku, a povezivanje na ovu web stranicu sa usluga u oblaku nije dozvoljeno od strane vlasnika web stranice."
+ReasonMessage_Conflict: "Vaš zahtjev nije mogao biti obrađen u ovom trenutku, jer resurs potreban za to nije bio dostupan. Vjerovatno uzrokovan sukobom s drugim zahtjevom, očekuje se da će ovaj problem biti privremen. Pokušajte ponovo nakon nekoliko sekundi."
 ReasonMessage_Generic: "Vaš pristup ovoj stranici je odbijen jer vaša IP adresa pripada mreži koja je navedena na crnoj listi koju koristi ova web stranica."
 ReasonMessage_Legal: "Vaš pristup ovoj stranici je odbijen zbog zakonskih obaveza."
 ReasonMessage_Malware: "Vaš pristup ovoj stranici je odbijen jer se vaša IP adresa smatra vjerojatnim izvorom zlonamjernog softvera."
 ReasonMessage_Proxy: "Vaš pristup ovoj stranici je odbijen jer je vaša IP adresa prepoznata kao da pripada proxy servisu ili VPN-u, a povezivanje na ovu web stranicu putem proxy usluga ili VPN-a nije dozvoljeno od strane vlasnika web stranice."
+ReasonMessage_RL: "Premašili ste maksimalnu propusnost ili broj zahtjeva koji su u ovom trenutku dozvoljeni za opsluživanje. Molimo pričekajte najmanje %s prije nego što pokušate ponovo."
 ReasonMessage_Spam: "Vaš pristup ovoj stranici je odbijen jer se vaša IP adresa smatra vjerovatnim izvorom neželjene pošte."
 Short_Attacks: "Napadi"
 Short_BadIP: "Nevažeći IP"
 Short_Banned: "Zabranjeno"
 Short_Bogon: "Bogon IP"
 Short_Cloud: "Usluga u oblaku"
+Short_Conflict: "Sukob"
 Short_Fake_UA: "Lažni %s"
 Short_Generic: "Generički"
 Short_Legal: "Pravni"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data (last modified: 2024.08.14).
+# This file: Afrikaans language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,22 +24,26 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: ["%s sekonde", "%s sekondes"]
 PrivacyPolicy: "Privaatheidsbeleid"
 ReasonMessage_Attacks: "Jou toegang tot hierdie bladsy is geweier weens abnormale verkeer wat voorheen van jou IP-adres of netwerk bespeur is."
 ReasonMessage_BadIP: "Jou toegang tot hierdie bladsy is geweier omdat jy probeer het om toegang tot hierdie bladsy te kry met 'n ongeldige IP-adres."
 ReasonMessage_Banned: "Jou toegang tot hierdie bladsy is geweier weens vorige slegte gedrag vanaf jou IP-adres."
 ReasonMessage_Bogon: "Jou toegang tot hierdie bladsy is geweier omdat jou IP-adres as 'n bogon-adres erken word, en die koppeling van bogons aan hierdie webwerf word nie deur die webwerf-eienaar toegelaat nie."
 ReasonMessage_Cloud: "Jou toegang tot hierdie bladsy is geweier omdat jou IP-adres erken word as wat aan 'n wolkdiens behoort, en om vanaf wolkdienste aan hierdie webwerf te koppel, word nie deur die webwerf-eienaar toegelaat nie."
+ReasonMessage_Conflict: "Jou versoek kon nie tans verwerk word nie, aangesien 'n hulpbron wat nodig is om dit te doen nie beskikbaar was nie. Waarskynlik veroorsaak word deur 'n konflik met 'n ander versoek, hierdie probleem sal na verwagting tydelik wees. Probeer weer nadat jy 'n paar sekondes gewag het."
 ReasonMessage_Generic: "Jou toegang tot hierdie bladsy is geweier omdat jou IP-adres aan 'n netwerk behoort wat gelys is op 'n swartlys wat deur hierdie webwerf gebruik word."
 ReasonMessage_Legal: "Jou toegang tot hierdie bladsy is geweier weens wetlike verpligtinge."
 ReasonMessage_Malware: "Jou toegang tot hierdie bladsy is geweier omdat jou IP-adres as 'n waarskynlike bron van wanware beskou word."
 ReasonMessage_Proxy: "Jou toegang tot hierdie bladsy is geweier omdat jou IP-adres erken word dat dit aan 'n instaanbediener of skynprivaatnetwerk behoort, en om aan hierdie webwerf vanaf instaanbedienerdienste of skynprivaatnetwerk te koppel, word nie deur die webwerf-eienaar toegelaat nie."
+ReasonMessage_RL: "Jy het die maksimum bandwydte of aantal versoeke oorskry wat toegelaat word om op hierdie tydstip bedien te word. Wag asseblief ten minste %s voor jy weer probeer."
 ReasonMessage_Spam: "Jou toegang tot hierdie bladsy is geweier omdat jou IP-adres as 'n waarskynlike bron van strooipos beskou word."
 Short_Attacks: "Aanvalle"
 Short_BadIP: "Ongeldige IP"
 Short_Banned: "Verban"
 Short_Bogon: "Bogon IP"
 Short_Cloud: "Wolkdiens"
+Short_Conflict: "Konflik"
 Short_Fake_UA: "Valse %s"
 Short_Generic: "Generies"
 Short_Legal: "Wettig"

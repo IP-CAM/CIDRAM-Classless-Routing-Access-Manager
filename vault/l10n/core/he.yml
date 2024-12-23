@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2024.08.14).
+# This file: Hebrew language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,22 +24,26 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: ["שנייה %s", "%s שניות"]
 PrivacyPolicy: "מדיניות פרטיות"
 ReasonMessage_Attacks: "הגישה שלך לדף זה נדחתה עקב תעבורה חריגה שזוהתה בעבר מכתובת ה-IP או הרשת שלך."
 ReasonMessage_BadIP: "הגישה שלך לדף זה נדחתה מכיוון שניסית לגשת לדף זה באמצעות כתובת IP לא חוקית."
 ReasonMessage_Banned: "הגישה שלך לדף זה נדחתה עקב התנהגות לא טובה בעבר מכתובת ה-IP שלך."
 ReasonMessage_Bogon: "הגישה שלך לדף זה נדחתה מכיוון שכתובת ה-IP שלך מזוהה ככתובת בוגון, וחיבור מבוגונים לאתר זה אינו מורשה על ידי בעל האתר."
 ReasonMessage_Cloud: "הגישה שלך לדף זה נדחתה מכיוון שכתובת ה-IP שלך מזוהה כשייכת לשירות ענן, והחיבור לאתר זה משירותי ענן אינו מורשה על ידי בעל האתר."
+ReasonMessage_Conflict: "לא ניתן היה לעבד את הבקשה שלך בשלב זה, מכיוון שהמשאב הדרוש לשם כך לא היה זמין. סביר להניח שנגרם עקב התנגשות עם בקשה אחרת, בעיה זו צפויה להיות זמנית. נסה שוב לאחר המתנה של מספר שניות."
 ReasonMessage_Generic: "הגישה שלך לדף זה נדחתה מכיוון שכתובת ה-IP שלך שייכת לרשת הרשומה ברשימה שחורה המשמשת אתר זה."
 ReasonMessage_Legal: "הגישה שלך לדף זה נדחתה עקב התחייבויות משפטיות."
 ReasonMessage_Malware: "הגישה שלך לדף זה נדחתה מכיוון שכתובת ה-IP שלך נחשבת למקור סביר לתוכנות זדוניות."
 ReasonMessage_Proxy: "הגישה שלך לדף זה נדחתה מכיוון שכתובת ה-IP שלך מזוהה כשייכת לשירות proxy או VPN, וחיבור לאתר זה משירותי proxy או VPN אינו מורשה על ידי בעל האתר."
+ReasonMessage_RL: "חרגת מרוחב הפס המרבי או מספר הבקשות המותר להגיש בשלב זה. אנא המתן לפחות %s לפני שתנסה שוב."
 ReasonMessage_Spam: "הגישה שלך לדף זה נדחתה מכיוון שכתובת ה-IP שלך נחשבת למקור סביר לספאם."
 Short_Attacks: "התקפות"
 Short_BadIP: "IP לא חוקי"
 Short_Banned: "אָסוּר"
 Short_Bogon: "בוגון IP"
 Short_Cloud: "שירות ענן"
+Short_Conflict: "סתירה"
 Short_Fake_UA: "%s מזויף"
 Short_Generic: "גנרית"
 Short_Legal: "משפטי"

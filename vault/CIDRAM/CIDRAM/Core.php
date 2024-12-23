@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The CIDRAM core (last modified: 2024.12.20).
+ * This file: The CIDRAM core (last modified: 2024.12.24).
  */
 
 namespace CIDRAM\CIDRAM;
@@ -2043,6 +2043,7 @@ class Core
             307 => 'Temporary Redirect',
             308 => 'Permanent Redirect',
             403 => 'Forbidden',
+            409 => 'Conflict',
             410 => 'Gone',
             418 => 'I\'m a teapot',
             429 => 'Too Many Requests',
@@ -2734,6 +2735,11 @@ class Core
      */
     public function rateLimitClean(): void
     {
+        /** Guard. */
+        if (!isset($this->CIDRAM['RL_Data'], $this->CIDRAM['RL_Expired'])) {
+            return;
+        }
+
         $Pos = 0;
         $EoS = strlen($this->CIDRAM['RL_Data']);
         while ($Pos < $EoS) {
@@ -2796,6 +2802,20 @@ class Core
             $Requests++;
         }
         return ['Bytes' => $Bytes, 'Requests' => $Requests];
+    }
+
+    /**
+     * Get the requesting entity's oldest record.
+     *
+     * @return array The requesting entity's oldest record.
+     */
+    public function rateGetOldest(): array
+    {
+        if (($Pos = strpos($this->CIDRAM['RL_Data'], $this->CIDRAM['RL_Capture'])) !== false) {
+            $Bytes = unpack('l*', substr($this->CIDRAM['RL_Data'], $Pos - 4, 4));
+            $Time = unpack('l*', substr($this->CIDRAM['RL_Data'], $Pos - 8, 4));
+        }
+        return ['Bytes' => $Bytes[1] ?? 0, 'Time' => $Time[1] ?? 0];
     }
 
     /**

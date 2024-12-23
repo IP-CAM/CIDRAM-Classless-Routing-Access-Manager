@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese language data (last modified: 2024.08.14).
+# This file: Chinese language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,22 +24,26 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: "%s秒"
 PrivacyPolicy: {"zh-Hans": "隐私政策", "zh-Hant": "隱私政策"}
 ReasonMessage_Attacks: {"zh-Hans": "您的访问这个页面被拒绝由于之前从您的IP地址或网络检测到流量异常。", "zh-Hant": "您的訪問這個頁面被拒絕由於之前從您的IP位址或網絡檢測到流量異常。"}
 ReasonMessage_BadIP: {"zh-Hans": "您的访问这个页面被拒绝因为您试图访问该页面使用一个无效的IP地址。", "zh-Hant": "您的訪問這個頁面被拒絕因為您試圖訪問該頁面使用一個無效的IP位址。"}
 ReasonMessage_Banned: {"zh-Hans": "您的访问这个页面被拒绝因由于您的IP地址以前的错误行为。", "zh-Hant": "您的訪問這個頁面被拒絕因由於您的IP位址以前的錯誤行為。"}
 ReasonMessage_Bogon: {"zh-Hans": "您的访问这个页面被拒绝因为您的IP地址被识别作为火星IP地址，​和从火星IP地址连接是网站所有者不允许。", "zh-Hant": "您的訪問這個頁面被拒絕因為您的IP位址被識別作為火星IP位址，​和從火星IP位址連接是網站所有者不允許。"}
 ReasonMessage_Cloud: {"zh-Hans": "您的访问这个页面被拒绝因为您的IP地址被识别为属于云服务，​和从云服务连接是网站所有者不允许。", "zh-Hant": "您的訪問這個頁面被拒絕因為您的IP位址被識別為屬於雲服務，​和從雲服務連接是網站所有者不允許。"}
+ReasonMessage_Conflict: {"zh-Hans": "目前无法处理您的请求，因为处理请求所需的资源不可用。​该问题可能是由于与另一个请求冲突而引起的，并且预计是暂时的。​等待几秒钟后重试。", "zh-Hant": "目前無法處理您的請求，因為所需的資源不可用。​此問題可能是由與另一個請求的衝突引起的，並且預計是暫時的。​等待幾秒鐘後重試。"}
 ReasonMessage_Generic: {"zh-Hans": "您的访问这个页面被拒绝因为您的IP地址属于一个网络在黑名单中所列使用本网站。", "zh-Hant": "您的訪問這個頁面被拒絕因為您的IP位址屬於一個網絡在黑名單中所列使用本網站。"}
 ReasonMessage_Legal: {"zh-Hans": "您的访问这个页面被拒绝因为由于法律义务。", "zh-Hant": "您的訪問這個頁面被拒絕因為由於法律義務。"}
 ReasonMessage_Malware: {"zh-Hans": "您的访问这个页面被拒绝因为您的IP地址被认为是恶意软件的可能来源。", "zh-Hant": "您的訪問這個頁面被拒絕因為您的IP位址被認為是惡意軟體的可能來源。"}
 ReasonMessage_Proxy: {"zh-Hans": "您的访问这个页面被拒绝因为您的IP地址被识别为属于代理服务或VPN，​和从代理服务或VPN连接是网站所有者不允许。", "zh-Hant": "您的訪問這個頁面被拒絕因為您的IP位址被識別為屬於代理服務或VPN，​和從代理服務或VPN連接是網站所有者不允許。"}
+ReasonMessage_RL: {"zh-Hans": "您已超出此时允许服务的最大带宽或请求数量。​请至少等待%s后再重试。", "zh-Hant": "您已經超出了此時允許服務的最大頻寬或請求數。​請等待至少%s後再重試。"}
 ReasonMessage_Spam: {"zh-Hans": "您的访问这个页面被拒绝因为您的IP地址被认为是垃圾邮件的可能来源。", "zh-Hant": "您的訪問這個頁面被拒絕因為您的IP位址被認為是垃圾郵件的可能來源。"}
 Short_Attacks: {"zh-Hans": "攻击", "zh-Hant": "攻擊"}
 Short_BadIP: {"zh-Hans": "无效的IP！", "zh-Hant": "無效的IP！"}
 Short_Banned: "禁止"
 Short_Bogon: "火星IP"
 Short_Cloud: {"zh-Hans": "云服务", "zh-Hant": "雲服務"}
+Short_Conflict: {"zh-Hans": "冲突", "zh-Hant": "衝突"}
 Short_Fake_UA: "假%s"
 Short_Generic: "通用"
 Short_Legal: {"zh-Hans": "法律义务", "zh-Hant": "法律義務"}

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data (last modified: 2024.08.14).
+# This file: Romanian language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,22 +24,26 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: ["%s secundă", "%s secunde"]
 PrivacyPolicy: "Politica de confidențialitate"
 ReasonMessage_Attacks: "Accesul dvs. la această pagină a fost refuzat din cauza traficului anormal detectat anterior din adresa dvs. IP sau rețea dvs."
 ReasonMessage_BadIP: "Accesul dvs. la această pagină a fost refuzat deoarece ați încercat să accesați această pagină folosind o adresă IP nevalidă."
 ReasonMessage_Banned: "Accesul dvs. la această pagină a fost refuzat din cauza unui comportament negativ anterior din adresa dvs. IP."
 ReasonMessage_Bogon: "Accesul dvs. la această pagină a fost refuzat deoarece adresa dvs. IP este recunoscută ca adresă bogon, iar conectarea de la bogon la acest site web nu este permisă de proprietarul site-ului."
 ReasonMessage_Cloud: "Accesul dvs. la această pagină a fost refuzat deoarece adresa dvs. IP este recunoscută ca aparținând unui serviciu cloud, și conectarea la acest site web din serviciile cloud nu este permisă de proprietarul site-ului."
+ReasonMessage_Conflict: "Solicitarea dvs. nu a putut fi procesată în acest moment, deoarece o resursă necesară pentru a face acest lucru nu era disponibilă. Probabil cauzată de un conflict cu o altă solicitare, această problemă este de așteptat să fie temporară. Încercați din nou după ce ați așteptat câteva secunde."
 ReasonMessage_Generic: "Accesul dvs. la această pagină a fost refuzat deoarece adresa dvs. IP aparține unei rețele listate pe o listă neagră utilizată de acest site web."
 ReasonMessage_Legal: "Accesul dvs. la această pagină a fost refuzat din cauza obligațiilor legale."
 ReasonMessage_Malware: "Accesul dvs. la această pagină a fost refuzat deoarece adresa dvs. IP este considerată o sursă probabilă de malware."
 ReasonMessage_Proxy: "Accesul dvs. la această pagină a fost refuzat deoarece adresa dvs. IP este recunoscută ca aparținând unui serviciu proxy sau VPN, iar conectarea la acest site web de la servicii proxy sau VPN-uri nu este permisă de proprietarul site-ului."
+ReasonMessage_RL: "Ați depășit lățimea de bandă maximă sau numărul maxim de solicitări permise a fi servite în acest moment. Vă rugăm să așteptați cel puțin %s înainte de a încerca din nou."
 ReasonMessage_Spam: "Accesul dvs. la această pagină a fost refuzat deoarece adresa dvs. IP este considerată o sursă probabilă de spam."
 Short_Attacks: "Atacurile"
 Short_BadIP: "IP nevalid"
 Short_Banned: "Interzis"
 Short_Bogon: "Bogon IP"
 Short_Cloud: "Serviciu cloud"
+Short_Conflict: "Conflict"
 Short_Fake_UA: "%s fals"
 Short_Generic: "Generic"
 Short_Legal: "Legal"

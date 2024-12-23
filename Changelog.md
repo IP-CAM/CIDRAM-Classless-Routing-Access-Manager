@@ -382,4 +382,5 @@
 - [2024.10.16]: Verification update.
 - [2024.11.06]: Added PHP 8.4 to workflows.
 - [2024.11.25]: Added a new module (Quic cloud compatibility module).
+- [2024.12.24]: Improved the access denied page messaging for rate limiting block events.
 - *Plus all the regular signature updates.*

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data (last modified: 2024.08.14).
+# This file: Galician language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,22 +24,26 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: ["%s segundo", "%s segundos"]
 PrivacyPolicy: "Política de Privacidade"
 ReasonMessage_Attacks: "O teu acceso a esta páxina foi denegado debido a un tráfico anormal detectado anteriormente desde o teu enderezo IP ou rede."
 ReasonMessage_BadIP: "O teu acceso a esta páxina foi denegado porque tentaches acceder a esta páxina usando un enderezo IP non válido."
 ReasonMessage_Banned: "O teu acceso a esta páxina foi denegado debido a un mal comportamento anterior do teu enderezo IP."
 ReasonMessage_Bogon: "O teu acceso a esta páxina foi denegado porque o teu enderezo IP é recoñecido como un enderezo bogon, e o propietario do sitio web non permite conectar desde bogons a este sitio web."
 ReasonMessage_Cloud: "O teu acceso a esta páxina foi denegado porque o teu enderezo IP é recoñecido como pertencente a un servizo na nube, e o propietario do sitio web non permite conectarse a este sitio web desde os servizos na nube."
+ReasonMessage_Conflict: "Non se puido procesar a túa solicitude neste momento, xa que un recurso necesario para facelo non estaba dispoñible. Probablemente causado por un conflito con outra solicitude, espérase que este problema sexa temporal. Téntao de novo despois de agardar uns segundos."
 ReasonMessage_Generic: "O teu acceso a esta páxina foi denegado porque o teu enderezo IP pertence a unha rede que figura nunha lista negra que utiliza este sitio web."
 ReasonMessage_Legal: "O teu acceso a esta páxina foi denegado por obrigas legais."
 ReasonMessage_Malware: "O teu acceso a esta páxina foi denegado porque o teu enderezo IP considérase unha fonte probable de malware."
 ReasonMessage_Proxy: "O teu acceso a esta páxina foi denegado porque o teu enderezo IP é recoñecido como pertencente a un servizo proxy ou VPN, e o propietario do sitio web non permite conectarse a este sitio web desde servizos proxy ou VPN."
+ReasonMessage_RL: "Superou o ancho de banda máximo ou o número de solicitudes que se permiten atender neste momento. Agarde polo menos %s antes de tentalo de novo."
 ReasonMessage_Spam: "O teu acceso a esta páxina foi denegado porque o teu enderezo IP considérase unha fonte probable de spam."
 Short_Attacks: "Ataques"
 Short_BadIP: "IP non válida"
 Short_Banned: "Prohibido"
 Short_Bogon: "Bogon IP"
 Short_Cloud: "Servizo na nube"
+Short_Conflict: "Conflito"
 Short_Fake_UA: "%s falso"
 Short_Generic: "Xenérico"
 Short_Legal: "Legal"

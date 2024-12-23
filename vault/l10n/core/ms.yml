@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data (last modified: 2024.08.14).
+# This file: Malay language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,22 +24,26 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: "%s saat"
 PrivacyPolicy: "Dasar Privasi"
 ReasonMessage_Attacks: "Akses anda ke halaman ini dinafikan kerana trafik yang tidak normal telah dikesan daripada alamat atau rangkaian anda."
 ReasonMessage_BadIP: "Akses anda ke halaman ini dinafikan kerana anda cuba mengakses halaman ini menggunakan alamat IP yang tidak sah."
 ReasonMessage_Banned: "Akses anda ke halaman ini dinafikan kerana kelakuan buruk pada masa lalu daripada alamat IP anda."
 ReasonMessage_Bogon: "Akses anda ke halaman ini dinafikan kerana alamat IP anda diiktiraf sebagai alamat bogon, dan sambungan dari bogon ke tapak web ini tidak dibenarkan oleh pemilik tapak web."
 ReasonMessage_Cloud: "Akses anda ke halaman ini dinafikan kerana alamat IP anda diiktiraf sebagai kepunyaan perkhidmatan pengkomputeran awan, dan sambungan dari perkhidmatan pengkomputeran awan ke tapak web ini tidak dibenarkan oleh pemilik tapak web."
+ReasonMessage_Conflict: "Permintaan anda tidak dapat diproses pada masa ini, kerana sumber yang diperlukan untuk berbuat demikian tidak tersedia. Berkemungkinan disebabkan oleh konflik dengan permintaan lain, masalah ini dijangka bersifat sementara. Cuba lagi selepas menunggu beberapa saat."
 ReasonMessage_Generic: "Akses anda ke halaman ini dinafikan kerana alamat IP anda tergolong dalam rangkaian yang disenaraihitamkan yang digunakan oleh tapak web ini."
 ReasonMessage_Legal: "Akses anda ke halaman ini dinafikan kerana kewajipan undang-undang."
 ReasonMessage_Malware: "Akses anda ke halaman ini dinafikan kerana alamat IP anda dianggap sebagai sumber perisian hasad yang berpotensi."
 ReasonMessage_Proxy: "Akses anda ke halaman ini dinafikan kerana alamat IP anda diiktiraf sebagai kepunyaan proksi atau perkhidmatan VPN, dan sambungan dari proksi atau perkhidmatan VPN ke tapak web ini tidak dibenarkan oleh pemilik tapak web."
+ReasonMessage_RL: "Anda telah melebihi lebar jalur maksimum atau bilangan permintaan yang dibenarkan untuk disampaikan pada masa ini. Sila tunggu sekurang-kurangnya %s sebelum mencuba lagi."
 ReasonMessage_Spam: "Akses anda ke halaman ini dinafikan kerana alamat IP anda dianggap sebagai sumber spam yang berpotensi."
 Short_Attacks: "Serangan"
 Short_BadIP: "IP tidak sah"
 Short_Banned: "Dilarang"
 Short_Bogon: "IP bogon"
 Short_Cloud: "Perkhidmatan pengkomputeran awan"
+Short_Conflict: "Konflik"
 Short_Fake_UA: "%s palsu"
 Short_Generic: "Generik"
 Short_Legal: "Undang-undang"

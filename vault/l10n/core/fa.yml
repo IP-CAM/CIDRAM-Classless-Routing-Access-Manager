@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Farsi language data (last modified: 2024.08.14).
+# This file: Farsi language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,22 +24,26 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: "%s ثانیه"
 PrivacyPolicy: "سیاست حفظ حریم خصوصی"
 ReasonMessage_Attacks: "دسترسی شما به این صفحه به دلیل ترافیک غیرعادی که قبلاً از آدرس IP یا شبکه شما شناسایی شده بود، رد شد."
 ReasonMessage_BadIP: "دسترسی شما به این صفحه رد شد زیرا سعی کردید با استفاده از یک آدرس IP نامعتبر به این صفحه دسترسی پیدا کنید."
 ReasonMessage_Banned: "دسترسی شما به این صفحه به دلیل رفتار بد قبلی از آدرس IP شما رد شد."
 ReasonMessage_Bogon: "دسترسی شما به این صفحه رد شد زیرا آدرس IP شما به عنوان یک آدرس bogon شناخته شده است و اتصال از bogons به این وب سایت توسط مالک وب سایت مجاز نیست."
 ReasonMessage_Cloud: "دسترسی شما به این صفحه رد شد زیرا آدرس IP شما به عنوان متعلق به یک سرویس ابری شناخته شده است و اتصال به این وب سایت از سرویس های ابری توسط مالک وب سایت مجاز نیست."
+ReasonMessage_Conflict: "درخواست شما در حال حاضر قابل پردازش نیست، زیرا منبع مورد نیاز برای انجام این کار در دسترس نبود. این مشکل احتمالاً به دلیل درگیری با درخواست دیگری ایجاد شده است، انتظار می رود این مشکل موقتی باشد. پس از چند ثانیه انتظار دوباره امتحان کنید."
 ReasonMessage_Generic: "دسترسی شما به این صفحه رد شد زیرا آدرس IP شما در لیست سیاه مورد استفاده این وب سایت قرار دارد."
 ReasonMessage_Legal: "دسترسی شما به این صفحه به دلیل تعهدات قانونی ممنوع شد."
 ReasonMessage_Malware: "دسترسی شما به این صفحه رد شد زیرا آدرس IP شما منبع احتمالی بدافزار در نظر گرفته می شود."
 ReasonMessage_Proxy: "دسترسی شما به این صفحه رد شد زیرا آدرس IP شما به عنوان متعلق به یک سرویس پروکسی یا VPN شناخته شده است و اتصالات از سرویس های پراکسی یا VPN ها توسط مالک وب سایت مجاز نیست."
+ReasonMessage_RL: "شما از حداکثر پهنای باند یا تعداد درخواست های مجاز برای ارائه در این زمان فراتر رفته اید. لطفاً قبل از تلاش مجدد حداقل %s صبر کنید."
 ReasonMessage_Spam: "دسترسی شما به این صفحه رد شد زیرا آدرس IP شما منبع احتمالی اسپم محسوب می شود."
 Short_Attacks: "حملات"
 Short_BadIP: "IP نامعتبر است"
 Short_Banned: "ممنوع شد"
 Short_Bogon: "Bogon IP"
 Short_Cloud: "سرویس ابری"
+Short_Conflict: "درگیری"
 Short_Fake_UA: "%s جعلی"
 Short_Generic: "عمومی"
 Short_Legal: "مجاز"

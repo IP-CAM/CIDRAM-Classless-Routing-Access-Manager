@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Indonesian language data (last modified: 2024.09.17).
+# This file: Indonesian language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,22 +24,26 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: "%s detik"
 PrivacyPolicy: "Kebijakan Privasi"
 ReasonMessage_Attacks: "Akses Anda ke halaman ini ditolak karena lalu lintas abnormal terdeteksi sebelumnya dari alamat atau jaringan Anda."
 ReasonMessage_BadIP: "Akses Anda ke halaman ini ditolak karena Anda mencoba untuk mengakses halaman ini menggunakan alamat IP yang tidak valid."
 ReasonMessage_Banned: "Akses Anda ke halaman ini ditolak karena perilaku buruk sebelumnya dari alamat IP Anda."
 ReasonMessage_Bogon: "Akses Anda ke halaman ini ditolak karena alamat IP Anda diakui sebagai alamat bogon, dan menghubungkan dari bogon ke situs ini tidak diizinkan oleh pemilik situs."
 ReasonMessage_Cloud: "Akses Anda ke halaman ini ditolak karena alamat IP Anda diakui sebagai milik dari layanan komputasi awan, dan menghubungkan dari layanan komputasi awan ke situs ini tidak diizinkan oleh pemilik situs."
+ReasonMessage_Conflict: "Permintaan Anda tidak dapat diproses saat ini, karena sumber daya yang diperlukan untuk melakukannya tidak tersedia. Kemungkinan disebabkan oleh konflik dengan permintaan lain, masalah ini diperkirakan bersifat sementara. Coba lagi setelah menunggu beberapa detik."
 ReasonMessage_Generic: "Akses Anda ke halaman ini ditolak karena alamat IP Anda milik dari jaringan terdaftar pada daftar hitam yang digunakan oleh situs ini."
 ReasonMessage_Legal: "Akses Anda ke halaman ini ditolak karena kewajiban hukum."
 ReasonMessage_Malware: "Akses Anda ke halaman ini ditolak karena alamat IP Anda dianggap sebagai sumber potensial malware."
 ReasonMessage_Proxy: "Akses Anda ke halaman ini ditolak karena alamat IP Anda diakui sebagai milik dari layanan proxy atau VPN, dan menghubungkan dari layanan proxy atau VPN ke situs ini tidak diizinkan oleh pemilik situs."
+ReasonMessage_RL: "Anda telah melampaui bandwidth maksimum atau jumlah permintaan yang diizinkan untuk dilayani saat ini. Harap tunggu setidaknya %s sebelum mencoba lagi."
 ReasonMessage_Spam: "Akses Anda ke halaman ini ditolak karena alamat IP Anda dianggap sebagai sumber potensial spam."
 Short_Attacks: "Serangan"
 Short_BadIP: "IP tidak valid"
 Short_Banned: "Dilarang"
 Short_Bogon: "IP yang bogon"
 Short_Cloud: "Layanan komputasi awan"
+Short_Conflict: "Konflik"
 Short_Fake_UA: "%s palsu"
 Short_Generic: "Umum"
 Short_Legal: "Hukum"

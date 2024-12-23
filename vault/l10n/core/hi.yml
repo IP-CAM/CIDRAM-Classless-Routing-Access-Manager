@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data (last modified: 2024.08.14).
+# This file: Hindi language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,22 +24,26 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: "%s सेकंड"
 PrivacyPolicy: "गोपनीयता नीति"
 ReasonMessage_Attacks: "इस पृष्ठ पर प्रवेश से इंकार किया गया था। आपके पते या नेटवर्क से असामान्य ट्रैफ़िक का पता चला है।"
 ReasonMessage_BadIP: "इस पृष्ठ पर प्रवेश से इंकार किया गया था। आपका IP पता मान्य नहीं है।"
 ReasonMessage_Banned: "आपके IP पते से पिछले दुर्व्यवहार के कारण, इस पृष्ठ पर प्रवेश से इंकार किया गया था।"
 ReasonMessage_Bogon: "इस पृष्ठ पर प्रवेश से इंकार किया गया था। आपका IP पता एक बोगोन पता के रूप में पहचाना जाता है, और बोगोनों से कनेक्ट करना वेबसाइट के स्वामी द्वारा अनुमति नहीं है।"
 ReasonMessage_Cloud: "इस पृष्ठ पर प्रवेश से इंकार किया गया था। आपका IP पता एक क्लाउड सर्विस का हिस्सा है, और क्लाउड सेवाओं से कनेक्ट करना वेबसाइट के स्वामी द्वारा अनुमति नहीं है।"
+ReasonMessage_Conflict: "इस समय आपका अनुरोध संसाधित नहीं किया जा सका, क्योंकि ऐसा करने के लिए आवश्यक संसाधन उपलब्ध नहीं था। यह समस्या संभवतः किसी अन्य अनुरोध के साथ टकराव के कारण उत्पन्न हुई है, तथा यह अस्थायी होने की संभावना है। कुछ सेकंड प्रतीक्षा करने के बाद पुनः प्रयास करें."
 ReasonMessage_Generic: "इस पृष्ठ पर प्रवेश से इंकार किया गया था। आपका IP पता इस वेबसाइट द्वारा उपयोग की गई एक ब्लैकलिस्ट पर है।"
 ReasonMessage_Legal: "कानूनी दायित्वों के कारण इस पृष्ठ तक आपकी पहुंच अस्वीकार कर दी गई थी।"
 ReasonMessage_Malware: "इस पृष्ठ पर प्रवेश से इंकार किया गया था। आपका IP पता मैलवेयर का संभावित स्रोत माना जाता है।"
 ReasonMessage_Proxy: "इस पृष्ठ पर प्रवेश से इंकार किया गया था। आपका IP पता प्रॉक्सी सेवा से संबंधित है, और प्रॉक्सी सेवाओं से कनेक्ट करना वेबसाइट के स्वामी द्वारा अनुमति नहीं है।"
+ReasonMessage_RL: "आपने इस समय अनुमत अधिकतम बैंडविड्थ या अनुरोधों की संख्या पार कर ली है। कृपया पुनः प्रयास करने से पहले कम से कम %s प्रतीक्षा करें।"
 ReasonMessage_Spam: "इस पृष्ठ पर प्रवेश से इंकार किया गया था। आपका IP पता स्पैम का संभावित स्रोत माना जाता है।"
 Short_Attacks: "आक्रमण"
 Short_BadIP: "अमान्य IP"
 Short_Banned: "प्रतिबंधित"
 Short_Bogon: "बोगोन IP"
 Short_Cloud: "क्लाउड सेवा"
+Short_Conflict: "टकराव"
 Short_Fake_UA: "नकली %s"
 Short_Generic: "सामान्य"
 Short_Legal: "कानूनी"

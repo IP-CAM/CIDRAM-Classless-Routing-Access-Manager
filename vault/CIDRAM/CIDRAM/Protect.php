@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Protect traits (last modified: 2024.09.22).
+ * This file: Protect traits (last modified: 2024.12.24).
  */
 
 namespace CIDRAM\CIDRAM;
@@ -385,15 +385,18 @@ trait Protect
                             $this->rateLimitClean();
                         }
                         $this->CIDRAM['RL_Usage'] = $this->rateGetUsage();
+                        $RLFormatted = $this->rateGetOldest();
+                        $RLRetryAfter = $RLFormatted['Time'] > 0 ? $this->Configuration['rate_limiting']['allowance_period']->getAsSeconds() - ($this->Now - $RLFormatted['Time']) : $this->Configuration['rate_limiting']['allowance_period']->getAsSeconds();
+                        $RLFormatted = sprintf($this->L10N->getPlural($RLRetryAfter, '%s seconds'), $this->NumberFormatter->format($RLRetryAfter));
                         if ($this->trigger((
                             ($RLMaxBandwidth > 0 && $this->CIDRAM['RL_Usage']['Bytes'] >= $RLMaxBandwidth) ||
                             ($this->Configuration['rate_limiting']['max_requests'] > 0 && $this->CIDRAM['RL_Usage']['Requests'] >= $this->Configuration['rate_limiting']['max_requests'])
-                        ), $this->L10N->getString('Short_RL'))) {
+                        ), $this->L10N->getString('Short_RL'), sprintf($this->L10N->getString('ReasonMessage_RL'), $RLFormatted))) {
                             $this->enactOptions('', ['ForciblyDisableReCAPTCHA' => true, 'ForciblyDisableHCAPTCHA' => true]);
                             $this->CIDRAM['RL_Status'] = $this->getStatusHTTP(429);
                             $this->Events->fireEvent('rateLimited');
                         }
-                        unset($this->CIDRAM['RL_Usage'], $this->CIDRAM['RL_Oldest'], $this->CIDRAM['RL_Expired']);
+                        unset($this->CIDRAM['RL_Usage'], $this->CIDRAM['RL_Oldest'], $this->CIDRAM['RL_Expired'], $RLFormatted);
                     }
                     $this->CIDRAM['RL_Size'] = 0;
                     ob_start(function ($In) {
@@ -929,7 +932,7 @@ trait Protect
                         header('HTTP/1.0 429 ' . $this->CIDRAM['RL_Status']);
                         header('HTTP/1.1 429 ' . $this->CIDRAM['RL_Status']);
                         header('Status: 429 ' . $this->CIDRAM['RL_Status']);
-                        header('Retry-After: ' . floor($this->Configuration['rate_limiting']['allowance_period']->getAsSeconds()));
+                        header('Retry-After: ' . $RLRetryAfter ?? floor($this->Configuration['rate_limiting']['allowance_period']->getAsSeconds()));
                     } elseif ((
                         !empty($this->CIDRAM['Aux Status Code']) &&
                         ($this->CIDRAM['errCode'] = $this->CIDRAM['Aux Status Code']) > 400 &&
