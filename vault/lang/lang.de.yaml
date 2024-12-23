@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data (last modified: 2024.08.14).
+# This file: German language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,7 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: ["%s Sekunde", "%s Sekunden"]
 Error_MissingRequire: "Benötigte Dateien fehlen! Kann nicht weitermachen!"
 Error_WriteCache: "Kann nicht in den Cache schreiben! Bitte überprüfen Sie Ihre CHMOD Dateiberechtigungen!"
 MoreInfo: "Für mehr Informationen:"
@@ -33,16 +34,19 @@ ReasonMessage_BadIP: "Ihr Zugriff auf diese Seite wurde verweigert da Sie versuc
 ReasonMessage_Banned: "Ihr Zugriff auf diese Seite wurde verweigert aufgrund der vorherigen schlechten Verhalten von Ihrer IP-Adresse."
 ReasonMessage_Bogon: "Ihr Zugriff auf diese Seite wurde verweigert da Ihre IP-Adresse wird als Bogon Adresse erkannt, und Verbindungen von Bogon-Adressen auf dieser Website ist nicht vom Besitzer der Website gestattet."
 ReasonMessage_Cloud: "Ihr Zugriff auf diese Seite wurde verweigert da Ihre IP-Adresse gehört zu einer Cloud-Service, und Verbindungen von einer Cloud-Service auf dieser Website ist nicht vom Besitzer der Website gestattet."
+ReasonMessage_Conflict: "Ihre Anfrage konnte derzeit nicht bearbeitet werden, da eine hierfür erforderliche Ressource nicht verfügbar war. Dieses Problem wird wahrscheinlich durch einen Konflikt mit einer anderen Anfrage verursacht und ist voraussichtlich nur vorübergehend. Versuchen Sie es nach einigen Sekunden erneut."
 ReasonMessage_Generic: "Ihr Zugriff auf diese Seite wurde verweigert da Ihre IP-Adresse gehört zu einem Netzwerk aufgelistet auf eine Schwarzliste benutzten mit dieser Website."
 ReasonMessage_Legal: "Ihr Zugriff auf diese Seite wurde verweigert aufgrund gesetzlicher Verpflichtungen."
 ReasonMessage_Malware: "Ihr Zugriff auf diese Seite wurde verweigert da Ihre IP-Adresse als wahrscheinliche Quelle von Schadsoftware gilt."
 ReasonMessage_Proxy: "Ihr Zugriff auf diese Seite wurde verweigert da Ihre IP-Adresse gehört zu einem Proxy-Dienst oder VPN, und Verbindungen von einem Proxy-Dienst oder VPN auf dieser Website ist nicht vom Besitzer der Website gestattet."
+ReasonMessage_RL: "Sie haben die maximale Bandbreite oder Anzahl der Anfragen überschritten, die derzeit verarbeitet werden dürfen. Bitte warten Sie mindestens %s, bevor Sie es erneut versuchen."
 ReasonMessage_Spam: "Ihr Zugriff auf diese Seite wurde verweigert da Ihre IP-Adresse als wahrscheinliche Spam-Quelle gilt."
 Short_Attacks: "Angriffe"
 Short_BadIP: "Ungültige IP"
 Short_Banned: "Verbannt"
 Short_Bogon: "Bogon-IP"
 Short_Cloud: "Cloud-Service"
+Short_Conflict: "Konflikt"
 Short_Fake_UA: "Gefälschte %s"
 Short_Generic: "Generisches"
 Short_Legal: "Gesetzliche"

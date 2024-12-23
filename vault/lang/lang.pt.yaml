@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Portuguese language data (last modified: 2024.08.14).
+# This file: Portuguese language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,7 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: ["%s segundo", "%s segundos"]
 Error_MissingRequire: "Arquivos necessários estão faltando! Não pode continuar!"
 Error_WriteCache: "Não é possível gravar para o cache! Por favor verifique suas permissões CHMOD!"
 MoreInfo: "Para maiores informações:"
@@ -33,16 +34,19 @@ ReasonMessage_BadIP: "O seu acesso a esta página foi negado porque você tentou
 ReasonMessage_Banned: "O seu acesso a esta página foi negado devido ao mau comportamento anterior do seu endereço IP."
 ReasonMessage_Bogon: "O seu acesso a esta página foi negado porque o seu endereço IP é reconhecida como um endereço bogon, e conectando a partir de bogons a este site não é permitido pelo dono do site."
 ReasonMessage_Cloud: "O seu acesso a esta página foi negado porque o seu endereço IP é reconhecida como pertencente a um serviço de nuvem, e conectando a partir de serviços em nuvem a este site não é permitido pelo dono do site."
+ReasonMessage_Conflict: "O seu solicitação não pôde ser processado neste momento, porque um recurso necessário para tal não estava disponível. Provavelmente causado por um conflito com um outra solicitação, espera-se que este problema seja temporário. Tente novamente após aguardar alguns segundos."
 ReasonMessage_Generic: "O seu acesso a esta página foi negado porque o seu endereço IP pertence a uma rede listados numa lista negra usada por este site."
 ReasonMessage_Legal: "O seu acesso a esta página foi negado devido a obrigações legais."
 ReasonMessage_Malware: "O seu acesso a esta página foi negado porque o seu endereço IP é considerado uma provável fonte de malware."
 ReasonMessage_Proxy: "O seu acesso a esta página foi negado porque o seu endereço IP é reconhecida como pertencente a um serviço de proxy, e conectando a partir de um serviço de proxy a este site não é permitido pelo dono do site."
+ReasonMessage_RL: "Você excedeu a largura de banda máxima ou o número de solicitações máximo permitidos para serem atendidos no momento. Aguarde pelo menos %s antes de tentar novamente."
 ReasonMessage_Spam: "O seu acesso a esta página foi negado porque o seu endereço IP é considerado uma provável fonte de spam."
 Short_Attacks: "Ataques"
 Short_BadIP: "IP inválido"
 Short_Banned: "Banido"
 Short_Bogon: "Bogon IP"
 Short_Cloud: "Serviço de nuvem"
+Short_Conflict: "Conflito"
 Short_Fake_UA: "%s falso"
 Short_Generic: "Genérico"
 Short_Legal: "Legais"

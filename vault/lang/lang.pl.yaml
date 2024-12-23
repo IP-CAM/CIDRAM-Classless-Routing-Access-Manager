@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data (last modified: 2024.08.14).
+# This file: Polish language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,7 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: ["%s sekundę", "%s sekundy", "%s sekund"]
 Error_MissingRequire: "Brak wymaganych plików! Nie można kontynuować!"
 Error_WriteCache: "Nie można zapisać w pamięci podręcznej! Proszę sprawdź swoje uprawnienia do plików CHMOD!"
 MoreInfo: "Po więcej informacji:"
@@ -33,16 +34,19 @@ ReasonMessage_BadIP: "Twój dostęp do tej strony został odrzucony, ponieważ p
 ReasonMessage_Banned: "Twój dostęp do tej strony został odrzucony z powodu wcześniejszego złego zachowania z twojego adresu IP."
 ReasonMessage_Bogon: "Twój dostęp do tej strony został odrzucony, ponieważ Twój adres IP jest rozpoznawany jako adres pozorny, a łączenie się z tą witryną z bogonami nie jest dozwolone przez właściciela witryny."
 ReasonMessage_Cloud: "Twój dostęp do tej strony został odrzucony, ponieważ Twój adres IP jest rozpoznawany jako należący do usługi w chmurze, a łączenie się z tą witryną z usług w chmurze nie jest dozwolone przez właściciela witryny."
+ReasonMessage_Conflict: "Nie możemy teraz przetworzyć Twojego żądania, ponieważ zasób potrzebny do tego jest niedostępny. Prawdopodobnie problem ten jest spowodowany konfliktem z innym żądaniem i powinien być tymczasowy. Spróbuj ponownie po odczekaniu kilku sekund."
 ReasonMessage_Generic: "Twój dostęp do tej strony został odrzucony, ponieważ Twój adres IP należy do sieci wymienionej na czarnej liście używanej przez tę witrynę."
 ReasonMessage_Legal: "Twój dostęp do tej strony został odrzucony z powodu zobowiązań prawnych."
 ReasonMessage_Malware: "Twój dostęp do tej strony został odrzucony, ponieważ Twój adres IP jest uważany za prawdopodobne źródło złośliwego oprogramowania."
 ReasonMessage_Proxy: "Twój dostęp do tej strony został odrzucony, ponieważ Twój adres IP jest rozpoznawany jako należący do usługi proxy lub VPN, a łączenie się z tą witryną z usług proxy lub VPN nie jest dozwolone przez właściciela witryny."
+ReasonMessage_RL: "Przekroczono maksymalną przepustowość lub liczbę żądań, które mogą być obsłużone w tym momencie. Proszę odczekać co najmniej %s przed ponowną próbą."
 ReasonMessage_Spam: "Twój dostęp do tej strony został odrzucony, ponieważ Twój adres IP jest uważany za prawdopodobne źródło spamu."
 Short_Attacks: "Ataki"
 Short_BadIP: "Nieprawidłowy adres IP"
 Short_Banned: "Zakazany"
 Short_Bogon: "Bogon IP"
 Short_Cloud: "Usługa w chmurze"
+Short_Conflict: "Konflikt"
 Short_Fake_UA: "Podróbka %s"
 Short_Generic: "Rodzajowy"
 Short_Legal: "Prawna"

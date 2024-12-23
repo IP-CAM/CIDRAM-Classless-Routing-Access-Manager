@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data (last modified: 2024.08.14).
+# This file: French language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,7 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: ["%s seconde", "%s secondes"]
 Error_MissingRequire: "Les fichiers requis sont manquants\_! Ne peut pas continuer\_!"
 Error_WriteCache: "Ne peux pas d'écrire dans le cache\_! S'il vous plaît vérifier votre permissions CHMOD\_!"
 MoreInfo: "Pour plus d'informations\_:"
@@ -33,16 +34,19 @@ ReasonMessage_BadIP: "Votre accès à cette page a été refusé parce que vous 
 ReasonMessage_Banned: "Votre accès à cette page a été refusé en raison du mauvais comportement précédent de votre adresse IP."
 ReasonMessage_Bogon: "Votre accès à cette page a été refusé parce que votre IP adresse est reconnue comme une adresse bogon, et la connexion de bogons à cette site n'est pas autorisée par le propriétaire du site."
 ReasonMessage_Cloud: "Votre accès à cette page a été refusé parce que votre IP adresse est reconnue comme appartenant à un service de cloud computing, et la connexion des services de cloud computing à cette site n'est pas autorisée par le propriétaire du site."
-ReasonMessage_Generic: "Votre accès à cette page a été refusé parce que votre IP adresse appartient à un réseau figurant sur une liste noire utilisée par ce site."
+ReasonMessage_Conflict: "Votre requête n'a pas pu être traité pour le moment, car une ressource nécessaire pour le faire n'était pas disponible. Probablement causé par un conflit avec une autre requête, ce problème devrait être temporaire. Réessayez après avoir attendu quelques secondes."
+ReasonMessage_Generic: "Votre accès à cette page a été refusé parce que votre IP adresse appartient à un réseau figurant sur une liste noire utilisé par ce site."
 ReasonMessage_Legal: "Votre accès à cette page a été refusé en raison d'obligations légales."
 ReasonMessage_Malware: "Votre accès à cette page a été refusé parce que votre adresse IP est considéré comme un source probable de logiciels malveillants."
 ReasonMessage_Proxy: "Votre accès à cette page a été refusé parce que votre IP adresse est reconnue comme appartenant à un service de proxy ou un VPN, et la connexion des services de proxy ou des VPNs à cette site n'est pas autorisée par le propriétaire du site."
+ReasonMessage_RL: "Vous avez dépassé la bande passante maximale ou le nombre de requêtes autorisées à être traitées à ce moment. Veuillez patienter au moins %s avant de réessayer."
 ReasonMessage_Spam: "Votre accès à cette page a été refusé parce que votre adresse IP est considéré comme un source probable de spam."
 Short_Attacks: "Attaques"
 Short_BadIP: "Invalide IP"
 Short_Banned: "Interdit"
 Short_Bogon: "Bogon IP"
 Short_Cloud: "Service de cloud"
+Short_Conflict: "Conflit"
 Short_Fake_UA: "Faux %s"
 Short_Generic: "Générique"
 Short_Legal: "Légal"

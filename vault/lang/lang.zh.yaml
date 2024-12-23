@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (simplified) language data (last modified: 2024.08.14).
+# This file: Chinese (simplified) language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,7 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: "%s秒"
 Error_MissingRequire: "缺少必需的文件！不能继续！"
 Error_WriteCache: "无法写入缓存！​请检查您的CHMOD文件的权限！"
 MoreInfo: "了解更多信息："
@@ -33,16 +34,19 @@ ReasonMessage_BadIP: "您的访问这个页面被拒绝因为您试图访问该�
 ReasonMessage_Banned: "您的访问这个页面被拒绝因由于您的IP地址以前的错误行为。"
 ReasonMessage_Bogon: "您的访问这个页面被拒绝因为您的IP地址被识别作为火星IP地址，​和从火星IP地址连接是网站所有者不允许。"
 ReasonMessage_Cloud: "您的访问这个页面被拒绝因为您的IP地址被识别为属于云服务，​和从云服务连接是网站所有者不允许。"
+ReasonMessage_Conflict: "目前无法处理您的请求，因为处理请求所需的资源不可用。​该问题可能是由于与另一个请求冲突而引起的，并且预计是暂时的。​等待几秒钟后重试。"
 ReasonMessage_Generic: "您的访问这个页面被拒绝因为您的IP地址属于一个网络在黑名单中所列使用本网站。"
 ReasonMessage_Legal: "您的访问这个页面被拒绝因为由于法律义务。"
 ReasonMessage_Malware: "您的访问这个页面被拒绝因为您的IP地址被认为是恶意软件的可能来源。"
 ReasonMessage_Proxy: "您的访问这个页面被拒绝因为您的IP地址被识别为属于代理服务或VPN，​和从代理服务或VPN连接是网站所有者不允许。"
+ReasonMessage_RL: "您已超出此时允许服务的最大带宽或请求数量。​请至少等待%s后再重试。"
 ReasonMessage_Spam: "您的访问这个页面被拒绝因为您的IP地址被认为是垃圾邮件的可能来源。"
 Short_Attacks: "攻击"
 Short_BadIP: "无效的IP！"
 Short_Banned: "禁止"
 Short_Bogon: "火星IP"
 Short_Cloud: "云服务"
+Short_Conflict: "冲突"
 Short_Fake_UA: "假%s"
 Short_Generic: "通用"
 Short_Legal: "法律义务"

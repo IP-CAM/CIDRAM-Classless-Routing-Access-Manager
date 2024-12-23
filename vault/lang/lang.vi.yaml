@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Vietnamese language data (last modified: 2024.08.14).
+# This file: Vietnamese language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,7 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: "%s giây"
 Error_MissingRequire: "Các tập tin cần thiết bị thiếu! Không thể tiếp tục!"
 Error_WriteCache: "Không thể ghi vào cache! Xin kiểm tra quyền tập tin CHMOD của bạn!"
 MoreInfo: "Để biết thêm thông tin:"
@@ -33,16 +34,19 @@ ReasonMessage_BadIP: "Truy cập của bạn vào trang này đã bị từ ch�
 ReasonMessage_Banned: "Truy cập của bạn vào trang này đã bị từ chối do hành vi xấu trước đó từ địa chỉ IP của bạn."
 ReasonMessage_Bogon: "Truy cập của bạn vào trang này đã bị từ chối bởi vì địa chỉ IP của bạn được công nhận như một địa chỉ bogon, và kết nối từ bogon đến trang web này không được phép bởi chủ sở hữu trang web."
 ReasonMessage_Cloud: "Truy cập của bạn vào trang này đã bị từ chối bởi vì địa chỉ IP của bạn được công nhận như thuộc về một dịch vụ điện toán đám mây, và kết nối đến trang web này từ dịch vụ điện toán đám mây không được phép bởi chủ sở hữu trang web."
+ReasonMessage_Conflict: "Yêu cầu của bạn không thể được xử lý tại thời điểm này vì không có sẵn nguồn tài nguyên cần thiết. Vấn đề này có thể là do xung đột với yêu cầu khác, và dự kiến ​​chỉ là tạm thời. Hãy thử lại sau khi đợi vài giây."
 ReasonMessage_Generic: "Truy cập của bạn vào trang này đã bị từ chối bởi vì địa chỉ IP của bạn được công nhận như thuộc về một mạng lưới được liệt kê vào danh sách đen được sử dụng bởi trang web này."
 ReasonMessage_Legal: "Truy cập của bạn vào trang này đã bị từ chối do các nghĩa vụ hợp pháp."
 ReasonMessage_Malware: "Truy cập của bạn vào trang này đã bị từ chối bởi vì địa chỉ IP của bạn được coi là nguồn phần mềm độc hại tiềm ẩn."
 ReasonMessage_Proxy: "Truy cập của bạn vào trang này đã bị từ chối bởi vì địa chỉ IP của bạn được công nhận như thuộc về một dịch vụ proxy, và kết nối đến trang web này từ dịch vụ proxy không được phép bởi chủ sở hữu trang web."
+ReasonMessage_RL: "Bạn đã vượt quá băng thông tối đa hoặc số lượng yêu cầu được phép phục vụ tại thời điểm này. Vui lòng đợi ít nhất %s trước khi thử lại."
 ReasonMessage_Spam: "Truy cập của bạn vào trang này đã bị từ chối bởi vì địa chỉ IP của bạn được coi là nguồn thư rác tiềm ẩn."
 Short_Attacks: "Cuộc tấn công"
 Short_BadIP: "IP không hợp lệ"
 Short_Banned: "Bị cấm"
 Short_Bogon: "IP bogon"
 Short_Cloud: "Dịch vụ điện toán đám mây"
+Short_Conflict: "Xung đột"
 Short_Fake_UA: "%s giả mạo"
 Short_Generic: "Chủng loại"
 Short_Legal: "Nghĩa vụ hợp pháp"

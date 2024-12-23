@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Arabic language data (last modified: 2024.08.14).
+# This file: Arabic language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,7 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: "%s ثانية"
 Error_MissingRequire: "الملفات المطلوبة مفقودة! لا يمكن الاستمرار!"
 Error_WriteCache: "لا تملك تصريح للقيام بهذا، يرجى التأكد من تصاريح الملفات"
 MoreInfo: "للمزيد من المعلومات:"
@@ -33,16 +34,19 @@ ReasonMessage_BadIP: "عنوان ال IP غير صالح."
 ReasonMessage_Banned: "تم حجب الوصول من قبل صاحب الموقع."
 ReasonMessage_Bogon: "تم حجب الوصول من قبل صاحب الموقع."
 ReasonMessage_Cloud: "الموقع لا يسمح بالخدمات السحابية."
+ReasonMessage_Conflict: "لم يكن من الممكن معالجة طلبك في هذا الوقت، لأن الموارد اللازمة للقيام بذلك غير متوفرة. من المحتمل أن يكون السبب في ذلك هو تعارض مع طلب آخر، ومن المتوقع أن تكون هذه المشكلة مؤقتة. حاول مرة أخرى بعد الانتظار لبضع ثوان."
 ReasonMessage_Generic: "تم رفض الوصول، عنوان ال IP الخاص بك مدرج بالقائمة السوداء للموقع."
 ReasonMessage_Legal: "تم رفض دخولك إلى هذه الصفحة بسبب الالتزامات القانونية."
 ReasonMessage_Malware: "لقد تم رفض وصولك إلى هذه الصفحة لأن عنوان IP الخاص بك يعتبر مصدرًا محتملًا للبرامج الضارة."
 ReasonMessage_Proxy: "الموقع لا يسمح بخدمة بروكسي أو VPN."
+ReasonMessage_RL: "لقد تجاوزت الحد الأقصى للنطاق الترددي أو عدد الطلبات المسموح بتقديمها في هذا الوقت. يرجى الانتظار لمدة %s على الأقل قبل المحاولة مرة أخرى."
 ReasonMessage_Spam: "لقد تم رفض وصولك إلى هذه الصفحة لأن عنوان IP الخاص بك يعتبر مصدرًا محتملًا للبريد العشوائي."
 Short_Attacks: "هجمات"
 Short_BadIP: "IP غير صالح"
 Short_Banned: "حظر"
 Short_Bogon: "المريخ IP"
 Short_Cloud: "الخدمات السحابية"
+Short_Conflict: "صراع"
 Short_Fake_UA: "%s همية"
 Short_Generic: "عام"
 Short_Legal: "قانوني"

@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Output generator (last modified: 2024.09.02).
+ * This file: Output generator (last modified: 2024.12.24).
  */
 
 /** Initialise cache. */
@@ -329,10 +329,13 @@ if ($CIDRAM['RL_Active'] && isset($CIDRAM['Factors']) && (!$CIDRAM['Config']['ra
                 $CIDRAM['RL_Clean']();
             }
             $CIDRAM['RL_Usage'] = $CIDRAM['RL_Get_Usage']();
+            $CIDRAM['RL_Formatted'] = $CIDRAM['RL_Get_Oldest']();
+            $CIDRAM['RL_RetryAfter'] = $CIDRAM['RL_Formatted']['Time'] > 0 ? ($CIDRAM['Config']['rate_limiting']['allowance_period'] * 3600) - ($CIDRAM['Now'] - $CIDRAM['RL_Formatted']['Time']) : $CIDRAM['Config']['rate_limiting']['allowance_period'] * 3600;
+            $CIDRAM['RL_Formatted'] = sprintf($CIDRAM['L10N']->getPlural($CIDRAM['RL_RetryAfter'], '%s seconds'), (new \Maikuolan\Common\NumberFormatter($CIDRAM['Config']['general']['numbers']))->format($CIDRAM['RL_RetryAfter']));
             if ($CIDRAM['Trigger']((
                 ($CIDRAM['RL_MaxBandwidth'] > 0 && $CIDRAM['RL_Usage']['Bytes'] >= $CIDRAM['RL_MaxBandwidth']) ||
                 ($CIDRAM['Config']['rate_limiting']['max_requests'] > 0 && $CIDRAM['RL_Usage']['Requests'] >= $CIDRAM['Config']['rate_limiting']['max_requests'])
-            ), $CIDRAM['L10N']->getString('Short_RL'))) {
+            ), $CIDRAM['L10N']->getString('Short_RL'), sprintf($CIDRAM['L10N']->getString('ReasonMessage_RL'), $CIDRAM['RL_Formatted']))) {
                 $CIDRAM['Config']['recaptcha']['usemode'] = 0;
                 $CIDRAM['Config']['recaptcha']['enabled'] = false;
                 $CIDRAM['Config']['hcaptcha']['usemode'] = 0;
@@ -340,7 +343,7 @@ if ($CIDRAM['RL_Active'] && isset($CIDRAM['Factors']) && (!$CIDRAM['Config']['ra
                 $CIDRAM['RL_Status'] = $CIDRAM['GetStatusHTTP'](429);
                 $CIDRAM['Events']->fireEvent('rateLimited');
             }
-            unset($CIDRAM['RL_Usage'], $CIDRAM['RL_Oldest'], $CIDRAM['RL_Expired']);
+            unset($CIDRAM['RL_Usage'], $CIDRAM['RL_Oldest'], $CIDRAM['RL_Expired'], $CIDRAM['RL_Formatted']);
         }
         $CIDRAM['RL_Size'] = 0;
         ob_start(function ($In) use (&$CIDRAM) {
@@ -803,7 +806,7 @@ if ($CIDRAM['BlockInfo']['SignatureCount'] > 0) {
         header('HTTP/1.0 429 ' . $CIDRAM['RL_Status']);
         header('HTTP/1.1 429 ' . $CIDRAM['RL_Status']);
         header('Status: 429 ' . $CIDRAM['RL_Status']);
-        header('Retry-After: ' . floor($CIDRAM['Config']['rate_limiting']['allowance_period'] * 3600));
+        header('Retry-After: ' . $CIDRAM['RL_RetryAfter'] ?? floor($CIDRAM['Config']['rate_limiting']['allowance_period'] * 3600));
         $CIDRAM['HTML'] = '';
     } elseif ($CIDRAM['Config']['general']['silent_mode'] === '') {
         /** Fetch appropriate status code based on either "forbid_on_block" or "Aux Status Code". */

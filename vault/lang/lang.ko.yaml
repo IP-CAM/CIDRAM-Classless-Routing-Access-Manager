@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2024.08.14).
+# This file: Korean language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,7 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: "%s초"
 Error_MissingRequire: "필수 파일이 없습니다! 계속할 수 없다!"
 Error_WriteCache: "캐시는 쓰기 불가입니다! 당신의 CHMOD를 확인하십시오!"
 MoreInfo: "자세한 내용은\_:"
@@ -33,16 +34,19 @@ ReasonMessage_BadIP: "이 페이지에 액세슨, 귀하의 IP 주소가 유효�
 ReasonMessage_Banned: "이 페이지에 액세슨, 귀하의 IP 주소에서 이전의 잘못된 행동으로 인해 거부되었습니다."
 ReasonMessage_Bogon: "이 페이지에 액세슨, 귀하의 IP 주소가 보곤 주소로 인식되기 때문에 거부되었습니다."
 ReasonMessage_Cloud: "이 페이지에 액세슨, 귀하의 IP 주소가 클라우드 서비스에 속하는 것으로 인식되기 때문에 거부되었습니다."
+ReasonMessage_Conflict: "현재 귀하의 요청을 처리할 수 없습니다. 해당 작업을 수행하는 데 필요한 리소스가 없습니다. 이 문제는 다른 요청과의 충돌로 인해 발생할 가능성이 크며, 일시적인 것으로 예상됩니다. 몇 초간 기다린 후 다시 시도하세요."
 ReasonMessage_Generic: "이 페이지에 액세스은, 당신의 IP는 위험한 네트워크 또는 웹 사이트에서 사용되는 블랙리스트에 속합니다 때문에 거부되었습니다."
 ReasonMessage_Legal: "이 페이지에 액세슨, 법적 의무로 인해 거부되었습니다."
 ReasonMessage_Malware: "귀하의 IP 주소가 악성 소프트웨어의 잠재적인 출처로 간주하여 이 페이지에 대한 액세스가 거부되었습니다."
 ReasonMessage_Proxy: "이 페이지에 액세스은, 당신의 IP는 프록시 서비스 또는 VPN에 속한다 위해 거부되었습니다."
+ReasonMessage_RL: "현재 허용된 최대 대역폭 또는 요청 수를 초과했습니다. 다시 시도하기 전에 최소 %s 동안 기다려 주세요."
 ReasonMessage_Spam: "귀하의 IP 주소가 스팸의 유력한 출처로 간주하여 이 페이지에 대한 액세스가 거부되었습니다."
 Short_Attacks: "공격"
 Short_BadIP: "잘못된 IP"
 Short_Banned: "금지 된"
 Short_Bogon: "보곤 IP"
 Short_Cloud: "클라우드 서비스"
+Short_Conflict: "갈등"
 Short_Fake_UA: "가짜 %s"
 Short_Generic: "일반"
 Short_Legal: "적법한"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Japanese language data (last modified: 2024.08.14).
+# This file: Japanese language data (last modified: 2024.12.20).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -24,6 +24,7 @@
 # requests, ask. I can help.
 ##/
 
+%s seconds: "%s秒"
 Error_MissingRequire: "必要なファイルがありません！続けることはできません！"
 Error_WriteCache: "キャッシュは書き込み不可です！​あなたのＣＨＭＯＤをチェックしてください！"
 MoreInfo: "詳細については："
@@ -33,16 +34,19 @@ ReasonMessage_BadIP: "このページへのアクセスは、無効なＩＰの�
 ReasonMessage_Banned: "このページへのアクセスは、あなたのＩＰアドレスからの望ましくない動作のために拒否されました。"
 ReasonMessage_Bogon: "このページへのアクセスは、あなたのＩＰがボゴンＩＰアドレスであるからですのために拒否されました。"
 ReasonMessage_Cloud: "このページへのアクセスは、あなたのＩＰはクラウド・サービスに属していますのために拒否されました。"
+ReasonMessage_Conflict: "必要なリソースが利用できなかったため、現時点ではリクエストを処理できませんでした。​この問題は、別のリクエストとの競合によって発生した可能性が高く、一時的なものであると予想されます。​数秒待ってからもう一度お試しください。"
 ReasonMessage_Generic: "このページへのアクセスは、あなたのＩＰは危険なネットワークまたはこのウェブサイトで使用されているブラックリストに属していますのために拒否されました。"
 ReasonMessage_Legal: "このページへのアクセスは、法的義務のために拒否されました。"
 ReasonMessage_Malware: "あなたのＩＰアドレスはマルウェアの送信元である可能性があると判断されたため、このページへのアクセスは拒否されました。"
 ReasonMessage_Proxy: "このページへのアクセスは、あなたのＩＰはプロキシ・サービスまたはＶＰＮに属していますのために拒否されました。"
+ReasonMessage_RL: "現時点で処理できる最大帯域幅またはリクエスト数を超えています。​もう一度試す前に少なくとも%s秒お待ちください。"
 ReasonMessage_Spam: "あなたのＩＰアドレスはスパムの送信元である可能性があると判断されたため、このページへのアクセスは拒否されました。"
 Short_Attacks: "攻撃"
 Short_BadIP: "無効なＩＰ"
 Short_Banned: "禁止された"
 Short_Bogon: "ボゴンＩＰ"
 Short_Cloud: "クラウド・サービス"
+Short_Conflict: "対立"
 Short_Fake_UA: "偽の%s"
 Short_Generic: "ジェネリック"
 Short_Legal: "法的"
