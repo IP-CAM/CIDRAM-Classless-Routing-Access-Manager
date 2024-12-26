@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Afrikaans language data for the front-end (last modified: 2024.11.25).
+# This file: Afrikaans language data for the front-end (last modified: 2024.12.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ config:
  recaptcha_usemode: *CaptchaUseMode
  sfs: "Konfigurasie vir die Stop Forum Spam module."
  signatures: "Konfigurasie vir handtekeninge, handtekeninglêers, modules, ens."
+ signatures_conflict_response: "Wanneer daar te veel gelyktydige pogings is om toegang tot dieselfde hulpbronne te verkry (bv., gelyktydige versoeke na verskeie PHP-prosesse by dieselfde masjien vir dieselfde hulpbronne), kan sommige van daardie pogings misluk. In die seldsame en onwaarskynlike geval dat dit handtekeninglêers of modules raak, kan CIDRAM verhinder word om 'n effektiewe bepaling oor die versoek te maak. Indien dit gebeur, moet die versoek geblokkeer word, en watter HTTP-statusboodskap moet CIDRAM stuur?"
  signatures_default_tracktime: "Die tydsduur waarvoor IP-adresse nagespoor moet word. Verstek = 7d0°0′0″ (1 week)."
  signatures_infraction_limit: "Maksimum aantal oortredings wat 'n IP toegelaat word om aan te gaan voordat dit deur IP-nasporing verbied word. Verstek = 10."
  signatures_shorthand: "Kontroles vir wat om met 'n versoek te doen wanneer daar 'n positiewe passing teen 'n handtekening is wat die gegewe snelskrifwoorde gebruik."
@@ -544,6 +545,7 @@ label:
  307 Temporary Redirect: "307 Temporary Redirect (Tydelike Herleiding)\nGee die kliënt opdrag dat die herleiding TYDELIK is, en dat die versoekmetode wat vir die herleiding gebruik word, NIE anders mag wees as die versoekmetode wat vir die aanvanklike versoek gebruik is nie."
  308 Permanent Redirect: "308 Permanent Redirect (Permanente Herleiding)\nGee die kliënt opdrag dat die herleiding PERMANENT is, en dat die versoekmetode wat vir die herleiding gebruik word, NIE anders mag wees as die versoekmetode wat vir die aanvanklike versoek gebruik is nie."
  403 Forbidden: "403 Forbidden (Verbied)\nMeer robuust, maar minder gebruikersvriendelik. Aanbeveel vir die meeste algemene omstandighede."
+ 409 Conflict: "409 Konflik\nAanbeveel vir hulpbronkonflikte (bv., samesmeltingskonflikte, lêertoegangskonflikte, ens). Word nie in ander kontekste aanbeveel nie."
  410 Gone: "410 Gone (Weg)\nKan probleme veroorsaak wanneer vals positiewes opgelos te word, omdat sommige blaaiers hierdie statusboodskap sal kas en nie daaropvolgende versoeke sal stuur nie, selfs nadat dit gedeblokkeer is. Kan in sommige kontekste die verkieslikste wees vir sekere soorte verkeer."
  418 I_m a teapot: "418 I'm a teapot (Ek is 'n teepot)\nVerwys na 'n Aprilgrap ({{Links.RFC2324}}). Dit is baie onwaarskynlik om deur enige kliënt, bot, blaaier, of andersins verstaan te word. Verskaf vir vermaak en gerief, maar word nie algemeen aanbeveel nie."
  429 Too Many Requests: "429 Too Many Requests (Te veel versoeke)\nAanbeveel vir tariefbeperking, wanneer DDoS-aanvalle hanteer word, en vir vloedvoorkoming. Word nie in ander kontekste aanbeveel nie."
@@ -591,6 +593,7 @@ label:
  Displaying %s entry:
   - "Wys %s inskrywing."
   - "Wys %s inskrywings."
+ Don_t block the request: "Moenie die versoek blokkeer nie.\nAs jy verkies dat versoeke slegs geblokkeer word wanneer jy seker is dat hulle kwaadwillig is, of om versigtig te wees met betrekking tot vals positiewe (ten koste van ongewenste verkeer wat soms deurkom), kies dit. As jy verkies dat versoeke geblokkeer word as jy nie seker is dat hulle goedaardig is nie, of om aan die kant van waaksaamheid te dwaal (ten koste van af en toe vals positiewes), kies een van die ander beskikbare opsies."
  Empty, unfamiliar, and others: "Leë, onbekende, en ander."
  Entries per page: "Inskrywings per bladsy:"
  Every request: "Elke versoek.\nMeer streng en deeglik, maar ook meer geneig om te lei dat limiete en kwotas baie vinniger nagekom word, wat moontlik tot gevolg kan hê dat die diens uitgesluit word wanneer dit die nodigste is. Ook, alhoewel opsoekresultate altyd in die kas gestoor word, kan dit nog steeds webwerfprestasie in sommige gevalle negatief beïnvloed. Mag in sommige gevalle nodig wees, maar word nie algemeen aanbeveel nie."

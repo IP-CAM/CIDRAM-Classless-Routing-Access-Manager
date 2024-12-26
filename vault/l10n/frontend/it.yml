@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Italian language data for the front-end (last modified: 2024.11.25).
+# This file: Italian language data for the front-end (last modified: 2024.12.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ config:
  recaptcha_usemode: *CaptchaUseMode
  sfs: "Configurazione per il modulo Stop Forum Spam."
  signatures: "Configurazione per firme, file di firma, moduli, ecc."
+ signatures_conflict_response: "Quando ce ne sono troppi tentativi simultanei di accedere alle stesse risorse (ad esempio, richieste simultanee a più processi PHP sulla stessa macchina per le stesse risorse), alcuni di questi tentativi potrebbero fallire. Nel raro e improbabile caso in cui ciò influisca sui file delle firme o sui moduli, CIDRAM potrebbe non essere in grado di prendere una decisione effettiva in merito alla richiesta. In tal caso, dovrebbe la richiesta essere bloccata, e quale messaggio di stato HTTP dovrebbe CIDRAM inviare?"
  signatures_default_tracktime: "La durata per la quale devono essere tracciati gli indirizzi IP. Predefinito = 7d0°0′0″ (1 settimana)."
  signatures_infraction_limit: "Numero massimo di infrazioni un IP è permesso di incorrere prima di essere vietato dalle tracciamento IP. Predefinito = 10."
  signatures_shorthand: "Controlla cosa fare con una richiesta quando c'è una corrispondenza positiva con una firma che utilizza le parole abbreviate fornite."
@@ -543,6 +544,7 @@ label:
  307 Temporary Redirect: "307 Temporary Redirect (Reindirizzamento temporaneo)\nIndica al client che il reindirizzamento è TEMPORANEO, e che il metodo di richiesta utilizzato per il reindirizzamento NON può essere diverso dal metodo di richiesta utilizzato per la richiesta iniziale."
  308 Permanent Redirect: "308 Permanent Redirect (Reindirizzamento permanente)\nIndica al client che il reindirizzamento è PERMANENTE, e che il metodo di richiesta utilizzato per il reindirizzamento NON può essere diverso dal metodo di richiesta utilizzato per la richiesta iniziale."
  403 Forbidden: "403 Forbidden (Vietato)\nUn po' più robusto, ma un po' meno facile da usare. Consigliato per la maggior parte delle circostanze generali."
+ 409 Conflict: "409 Conflitto\nConsigliato per conflitti di risorse (ad esempio, conflitti di unione, conflitti di accesso ai file, ecc). Non consigliato in altri contesti."
  410 Gone: "410 Gone (Andato)\nPotrebbe causare problemi durante la risoluzione dei falsi positivi, perché alcuni browser memorizzano nella cache questo messaggio di stato e non inviano richieste successive, anche dopo essere stati sbloccati. Può essere il più preferibile in alcuni contesti, per specifici tipi di traffico."
  418 I_m a teapot: "418 I'm a teapot (Sono una teiera)\nFa riferimento a uno scherzo di pesce d'aprile ({{Links.RFC2324}}). È molto improbabile che venga compreso da qualsiasi client, bot, browser, o altro. Fornito per divertimento e comodità, ma generalmente non consigliato."
  429 Too Many Requests: "429 Too Many Requests (Troppe richieste)\nConsigliato per la limitazione della velocità, quando si tratta di attacchi DDoS, e per la prevenzione delle inondazioni. Non consigliato in altri contesti."
@@ -590,6 +592,7 @@ label:
  Displaying %s entry:
   - "Visualizzazione di %s voce."
   - "Visualizzazione di %s voci."
+ Don_t block the request: "Non bloccare la richiesta.\nSe preferisci che le richieste vengano bloccate solo quando sei certo che siano maligne, o se preferisci essere cauto riguardo ai falsi positivi (a costo di far passare occasionalmente traffico indesiderato), scegli questa opzione. Se preferisci che le richieste vengano bloccate se non sei certo che sono benigni, o preferisci essere più vigile (a costo di occasionali falsi positivi), scegli una delle altre opzioni disponibili."
  Empty, unfamiliar, and others: "Vuoto, sconosciuto, e altri."
  Entries per page: "Voci per pagina:"
  Every request: "Ogni richiesta.\nPiù rigoroso e completo, ma anche più probabile che portino al raggiungimento di limiti e quote molto più rapidamente, con conseguente potenziale blocco del servizio quando è più necessario. Inoltre, sebbene i risultati della ricerca siano sempre memorizzati nella cache, in alcuni casi potrebbero comunque incida negativamente sulle prestazioni del sito Web. Può essere necessario in alcuni casi, ma generalmente non consigliato."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Malay language data for the front-end (last modified: 2024.11.25).
+# This file: Malay language data for the front-end (last modified: 2024.12.24).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ config:
  recaptcha_usemode: *CaptchaUseMode
  sfs: "Konfigurasi untuk modul Stop Forum Spam."
  signatures: "Konfigurasi untuk tandatangan, fail tandatangan, modul, dsb."
+ signatures_conflict_response: "Apabila terdapat terlalu banyak percubaan serentak untuk mengakses sumber yang sama (cth., permintaan serentak kepada berbilang proses PHP pada mesin yang sama untuk sumber yang sama), beberapa percubaan tersebut mungkin gagal. Apabila ini menjejaskan fail tandatangan atau modul, CIDRAM mungkin dihalang daripada membuat penentuan yang berkesan tentang permintaan tersebut. Jika ini berlaku, adakah permintaan tersebut harus disekat, dan manakah mesej status HTTP harus dihantar oleh CIDRAM?"
  signatures_default_tracktime: "Tempoh yang alamat IP harus dijejaki. Lalai = 7d0°0′0″ (1 minggu)."
  signatures_infraction_limit: "Jumlah maksimum pelanggaran IP dibenarkan untuk ditanggung sebelum ia dilarang oleh penjejakan IP. Lalai = 10."
  signatures_shorthand: "Mengawal perkara yang perlu dilakukan dengan permintaan apabila terdapat padanan yang positif terhadap tandatangan yang menggunakan perkataan pendek yang diberikan."
@@ -541,6 +542,7 @@ label:
  307 Temporary Redirect: "307 Temporary Redirect (Ubah hala sementara)\nMengarahkan klien bahawa ubah hala adalah SEMENTARA, dan kaedah permintaan yang digunakan untuk ubah hala mungkin TIDAK berbeza daripada kaedah permintaan yang digunakan untuk permintaan awal."
  308 Permanent Redirect: "308 Permanent Redirect (Ubah hala kekal)\nMengarahkan klien bahawa ubah hala adalah KEKAL, dan kaedah permintaan yang digunakan untuk ubah hala mungkin TIDAK berbeza daripada kaedah permintaan yang digunakan untuk permintaan awal."
  403 Forbidden: "403 Forbidden (Dilarang)\nLebih mantap, tetapi kurang mesra-pengguna. Disyorkan untuk kebanyakan keadaan umum."
+ 409 Conflict: "409 Konflik\nDisyorkan untuk konflik sumber (cth., konflik gabungan, konflik akses fail, dsb). Tidak disyorkan dalam konteks lain."
  410 Gone: "410 Gone (Dipergi)\nBoleh menyebabkan masalah apabila menyelesaikan positif palsu, kerana sesetengah penyemak imbas akan cache mesej status ini dan tidak menghantar permintaan seterusnya, walaupun selepas dinyahsekat. Mungkin yang paling disukai dalam sesetengah konteks, untuk jenis trafik tertentu."
  418 I_m a teapot: "418 I'm a teapot (Saya adalah teko)\nMerujuk daripada jenaka April Fools ({{Links.RFC2324}}). Sangat tidak kemungkinan difahami oleh mana-mana pelanggan, bot, penyemak imbas, atau sebaliknya. Disediakan untuk hiburan dan kemudahan, tetapi secara amnya tidak disyorkan."
  429 Too Many Requests: "429 Too Many Requests (Terlalu Banyak Permintaan)\nDisyorkan untuk mengehadkan kadar, apabila menangani serangan DDoS, dan untuk pencegahan banjir. Tidak disyorkan dalam konteks lain."
@@ -584,6 +586,7 @@ label:
  Difference: "Beza"
  Displaying %s entry that cites %s: "Memaparkan %s entri yang memetik "%s"."
  Displaying %s entry: "Memaparkan %s entri."
+ Don_t block the request: "Jangan sekat permintaan tersebut.\nJika anda lebih suka permintaan disekat hanya apabila anda pasti ia berniat jahat, atau tersilap langkah berhati-hati mengenai positif palsu (dengan kos trafik yang tidak diingini sekali-sekala melaluinya), pilih ini. Jika anda lebih suka permintaan disekat apabila anda tidak pasti ia adalah jinak, atau jika anda lebih suka terus berjaga-jaga (dengan kos positif palsu sekali-sekala), pilih daripada pilihan lain yang tersedia."
  Empty, unfamiliar, and others: "Kosong, tidak dikenali, dan lain-lain."
  Entries per page: "Entri setiap halaman:"
  Every request: "Setiap permintaan.\nLebih ketat dan teliti, tetapi juga lebih berkemungkinan mengakibatkan had dan kuota dipenuhi dengan lebih cepat, berpotensi mengakibatkan terkunci daripada perkhidmatan apabila ia paling diperlukan. Juga, walaupun hasil carian sentiasa dicache, prestasi tapak web masih boleh terjejas secara negatif dalam beberapa kes. Mungkin perlu dalam beberapa kes, tetapi secara amnya tidak disyorkan."

@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The CIDRAM core (last modified: 2024.12.24).
+ * This file: The CIDRAM core (last modified: 2024.12.26).
  */
 
 namespace CIDRAM\CIDRAM;
@@ -430,17 +430,23 @@ class Core
      * Reads and returns the contents of files.
      *
      * @param string $File The path and the name of the file to read.
+     * @param int $Err Populates on error; Reference; Optional.
      * @return string The file's content, or an empty string on failure.
      */
-    public function readFile(string $File): string
+    public function readFile(string $File, int &$Err = 0): string
     {
         /** Guard. */
         if ($File === '' || !is_file($File) || !is_readable($File)) {
+            $Err = 1;
             return '';
         }
 
         $Data = file_get_contents($File);
-        return is_string($Data) ? $Data : '';
+        if (is_string($Data)) {
+            return $Data;
+        }
+        $Err = 2;
+        return '';
     }
 
     /**
@@ -545,6 +551,9 @@ class Core
         if (!isset($this->CIDRAM['FileCache'])) {
             $this->CIDRAM['FileCache'] = [];
         }
+        if (!isset($this->CIDRAM['FileCacheErrors'])) {
+            $this->CIDRAM['FileCacheErrors'] = [];
+        }
         for ($FileIndex = 0; $FileIndex < $Counts['Files']; $FileIndex++) {
             $Files[$FileIndex] = (
                 strpos($Files[$FileIndex], ':') === false
@@ -559,13 +568,32 @@ class Core
             } else {
                 $DefTag = $Files[$FileIndex] . '-Unknown';
             }
-            $FileExtension = strtolower(substr($Files[$FileIndex], -4));
             if (!isset($this->CIDRAM['FileCache'][$Files[$FileIndex]])) {
-                $this->CIDRAM['FileCache'][$Files[$FileIndex]] = $this->readFile($this->SignaturesPath . $Files[$FileIndex]);
+                $this->CIDRAM['FileCacheErrors'][$Files[$FileIndex]] = 0;
+                $this->CIDRAM['FileCache'][$Files[$FileIndex]] = $this->readFile($this->SignaturesPath . $Files[$FileIndex], $this->CIDRAM['FileCacheErrors'][$Files[$FileIndex]]);
             }
-            if (($Files[$FileIndex] = $this->CIDRAM['FileCache'][$Files[$FileIndex]]) === '') {
+            if ($this->CIDRAM['FileCache'][$Files[$FileIndex]] === '') {
+                if ($this->CIDRAM['FileCacheErrors'][$Files[$FileIndex]] !== 0 && $this->Configuration['signatures']['conflict_response'] !== 0) {
+                    $Signature = $this->Configuration['signatures']['conflict_response'] === 429 ? 'RL' : 'Conflict';
+                    $this->BlockInfo['ReasonMessage'] = $this->L10N->getString('ReasonMessage_' . $Signature);
+                    if (!empty($this->BlockInfo['WhyReason'])) {
+                        $this->BlockInfo['WhyReason'] .= ', ';
+                    }
+                    $this->BlockInfo['WhyReason'] .= $this->L10N->getString('Short_' . $Signature) . ' (F' . $FileIndex . ')';
+                    if (isset($this->Shorthand[$Signature . ':Suppress'])) {
+                        $this->CIDRAM['Suppress output template'] = true;
+                    }
+                    if (!empty($this->BlockInfo['Signatures'])) {
+                        $this->BlockInfo['Signatures'] .= ', ';
+                    }
+                    $this->BlockInfo['Signatures'] .= 'Conflict';
+                    $this->BlockInfo['SignatureCount']++;
+                    break;
+                }
                 continue;
             }
+            $FileExtension = strtolower(substr($Files[$FileIndex], -4));
+            $Files[$FileIndex] = $this->CIDRAM['FileCache'][$Files[$FileIndex]];
             if (
                 $FileExtension === '.csv' &&
                 strpos($Files[$FileIndex], "\n") === false &&

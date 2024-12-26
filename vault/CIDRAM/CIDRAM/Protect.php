@@ -189,7 +189,9 @@ trait Protect
                 $this->BlockInfo['ReasonMessage'] = $this->L10N->getString('ReasonMessage_BadIP');
                 $this->BlockInfo['WhyReason'] = $this->L10N->getString('Short_BadIP');
                 $this->BlockInfo['SignatureCount']++;
-                $this->addProfileEntry('BadIP');
+                if (isset($this->Shorthand['BadIP:Profile'])) {
+                    $this->addProfileEntry('BadIP');
+                }
                 if (isset($this->Shorthand['BadIP:Suppress'])) {
                     $this->CIDRAM['Suppress output template'] = true;
                 }
@@ -394,6 +396,9 @@ trait Protect
                         ), $this->L10N->getString('Short_RL'), sprintf($this->L10N->getString('ReasonMessage_RL'), $RLFormatted))) {
                             $this->enactOptions('', ['ForciblyDisableReCAPTCHA' => true, 'ForciblyDisableHCAPTCHA' => true]);
                             $this->CIDRAM['RL_Status'] = $this->getStatusHTTP(429);
+                            if (isset($this->Shorthand['RL:Suppress'])) {
+                                $this->CIDRAM['Suppress output template'] = true;
+                            }
                             $this->Events->fireEvent('rateLimited');
                         }
                         unset($this->CIDRAM['RL_Usage'], $this->CIDRAM['RL_Oldest'], $this->CIDRAM['RL_Expired'], $RLFormatted);
@@ -907,10 +912,7 @@ trait Protect
 
                 if ($this->Configuration['general']['silent_mode'] === '') {
                     /** Enforce output template suppression. */
-                    if (
-                        (!empty($this->CIDRAM['Banned']) && isset($this->Shorthand['Banned:Suppress'])) ||
-                        (!empty($this->CIDRAM['RL_Status']) && isset($this->Shorthand['RL:Suppress']))
-                    ) {
+                    if (!empty($this->CIDRAM['Banned']) && isset($this->Shorthand['Banned:Suppress'])) {
                         $this->CIDRAM['Suppress output template'] = true;
                     }
 

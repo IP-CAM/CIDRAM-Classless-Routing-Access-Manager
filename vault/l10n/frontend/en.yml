@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: English language data for the front-end (last modified: 2024.11.25).
+# This file: English language data for the front-end (last modified: 2024.12.24).
 ##/
 
 Abuse category:
@@ -302,6 +302,7 @@ config:
  recaptcha_usemode: *CaptchaUseMode
  sfs: "Configuration for the Stop Forum Spam module."
  signatures: "Configuration for signatures, signature files, modules, etc."
+ signatures_conflict_response: "When there are too many simultaneous attempts to access the same resources (e.g., simultaneous requests to multiple PHP processes at the same machine for the same resources), some of those attempts may fail. In the rare and unlikely event that this affects signature files or modules, CIDRAM may be prevented from making an effective determination about the request. If this happens, should the request be blocked, and which HTTP status message should CIDRAM send?"
  signatures_default_tracktime: "The duration that IP addresses should be tracked for. Default = 7d0°0′0″ (1 week)."
  signatures_infraction_limit: "Maximum number of infractions an IP is allowed to incur before it is banned by IP tracking. Default = 10."
  signatures_shorthand:
@@ -569,6 +570,7 @@ label:
  307 Temporary Redirect: "307 Temporary Redirect\nInstructs the client that the redirect is TEMPORARY, and that the request method used for the redirect may NOT be different than the request method used for the initial request."
  308 Permanent Redirect: "308 Permanent Redirect\nInstructs the client that the redirect is PERMANENT, and that the request method used for the redirect may NOT be different than the request method used for the initial request."
  403 Forbidden: "403 Forbidden\nMore robust, but less user-friendly. Recommended for most general circumstances."
+ 409 Conflict: "409 Conflict\nRecommended for resource conflicts (e.g., merge conflicts, file access conflicts, etc). Not recommended in other contexts."
  410 Gone: "410 Gone\nCould cause problems when resolving false positives, because some browsers will cache this status message and not send subsequent requests, even after having been unblocked. May be the most preferable in some contexts, for certain kinds of traffic."
  418 I_m a teapot: "418 I'm a teapot\nReferences an April Fools' joke ({{Links.RFC2324}}). Very unlikely to be understood by any client, bot, browser, or otherwise. Provided for amusement and convenience, but not generally recommended."
  429 Too Many Requests: "429 Too Many Requests\nRecommended for rate limiting, when dealing with DDoS attacks, and for flood prevention. Not recommended in other contexts."
@@ -616,6 +618,7 @@ label:
  Displaying %s entry:
   - "Displaying %s entry."
   - "Displaying %s entries."
+ Don_t block the request: "Don't block the request.\nIf you would prefer that requests be blocked only when you're certain they're malign, or to err on the side of caution regarding false positives (at the cost of unwanted traffic occasionally getting through), choose this. If you would prefer that requests be blocked if you're not certain they're benign, or to err on the side of vigilance (at the cost of occasional false positives), choose one of the other available options."
  Empty, unfamiliar, and others: "Empty, unfamiliar, and others."
  Entries per page: "Entries per page:"
  Every request: "Every request.\nMore stringent and thorough, but also more likely to result in limits and quotas being met much more quickly, potentially resulting in being locked out of the service when it's most needed. Also, although lookup results are always cached regardless, it could still nonetheless negatively impact website performance in some cases. May be necessary in some cases, but not generally recommended."

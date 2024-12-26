@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Defaults file (last modified: 2024.09.22).
+# This file: Defaults file (last modified: 2024.12.24).
 ##/
 
 Config Defaults:
@@ -711,6 +711,7 @@ Config Defaults:
     Spam:Block
     Spam:Profile
     Banned:Suppress
+    BadIP:Profile
     RL:Suppress
     Other:Block
     Other:Profile
@@ -730,14 +731,16 @@ Config Defaults:
     Banned: "³ {Short_Banned}"
     BadIP: "³ {Short_BadIP}"
     RL: "³ {Short_RL}"
+    Conflict: "³ {Short_Conflict}"
     Other: "⁴ {label.Other}"
    nonsense: |
     Banned:Block
     Banned:Profile
     BadIP:Block
-    BadIP:Profile
     RL:Block
     RL:Profile
+    Conflict:Block
+    Conflict:Profile
    hints: "hints_shorthand"
   default_tracktime:
    type: "duration"
@@ -748,6 +751,15 @@ Config Defaults:
   tracking_override:
    type: "bool"
    default: true
+  conflict_response:
+   type: "int"
+   default: 0
+   choices:
+    0: "label.Don_t block the request"
+    409: "label.409 Conflict"
+    429: "label.429 Too Many Requests"
+   style: "radio"
+   experimental: true
  verification:
   search_engines:
    type: "checkbox"

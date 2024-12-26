@@ -133,6 +133,7 @@ general:
  sensitive: "~[/=](?:activate|contact|login|regist(?:er|ration)|signup)|act(?:ion)?=(?:edit|reg)|(?:activate|con(?:firm|tact)|login|lost-password|my-account|newuser|reg(?:ist(?:er|ration))?|signin|signup)(?:\\.php|[/=])|special:userlogin&|verifyemail|wp-comments-post~i"
  email_notification_address: ""
  email_notification_name: ""
+ email_notification_when: "Immediately"
 components:
  ipv4: |
   ipv4.dat
@@ -198,6 +199,7 @@ signatures:
  default_tracktime: "7d0°0′0″"
  infraction_limit: 10
  tracking_override: true
+ conflict_response: 0
 verification:
  search_engines: |
   Amazonbot:Verify
@@ -337,6 +339,7 @@ supplementary_cache_options:
  redis_host: "localhost"
  redis_port: 6379
  redis_timeout: 2.5
+ redis_database_number: 0
  pdo_dsn: "mysql:dbname=cidram;host=localhost;port=3306"
  pdo_username: ""
  pdo_password: ""

@@ -383,4 +383,5 @@
 - [2024.11.06]: Added PHP 8.4 to workflows.
 - [2024.11.25]: Added a new module (Quic cloud compatibility module).
 - [2024.12.24]: Improved the access denied page messaging for rate limiting block events.
+- [2024.12.26]: Added a new configuration directive, `conflict_response`, to specify whether requests should be blocked when CIDRAM fails to access resources such as signature files due to, e.g., resource conflicts (#614).
 - *Plus all the regular signature updates.*
