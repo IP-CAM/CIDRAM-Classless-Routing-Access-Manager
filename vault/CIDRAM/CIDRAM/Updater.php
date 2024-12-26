@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Methods for updating CIDRAM components (last modified: 2024.07.13).
+ * This file: Methods for updating CIDRAM components (last modified: 2024.12.26).
  */
 
 namespace CIDRAM\CIDRAM;
@@ -19,8 +19,8 @@ trait Updater
      * Sometimes used by the updater to partially patch parts of files.
      *
      * @param string $Query The instruction to execute.
-     * @param int $BytesRemoved The number of bytes removed (optional).
-     * @param int $BytesAdded The number of bytes added (optional).
+     * @param ?int $BytesRemoved The number of bytes removed (optional).
+     * @param ?int $BytesAdded The number of bytes added (optional).
      * @return bool Success or failure.
      */
     private function in(string $Query, ?int &$BytesRemoved = null, ?int &$BytesAdded = null): bool
@@ -91,7 +91,7 @@ trait Updater
      * Sometimes used by the updater to delete files via metadata commands.
      *
      * @param string $File The file to delete.
-     * @param int $BytesRemoved The number of bytes removed (optional).
+     * @param ?int $BytesRemoved The number of bytes removed (optional).
      * @return bool Success or failure.
      */
     private function delete(string $File, ?int &$BytesRemoved = null): bool
@@ -1548,7 +1548,7 @@ trait Updater
      *
      * @param array $Metadata What to update it with.
      * @param int $BytesRemoved The number of bytes removed.
-     * @param int $BytesAdded The number of bytes added (optional).
+     * @param ?int $BytesAdded The number of bytes added (optional).
      * @return void
      */
     private function updateComponentMetadataFile(array $Metadata, int &$BytesRemoved, ?int &$BytesAdded = null): void

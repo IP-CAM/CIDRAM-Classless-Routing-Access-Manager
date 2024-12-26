@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: General methods used by the front-end (last modified: 2024.10.16).
+ * This file: General methods used by the front-end (last modified: 2024.12.26).
  */
 
 namespace CIDRAM\CIDRAM;
@@ -1345,8 +1345,8 @@ trait FrontEndMethods
      *
      * @param string|array $Methods The list of methods or commands to execute.
      * @param bool $Queue Whether to queue the operation or perform immediately.
-     * @param int $BytesRemoved The number of bytes removed (optional).
-     * @param int $BytesAdded The number of bytes added (optional).
+     * @param ?int $BytesRemoved The number of bytes removed (optional).
+     * @param ?int $BytesAdded The number of bytes added (optional).
      * @return void
      */
     private function executor($Methods = '', bool $Queue = false, ?int &$BytesRemoved = null, ?int &$BytesAdded = null): void
