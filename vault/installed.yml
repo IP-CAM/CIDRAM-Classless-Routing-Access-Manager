@@ -1,6 +1,6 @@
 CIDRAM Core:
  Name: "CIDRAM Core"
- Version: "3.8.0-DEV+243600"
+ Version: "3.8.0-DEV+243601"
  Dependencies:
   PHP: "^7.2|^8"
   CIDRAM Front-End: "Latest"
@@ -29,7 +29,7 @@ CIDRAM Core:
    Checksum: "8bfa4d8f80d7adef8670529cd229de10682a538ae139b9af972d2cfe803476e2:4843"
   CIDRAM/CIDRAM/Core.php:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/CIDRAM/CIDRAM/Core.php"
-   Checksum: "46550e95dc351231d43bbb0f339b42708e46ba880fcd159b24181607a99a358d:141617"
+   Checksum: "f1bc1e44f4e53daddfa06cabbf29f0d978171991b1de9a1ffe5d4ae3991be811:142440"
   CIDRAM/CIDRAM/Duration.php:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/CIDRAM/CIDRAM/Duration.php"
    Checksum: "2407aa5cd6fa8f1bfd789d4d8e4cd37cba050dc7bb1ecc9c8387f75f14049c7c:11651"
@@ -41,7 +41,7 @@ CIDRAM Core:
    Checksum: "f9db3c4a9fc6e55a8da6cdf8a766c4d417a9641b48bd7505ed10c8a7dea6355a:15725"
   CIDRAM/CIDRAM/Protect.php:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/CIDRAM/CIDRAM/Protect.php"
-   Checksum: "8d5be21ffadf9212d4f8d65b479c684b958aa267ad04593dda77a9232b545bd3:68295"
+   Checksum: "c84ab1fbac62901d94e595473df320a84a37ed72c0594d5ceed184d7fe05c6aa:68548"
   CIDRAM/CIDRAM/ReCaptcha.php:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/CIDRAM/CIDRAM/ReCaptcha.php"
    Checksum: "1e2a1b78daddce7bdb7583d6aff68ebe85d93d9b3f7efb4403d5a9f9bbd50225:15183"
@@ -56,7 +56,7 @@ CIDRAM Core:
    Checksum: "b62c0cf1deeb97c7ee15638f0a4102292a6bab6f0b6b1ee3a1dec7fa485c2e05:1352"
   defaults.yml:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/defaults.yml"
-   Checksum: "0ce880f81c9aca8cbae2bfd5c2368f950b7da744802b8aa468d29d6179df2842:41671"
+   Checksum: "a3df4f133004cd4c72ee5e1bbbaf4bfd2ea42604bbe892a248e7d270ed8cc1bb:41715"
   loader.php:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/loader.php"
    Checksum: "4d56d0a305ceafab32ade65a0f74ad27efe50964d0e257d787a6ee7056c41880:1313"
@@ -65,7 +65,7 @@ CIDRAM Core:
    Checksum: "72f56765fe158539ee0ca1b9a44720ebb588e9789f102aa30c189498ce62988f:12801"
 CIDRAM Front-End:
  Name: "CIDRAM Front-End"
- Version: "3.8.0-DEV+243600"
+ Version: "3.8.0-DEV+243601"
  Dependencies:
   PHP: "^7.2|^8"
   CIDRAM Core: "Latest"
@@ -446,7 +446,7 @@ CIDRAM Front-End:
    Checksum: "162901987b20ea0f4de02f7c7a37217af90a65307019145047ee86577f5261d2:39415"
   CIDRAM/CIDRAM/SimulateBlockEvent.php:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/CIDRAM/CIDRAM/SimulateBlockEvent.php"
-   Checksum: "106bee14be0c1ef92b5405db7c806363dc55e3283363bac4fe468a7109b1e572:17365"
+   Checksum: "24fb081ccc3a1287bf952b343b47eeacb3161abb74c92c0c90579a59f7fc2312:17445"
   CIDRAM/CIDRAM/Updater.php:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/CIDRAM/CIDRAM/Updater.php"
    Checksum: "40a3153b4d080e666a3bd529c08c8547ec32724d9176f88b6e5f39c232421c9c:74704"

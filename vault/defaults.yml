@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Defaults file (last modified: 2024.12.24).
+# This file: Defaults file (last modified: 2024.12.26).
 ##/
 
 Config Defaults:
@@ -1210,6 +1210,8 @@ Provide:
    ThisStatusHTTP: 200
    Trackable: null
    Tracking options override: ""
+   Other Status: ""
+   Other Status Code: 0
   Configuration:
    hcaptcha: {enabled: false, forcibly_disabled: false}
    recaptcha: {enabled: false, forcibly_disabled: false}

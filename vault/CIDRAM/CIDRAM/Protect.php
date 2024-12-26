@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Protect traits (last modified: 2024.12.24).
+ * This file: Protect traits (last modified: 2024.12.26).
  */
 
 namespace CIDRAM\CIDRAM;
@@ -395,7 +395,8 @@ trait Protect
                             ($this->Configuration['rate_limiting']['max_requests'] > 0 && $this->CIDRAM['RL_Usage']['Requests'] >= $this->Configuration['rate_limiting']['max_requests'])
                         ), $this->L10N->getString('Short_RL'), sprintf($this->L10N->getString('ReasonMessage_RL'), $RLFormatted))) {
                             $this->enactOptions('', ['ForciblyDisableReCAPTCHA' => true, 'ForciblyDisableHCAPTCHA' => true]);
-                            $this->CIDRAM['RL_Status'] = $this->getStatusHTTP(429);
+                            $this->CIDRAM['Other Status'] = $this->getStatusHTTP(429);
+                            $this->CIDRAM['Other Status Code'] = 429;
                             if (isset($this->Shorthand['RL:Suppress'])) {
                                 $this->CIDRAM['Suppress output template'] = true;
                             }
@@ -926,15 +927,14 @@ trait Protect
                         header('HTTP/1.0 ' . $this->CIDRAM['errCode'] . ' ' . $this->CIDRAM['ThisStatusHTTP']);
                         header('HTTP/1.1 ' . $this->CIDRAM['errCode'] . ' ' . $this->CIDRAM['ThisStatusHTTP']);
                         header('Status: ' . $this->CIDRAM['errCode'] . ' ' . $this->CIDRAM['ThisStatusHTTP']);
-                    } elseif (
-                        !empty($this->CIDRAM['RL_Status']) &&
-                        $this->BlockInfo['SignatureCount'] === 1
-                    ) {
-                        $this->CIDRAM['errCode'] = 429;
-                        header('HTTP/1.0 429 ' . $this->CIDRAM['RL_Status']);
-                        header('HTTP/1.1 429 ' . $this->CIDRAM['RL_Status']);
-                        header('Status: 429 ' . $this->CIDRAM['RL_Status']);
-                        header('Retry-After: ' . $RLRetryAfter ?? floor($this->Configuration['rate_limiting']['allowance_period']->getAsSeconds()));
+                    } elseif (!empty($this->CIDRAM['Other Status']) && !empty($this->CIDRAM['Other Status Code']) && $this->BlockInfo['SignatureCount'] === 1) {
+                        $this->CIDRAM['errCode'] = $this->CIDRAM['Other Status Code'];
+                        header('HTTP/1.0 ' . $this->CIDRAM['Other Status Code'] . ' ' . $this->CIDRAM['Other Status']);
+                        header('HTTP/1.1 ' . $this->CIDRAM['Other Status Code'] . ' ' . $this->CIDRAM['Other Status']);
+                        header('Status: ' . $this->CIDRAM['Other Status Code'] . ' ' . $this->CIDRAM['Other Status']);
+                        if ($this->CIDRAM['Other Status Code'] === 429 && isset($RLRetryAfter)) {
+                            header('Retry-After: ' . $RLRetryAfter);
+                        }
                     } elseif ((
                         !empty($this->CIDRAM['Aux Status Code']) &&
                         ($this->CIDRAM['errCode'] = $this->CIDRAM['Aux Status Code']) > 400 &&
