@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Catalan language data for the front-end (last modified: 2024.11.25).
+# This file: Catalan language data for the front-end (last modified: 2024.12.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ config:
  recaptcha_usemode: *CaptchaUseMode
  sfs: "Configuració del mòdul Stop Forum Spam."
  signatures: "Configuració per a les signatures, fitxers de signatura, mòduls, etc."
+ signatures_conflict_response: "Quan hi ha massa intents simultanis d'accedir als mateixos recursos (per exemple, sol·licituds simultànies a diversos processos PHP a la mateixa màquina per als mateixos recursos), alguns d'aquests intents poden fallar. En el cas rar i poc probable que això afecti fitxers de signatura o mòduls, es pot impedir que CIDRAM prengui una determinació efectiva sobre la sol·licitud. Si això passa, s'ha de bloquejar la sol·licitud, i quin missatge d'estat HTTP hauria d'enviar CIDRAM?"
  signatures_default_tracktime: "La durada per fer el seguiment de les adreces IP. Predeterminat = 7d0°0′0″ (1 setmana)."
  signatures_infraction_limit: "Nombre màxim d'infraccions que pot incórrer en una IP abans que sigui prohibida pel seguiment de la IP. Predeterminat = 10."
  signatures_shorthand: "Controla què fer amb una sol·licitud quan hi ha una coincidència positiva amb una signatura que utilitza les paraules taquigrafies donades."
@@ -537,6 +538,7 @@ label:
  307 Temporary Redirect: "307 Temporary Redirect (Redirecció temporal)\nIndica al client que la redirecció és TEMPORAL, i que el mètode de sol·licitud utilitzat per a la redirecció NO pot ser diferent del mètode de sol·licitud utilitzat per a la sol·licitud inicial."
  308 Permanent Redirect: "308 Permanent Redirect (Redirecció permanent)\nIndica al client que la redirecció és PERMANENT, i que el mètode de sol·licitud utilitzat per a la redirecció NO pot ser diferent del mètode de sol·licitud utilitzat per a la sol·licitud inicial."
  403 Forbidden: "403 Forbidden (Prohibit)\nMés robust, però menys fàcil d'utilitzar. Recomanat per a la majoria de circumstàncies generals."
+ 409 Conflict: "409 Conflicte\nRecomanat per a conflictes de recursos (per exemple, conflictes de combinació, conflictes d'accés a fitxers, etc). No recomanat en altres contextos."
  410 Gone: "410 Gone (Desaparegut)\nPodria causar problemes a l'hora de resoldre falsos positius, perquè alguns navegadors guardaran a la memòria cau aquest missatge d'estat i no enviaran sol·licituds posteriors, fins i tot després d'haver estat desbloquejats. Pot ser el més preferible en alguns contextos, per a determinats tipus de trànsit."
  418 I_m a teapot: "418 I'm a teapot (Sóc una tetera)\nFa referència a una broma dels innocents ({{Links.RFC2324}}). És molt poc probable que qualsevol client, bot, navegador, o qualsevol altre entengui. Proporcionat per diversió i comoditat, però generalment no recomanat."
  429 Too Many Requests: "429 Too Many Requests (Massa sol·licituds)\nRecomanat per als limitació de la tarifa, quan es tracta d'atacs DDoS, i per a la prevenció d'inundacions. No recomanat en altres contextos."
@@ -584,6 +586,7 @@ label:
  Displaying %s entry:
   - "Es mostra %s entrada."
   - "Es mostren %s entrades."
+ Don_t block the request: "No bloquegeu la sol·licitud.\nSi preferiu que les sol·licituds es bloquegin només quan esteu segurs que són malignes, o si voleu errar pel costat de la precaució dels falsos positius (a costa del trànsit no desitjat de tant en tant), trieu-ho. Si preferiu que les sol·licituds es bloquegin si no esteu segurs que siguin benignes, o per errar pel costat de la vigilància (a costa de falsos positius ocasionals), trieu una de les altres opcions disponibles."
  Empty, unfamiliar, and others: "Buit, desconegut, i altres."
  Entries per page: "Entrades per pàgina:"
  Every request: "Totes les sol·licituds.\nMés rigorós i exhaustiu, però també és més probable que es compleixin els límits i les quotes amb molta més rapidesa, cosa que podria provocar que es bloquegi el servei quan més es necessita. A més, tot i que els resultats de la cerca sempre s'emmagatzemen a la memòria cau independentment, encara podria afectar negativament el rendiment del lloc web en alguns casos. Pot ser necessari en alguns casos, però generalment no es recomana."

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Norwegian language data for the front-end (last modified: 2024.11.25).
+# This file: Norwegian language data for the front-end (last modified: 2024.12.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ config:
  recaptcha_usemode: *CaptchaUseMode
  sfs: "Konfigurasjon for Stop Forum Spam modulen."
  signatures: "Konfigurasjon for signaturer, signaturfiler, moduler, osv."
+ signatures_conflict_response: "Når det er for mange samtidige forsøk på å få tilgang til de samme ressursene (f.eks., samtidige forespørsler til flere PHP-prosesser på samme maskin for de samme ressursene), kan noen av disse forsøkene mislykkes. I det sjeldne og usannsynlige tilfellet at dette påvirker signaturfiler eller moduler, kan CIDRAM bli forhindret fra å ta en effektiv avgjørelse om forespørselen. Hvis dette skjer, bør forespørselen blokkeres, og hvilken HTTP-statusmelding skal CIDRAM sende?"
  signatures_default_tracktime: "Varigheten som IP-adresser skal spores for. Standardverdi = 7d0°0′0″ (1 uke)."
  signatures_infraction_limit: "Maks antall infraksjoner som en IP har lov til å pådra seg før den er utestengt av IP-sporing. Standardverdi = 10."
  signatures_shorthand: "Kontrollerer hva bør gjøres med en forespørsel når det er en positiv match mot en signatur som bruker de gitte stenografiordene."
@@ -543,6 +544,7 @@ label:
  307 Temporary Redirect: "307 Temporary Redirect (Midlertidig omdirigering)\nInstruerer klienten om at omdirigeringen er MIDLERTIDIG, og at forespørselsmetoden som brukes for omdirigeringen IKKE kan være annerledes enn forespørselsmetoden som ble brukt for den første forespørselen."
  308 Permanent Redirect: "308 Permanent Redirect (Permanent omdirigering)\nInstruerer klienten om at omdirigeringen er PERMANENT, og at forespørselsmetoden som brukes for omdirigeringen IKKE kan være annerledes enn forespørselsmetoden som ble brukt for den første forespørselen."
  403 Forbidden: "403 Forbidden (Forbudt)\nMer robust, men mindre brukervennlig. Anbefalt for de fleste generelle betingelser."
+ 409 Conflict: "409 Konflikt\nAnbefalt for ressurskonflikter (f.eks., flettekonflikter, filtilgangskonflikter, osv). Anbefales ikke i andre sammenhenger."
  410 Gone: "410 Gone (Borte)\nKan forårsake problemer når du løser falske positiver, fordi noen nettlesere vil bufre denne statusmeldingen og ikke sende påfølgende forespørsler, selv etter å ha blitt opphevet blokkeringen. Kan være den mest foretrukne i noen sammenhenger, for visse typer trafikk."
  418 I_m a teapot: "418 I'm a teapot (Jeg er en tekanne)\nRefererer til en aprilsnarr ({{Links.RFC2324}}). Svært usannsynlig å bli forstått av noen klient, bot, nettleser, eller annet. Tilbys for underholdning og bekvemmelighet, men anbefales ikke generelt."
  429 Too Many Requests: "429 Too Many Requests (For mange forespørsler)\nAnbefalt for hastighetsbegrensning, ved håndtering av DDoS-angrep, og for forebygging av flom. Anbefales ikke i andre sammenhenger."
@@ -590,6 +592,7 @@ label:
  Displaying %s entry:
   - "%s oppføring vises."
   - "%s oppføringer vises."
+ Don_t block the request: "Ikke blokker forespørselen.\nHvis du foretrekker at forespørsler bare blokkeres når du er sikker på at de er ondartede, eller for å være forsiktig med falske positiver (på bekostning av at uønsket trafikk av og til kommer gjennom), velger du dette. Hvis du foretrekker at forespørsler blokkeres hvis du ikke er sikker på at de er godartede, eller hvis du foretrekker å være årvåken (på bekostning av sporadiske falske positiver), velg ett av de andre tilgjengelige alternativene."
  Empty, unfamiliar, and others: "Tom, ukjent, og andre."
  Entries per page: "Oppføringer per side:"
  Every request: "Hver forespørsel.\nMer strenge og grundige, men også mer sannsynlig å resultere i at grenser og kvoter blir oppfylt mye raskere, noe som potensielt kan resultere i å bli utestengt fra tjenesten når det er mest nødvendig. Også, selv om oppslagsresultater alltid bufres uansett, det kan likevel ha negativ innvirkning på nettstedets ytelse i noen tilfeller. Kan være nødvendig i noen tilfeller, men generelt anbefales ikke."

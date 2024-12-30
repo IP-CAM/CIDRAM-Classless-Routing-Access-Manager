@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: German language data for the front-end (last modified: 2024.11.25).
+# This file: German language data for the front-end (last modified: 2024.12.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ config:
  recaptcha_usemode: *CaptchaUseMode
  sfs: "Konfiguration für das Stop Forum Spam Modul."
  signatures: "Konfiguration für Signaturen, Signaturdateien, Module, u.s.w."
+ signatures_conflict_response: "Wenn es zu viele gleichzeitige Versuche gibt auf dieselben Ressourcen zuzugreifen (z.B., gleichzeitige Anforderungen an mehrere PHP-Prozesse auf demselben Computer für dieselben Ressourcen), können einige dieser Versuche fehlschlagen. In dem seltenen und unwahrscheinlichen Fall dass Signaturdateien oder Module hiervon betroffen sind, kann CIDRAM möglicherweise keine wirksame Entscheidung über die Anfrage treffen. Wenn dies geschieht, sollte die Anforderung blockiert werden, und welche HTTP-Statusmeldung sollte CIDRAM senden?"
  signatures_default_tracktime: "Die Dauer für die IP-Adressen getrackt werden sollen. Standardeinstellung = 7d0°0′0″ (1 Woche)."
  signatures_infraction_limit: "Maximale Anzahl von Verstöße, die eine IP zulassen darf, bevor sie durch IP-Tracking verbannt ist. Standardeinstellung = 10."
  signatures_shorthand: "Kontrollen für was mit einer Anfrage zu tun wenn es gibt eine positive Übereinstimmung mit einer Signatur die die angegebenen Kurzwörter verwendet."
@@ -544,6 +545,7 @@ label:
  307 Temporary Redirect: "307 Temporary Redirect (Temporäre Weiterleitung)\nWeist den Client an, dass die Weiterleitung TEMPORÄR ist, und die Anfragemethode der Weiterleitung kann NICHT sich von der der ursprünglichen Anfrage unterscheiden."
  308 Permanent Redirect: "308 Permanent Redirect (Permanente Weiterleitung)\nWeist den Client an, dass die Weiterleitung DAUERHAFT ist, und die Anfragemethode der Weiterleitung kann NICHT sich von der der ursprünglichen Anfrage unterscheiden."
  403 Forbidden: "403 Forbidden (Verboten)\nRobuster, aber weniger benutzerfreundlich. Empfohlen für die meisten allgemeinen Umstände."
+ 409 Conflict: "409 Konflikt\nEmpfohlen für Ressourcenkonflikte (z.B., Zusammenführungskonflikte, Dateizugriffskonflikte, u.s.w.). Nicht in anderen Kontexten empfohlen."
  410 Gone: "410 Gone (Gegangen)\nBeim Auflösen von Falsch-Positive können Probleme auftreten, aufgrund einiger Browser diese Statusmeldung zwischenspeichern und keine nachfolgenden Anfragen senden, selbst nachdem sie entsperrt wurden. Kann in einigen Kontexten für bestimmte Arten von Datenverkehr am besten sein."
  418 I_m a teapot: "418 I'm a teapot (Ich bin eine Teekanne)\nBezieht sich auf einen Aprilscherz ({{Links.RFC2324}}). Es ist sehr unwahrscheinlich, dass es von einem Client, Bot, Browser, oder anderem verstanden wird. Zur Unterhaltung und Bequemlichkeit bereitgestellt, aber nicht allgemein empfohlen."
  429 Too Many Requests: "429 Too Many Requests (Zu viele Anfragen)\nEmpfohlen zur Ratenbegrenzung, beim Umgang mit DDoS-Angriffen, und zur Verhinderung von Netzüberschwemmungen. Nicht in anderen Kontexten empfohlen."
@@ -591,6 +593,7 @@ label:
  Displaying %s entry:
   - "%s Eintrag angezeigt."
   - "%s Einträge angezeigt."
+ Don_t block the request: "Blockieren die Anfrage nicht.\nWenn Sie es vorziehen dass Anfragen nur dann blockiert werden wenn Sie sicher dass sie bösartig sind, oder wenn Sie auf Nummer sicher in Bezug auf Falsche-Positives möchten (auf Kosten dessen, dass gelegentlich unerwünschter Datenverkehr durchkommt), wählen Sie diese. Wenn Sie es vorziehen dass Anfragen blockiert werden wenn Sie nicht sicher ob sie harmlos sind, oder wenn Sie möchten lieber wachsam bleiben (auf Kosten gelegentlicher Falsche-Positives), wählen Sie eine der anderen verfügbaren Optionen."
  Empty, unfamiliar, and others: "Leer, ungewohnt, und andere."
  Entries per page: "Einträge pro Seite:"
  Every request: "Alle Anfragen.\nStrenger und gründlicher, aber auch mit größerer Wahrscheinlichkeit dass Limits und Quoten viel schneller erreicht werden, was möglicherweise dazu führt dass der Dienst gesperrt wird, wenn er am dringendsten benötigt wird. Obwohl Lookup-Ergebnisse unabhängig davon immer zwischengespeichert werden, kann dies in einigen Fällen dennoch die Leistung der Website beeinträchtigen. Kann in manchen Fällen notwendig sein, aber wird im Allgemeinen nicht empfohlen."

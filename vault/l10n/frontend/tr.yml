@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data for the front-end (last modified: 2024.11.25).
+# This file: Turkish language data for the front-end (last modified: 2024.12.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ config:
  recaptcha_usemode: *CaptchaUseMode
  sfs: "Stop Forum Spam modülü için yapılandırma."
  signatures: "İmzalar, imza dosyaları, modüller, vb. için yapılandırma."
+ signatures_conflict_response: "Aynı kaynaklara erişmek için çok fazla eş zamanlı girişim olduğunda (örneğin, aynı kaynaklar için aynı makinedeki birden fazla PHP işlemine eş zamanlı istekler), bu girişimlerden bazıları başarısız olabilir. Nadiren de olsa, bu durumun imza dosyalarını veya modüllerini etkilemesi durumunda, CIDRAM'ın talep hakkında etkili bir karar vermesi engellenebilir. Eğer böyle bir durum gerçekleşirse, istek engellenmeli midir, ve CIDRAM hangi HTTP durum mesajını göndermelidir?"
  signatures_default_tracktime: "IP adreslerinin izlenmesi gereken süre. Varsayılan = 7d0°0′0″ (1 hafta)."
  signatures_infraction_limit: "IP izlemesi tarafından yasaklanmadan önce bir IPnin uğrayacağı maksimum ihlal sayısı. Varsayılan = 10."
  signatures_shorthand: "Verilen kısa sözcükleri kullanan bir imzayla olumlu bir eşleşme olduğunda bir istekle ne yapılacağını kontrol eder."
@@ -539,6 +540,7 @@ label:
  307 Temporary Redirect: "307 Temporary Redirect (Geçici Yönlendirme)\nİstemciye yönlendirmenin GEÇİCİ olduğunu söyler. Yönlendirme ve ilk isteğin istek yöntemleri farklı OLMAYABİLİR."
  308 Permanent Redirect: "308 Permanent Redirect (Kalıcı Yönlendirme)\nİstemciye yönlendirmenin KALICI olduğunu söyler. Yönlendirme ve ilk isteğin istek yöntemleri farklı OLMAYABİLİR."
  403 Forbidden: "403 Forbidden (Yasaktır)\nDaha sağlam, ancak daha az kullanıcı dostu. Çoğu genel durum için önerilir."
+ 409 Conflict: "409 Conflict (Çakışma)\nKaynak çatışmaları için önerilir (örneğin, birleştirme çatışmaları, dosya erişim çatışmaları, vb). Diğer bağlamlarda önerilmez."
  410 Gone: "410 Gone (Gitti)\nYanlış pozitifleri çözerken sorunlara neden olabilir, çünkü bazı tarayıcılar bu durum mesajını önbelleğe alır ve engelleme kaldırıldıktan sonra bile sonraki istekleri göndermez. Belirli trafik türleri için bazı bağlamlarda en çok tercih edileni olabilir."
  418 I_m a teapot: "418 I'm a teapot (Ben bir çaydanlığım)\nBir 1 Nisan şakasına gönderme yapıyor ({{Links.RFC2324}}). Herhangi bir istemci, bot, tarayıcı, veya başka bir şekilde anlaşılması pek olası değildir. Eğlence ve rahatlık için sağlanmıştır, ancak genellikle tavsiye edilmez."
  429 Too Many Requests: "429 Too Many Requests (Çok fazla istek)\nHız sınırlaması, DDoS saldırılarıyla uğraşırken, ve sel önleme için önerilir. Diğer bağlamlarda önerilmez."
@@ -586,6 +588,7 @@ label:
  Displaying %s entry:
   - "%s öğe görüntülenir."
   - "%s öğe görüntüleniyor."
+ Don_t block the request: "İsteği engellemeyin.\nİsteklerin yalnızca kötü niyetli olduklarından emin olduğunuzda engellenmesini tercih ediyorsanız veya yanlış pozitifler konusunda ihtiyatlı davranmak istiyorsanız (bazen istenmeyen trafiğin geçmesi pahasına), bunu seçin. İsteklerin iyi niyetli olup olmadığından emin değilseniz engellenmesini tercih ederseniz, veya dikkatli kalmayı tercih ederseniz (bazen yanlış pozitif pahasına), mevcut diğer seçeneklerden birini seçin."
  Empty, unfamiliar, and others: "Boş, yabancı, ve diğerleri."
  Entries per page: "Sayfa başına girişler:"
  Every request: "Her istek.\nDaha katı ve kapsamlıdır, ancak aynı zamanda sınırların ve kotaların çok daha hızlı bir şekilde karşılanmasıyla sonuçlanması, ve potansiyel olarak en çok ihtiyaç duyulduğunda hizmetin kilitlenmesiyle sonuçlanması daha olasıdır. Ayrıca, arama sonuçları ne olursa olsun her zaman önbelleğe alınsa da, yine de bazı durumlarda web sitesi performansını olumsuz etkileyebilir. Bazı durumlarda gerekli olabilir, ancak genellikle tavsiye edilmez."
@@ -594,7 +597,7 @@ label:
  Export: "Dışa aktar"
  Extension: "Uzantısı"
  External: "Dış"
- False positive risk: "Yalancı pozitif risk:"
+ False positive risk: "Yanlış pozitif risk:"
  Fancy: "Süslü"
  Focus: "Odak:"
  Free disk space: "Boş disk alanı:"

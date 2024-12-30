@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Galician language data for the front-end (last modified: 2024.11.25).
+# This file: Galician language data for the front-end (last modified: 2024.12.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ config:
  recaptcha_usemode: *CaptchaUseMode
  sfs: "Configuración para o módulo Stop Forum Spam."
  signatures: "Configuración para as sinaturas, ficheiros de sinatura, módulos, etc."
+ signatures_conflict_response: "Cando hai demasiados intentos simultáneos de acceder aos mesmos recursos (por exemplo, solicitudes simultáneas a varios procesos PHP na mesma máquina para os mesmos recursos), algúns deses intentos poden fallar. No caso raro e improbable de que isto afecte aos ficheiros de sinatura ou módulos, é posible que se impida a CIDRAM tomar unha determinación efectiva sobre a solicitude. Se isto ocorre, debería bloquearse a solicitude, e que mensaxe de estado HTTP debe enviar CIDRAM?"
  signatures_default_tracktime: "A duración na que se deben seguir os enderezos IP. Predeterminado = 7d0°0′0″ (1 semana)."
  signatures_infraction_limit: "Número máximo de infraccións nas que se permite incorrer nunha IP antes de ser prohibida polo seguimento IP. Predeterminado = 10."
  signatures_shorthand: "Controla que facer cunha solicitude cando hai unha coincidencia positiva cunha sinatura que utiliza as palabras abreviadas indicadas."
@@ -539,6 +540,7 @@ label:
  307 Temporary Redirect: "307 Temporary Redirect (Redirección temporal)\nIndícalle ao cliente que a redirección é TEMPORAL, e que o método de solicitude utilizado para a redirección NON pode ser diferente do método de solicitude utilizado para a solicitude inicial."
  308 Permanent Redirect: "308 Permanent Redirect (Redirección permanente)\nIndícalle ao cliente que a redirección é PERMANENTE, e que o método de solicitude utilizado para a redirección NON pode ser diferente do método de solicitude utilizado para a solicitude inicial."
  403 Forbidden: "403 Forbidden (Prohibido)\nMáis robusto, pero menos fácil de usar. Recomendado para a maioría das circunstancias xerais."
+ 409 Conflict: "409 Conflito\nRecoméndase para conflitos de recursos (por exemplo, conflitos de combinación, conflitos de acceso a ficheiros, etc). Non recomendado noutros contextos."
  410 Gone: "410 Gone (Desaparecido)\nPodería causar problemas ao resolver os falsos positivos, porque algúns navegadores almacenarán esta mensaxe de estado na caché e non enviarán solicitudes posteriores, mesmo despois de ser desbloqueado. Pode ser o máis preferible nalgúns contextos, para certos tipos de tráfico."
  418 I_m a teapot: "418 I'm a teapot (Son unha tetera)\nReferencias a unha broma de April Fools ({{Links.RFC2324}}). É moi pouco probable que o entenda ningún cliente, bot, navegador, ou doutro xeito. Proporcionado para diversión e comodidade, pero xeralmente non recomendado."
  429 Too Many Requests: "429 Too Many Requests (Demasiadas solicitudes)\nRecomendado para os límites de taxas, cando se trata de ataques DDoS, e para a prevención de inundacións. Non recomendado noutros contextos."
@@ -586,6 +588,7 @@ label:
  Displaying %s entry:
   - "Mostrando %s entrada."
   - "Mostrando %s entradas."
+ Don_t block the request: "Non bloquees a solicitude.\nSe prefires que as solicitudes se bloqueen só cando tes a certeza de que son malignas, ou se equivocas pola precaución con respecto aos falsos positivos (a costa de que o tráfico non desexado pase ocasionalmente), escolle isto. Se prefires que as solicitudes sexan bloqueadas se non estás seguro de que sexan benignas, ou se equivocas pola vixilancia (a costa de falsos positivos ocasionais), escolle unha das outras opcións dispoñibles."
  Empty, unfamiliar, and others: "Baleiro, descoñecido, e outros."
  Entries per page: "Entradas por páxina:"
  Every request: "Todas as solicitudes.\nMáis rigoroso e exhaustivo, pero tamén é máis probable que os límites e as cotas se cumpran moito máis rápido, o que pode provocar que se bloquee o servizo cando máis se necesita. Ademais, aínda que os resultados da busca sempre se almacenan na memoria caché independentemente, aínda pode afectar negativamente o rendemento do sitio web nalgúns casos. Pode ser necesario nalgúns casos, pero xeralmente non se recomenda."

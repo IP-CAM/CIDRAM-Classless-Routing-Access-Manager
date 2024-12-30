@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Czech language data for the front-end (last modified: 2024.11.25).
+# This file: Czech language data for the front-end (last modified: 2024.12.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ config:
  recaptcha_usemode: *CaptchaUseMode
  sfs: "Konfigurace pro modul Stop Forum Spam."
  signatures: "Konfigurace pro podpisy, soubory podpisů, moduly, atd."
+ signatures_conflict_response: "Pokud existuje příliš mnoho současných pokusů o přístup ke stejným zdrojům (např., současné požadavky na více procesů PHP na stejném počítači pro stejné zdroje), některé z těchto pokusů mohou selhat. Ve vzácných a nepravděpodobných případech, kdy to ovlivní soubory podpisů nebo moduly, může být CIDRAM zabráněno v účinném rozhodnutí o požadavku. Pokud k tomu dojde, měl by být požadavek zablokován, a jakou zprávu o stavu HTTP má CIDRAM odeslat?"
  signatures_default_tracktime: "Doba, po kterou by měly být IP adresy sledovány. Standardní = 7d0°0′0″ (1 týden)."
  signatures_infraction_limit: "Maximální počet přestupků, kterých se IP může vyskytnout, než bude zakázána sledováním IP. Standardní = 10."
  signatures_shorthand: "Co dělat s požadavkem, když existuje pozitivní shoda s podpisem, který používá daná těsnopisná slova."
@@ -546,6 +547,7 @@ label:
  307 Temporary Redirect: "307 Temporary Redirect (Dočasné přesměrování)\nInstruuje klienta, že přesměrování je DOČASNÉ, a že metoda požadavku použitá pro přesměrování NESMÍ být jiná než metoda požadavku použitá pro počáteční požadavek."
  308 Permanent Redirect: "308 Permanent Redirect (Trvalé přesměrování)\nInstruuje klienta, že přesměrování je TRVALÉ, a že metoda požadavku použitá pro přesměrování NESMÍ být jiná než metoda požadavku použitá pro počáteční požadavek."
  403 Forbidden: "403 Forbidden (Zakázáno)\nRobustnější, ale méně uživatelsky přívětivé. Doporučeno pro většinu obecných okolností."
+ 409 Conflict: "409 Konflikt\nDoporučeno pro konflikty zdrojů (např., konflikty sloučení, konflikty přístupu k souborům, atd). Nedoporučuje se v jiných kontextech."
  410 Gone: "410 Gone (Pryč)\nMůže způsobit problémy při řešení falešných poplachů, protože některé prohlížeče ukládají tuto stavovou zprávu do mezipaměti a neodesílají další požadavky, i když byly odblokovány. V některých kontextech může být pro určité druhy provozu nejvýhodnější."
  418 I_m a teapot: "418 I'm a teapot (Jsem čajník)\nOdkazuje na aprílový žertík ({{Links.RFC2324}}). Je velmi nepravděpodobné, že by mu porozuměl jakýkoli klient, robot, prohlížeč nebo jinak. Poskytováno pro zábavu a pohodlí, ale obecně se nedoporučuje."
  429 Too Many Requests: "429 Too Many Requests (Příliš mnoho požadavků)\nDoporučeno pro omezení rychlosti, při řešení DDoS útoků, a pro prevenci povodní. Nedoporučuje se v jiných kontextech."
@@ -595,6 +597,7 @@ label:
   - "Zobrazuje se %s záznam."
   - "Zobrazují se %s záznamy."
   - "Zobrazeno %s záznamů."
+ Don_t block the request: "Neblokujte žádost.\nChcete-li aby byly požadavky blokovány pouze tehdy, když jste si jisti že jsou škodlivé, nebo chcete-li zůstat opatrní o falešně pozitivní výsledky (za cenu občasného průchodu nežádoucího provozu), zvolte tuto možnost. Chcete-li aby byly žádosti zablokovány, pokud si nejste jisti že jsou neškodné, nebo pokud byste raději zůstali ostražití (za cenu občasných falešných poplachů), zvolte jednu z dalších dostupných možností."
  Empty, unfamiliar, and others: "Prázdné, neznámé, a další."
  Entries per page: "Záznamy na stránku:"
  Every request: "Všechny požadavky.\nPřísnější a důkladnější, ale také s větší pravděpodobností povede k mnohem rychlejšímu plnění limitů a kvót, což může mít za následek zablokování služby když je to nejvíce potřeba. I když jsou výsledky vyhledávání vždy bez ohledu na to ukládány do mezipaměti, přesto by to v některých případech mohlo negativně ovlivnit výkon webu. V některých případech může být nutné, ale obecně se nedoporučuje."

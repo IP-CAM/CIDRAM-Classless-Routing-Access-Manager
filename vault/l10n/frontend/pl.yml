@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Polish language data for the front-end (last modified: 2024.11.25).
+# This file: Polish language data for the front-end (last modified: 2024.12.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ config:
  recaptcha_usemode: *CaptchaUseMode
  sfs: "Konfiguracja modułu Stop Forum Spam."
  signatures: "Konfiguracja podpisów, plików podpisów, modułów, itp."
+ signatures_conflict_response: "Gdy podejmowanych jest zbyt wiele równoczesnych prób dostępu do tych samych zasobów (np., jednoczesne żądania do wielu procesów PHP na tym samym komputerze dotyczące tych samych zasobów), niektóre z tych prób mogą się nie powieść. W rzadkim i mało prawdopodobnym przypadku, gdy dotyczy to plików sygnatur lub modułów, CIDRAM może nie mieć możliwości podjęcia skutecznej decyzji w sprawie żądania. Jeśli tak się stanie, czy żądanie powinno zostać zablokowane i jaki komunikat o stanie HTTP powinien zostać wysłany przez CIDRAM?"
  signatures_default_tracktime: "Czas, przez jaki adresy IP powinny być śledzone. Domyślna = 7d0°0′0″ (1 tydzień)."
  signatures_infraction_limit: "Maksymalna liczba wykroczeń, które może ponieść IP, zanim zostanie zablokowane przez śledzenie IP. Domyślna = 10."
  signatures_shorthand: "Kontroluje, co zrobić z żądaniem, gdy istnieje pozytywne dopasowanie do podpisu, który wykorzystuje podane skrócone słowa."
@@ -454,7 +455,7 @@ hints_time_format: |
  <code class="s">{tz}</code> – Strefa czasowa (bez dwukropka) – Np., +0800.<br />
  <code class="s">{t:z}</code> – Strefa czasowa (z dwukropkiem) – Np., +08:00.
 hints_verification:
- "Czym są „pozytywy” i „negatywy”?": "Podczas weryfikacji tożsamości przedstawionej przez żądanie, pomyślny wynik można określić jako „pozytywny” lub „negatywny”. W przypadku potwierdzenia, że prezentowana tożsamość jest prawdziwą tożsamością, zostanie ona określona jako „pozytywna”. W przypadku potwierdzenia, że przedstawiona tożsamość jest sfałszowana, zostanie ona określona jako „negatywna”. Jednak nieudany wynik (np. weryfikacja nie powiodła się, lub nie można ustalić prawdziwości przedstawionej tożsamości) nie zostanie opisany jako „pozytywny” lub „negatywny”. Zamiast tego nieudany wynik zostałby opisany po prostu jako niezweryfikowany. Gdy nie zostanie podjęta żadna próba weryfikacji tożsamości przedstawionej przez żądanie, żądanie zostanie również opisane jako niezweryfikowane. Terminy mają sens tylko w kontekście, w którym rozpoznawana jest tożsamość przedstawiona w żądaniu, a zatem tam, gdzie możliwa jest weryfikacja. W przypadku, gdy przedstawiona tożsamość nie pasuje do opcji przedstawionych powyżej, lub gdy tożsamość nie jest przedstawiona, opcje podane powyżej stają się nieistotne."
+ "Czym są „pozytywy” i „negatywy”?": "Podczas weryfikacji tożsamości przedstawionej przez żądanie, pomyślny wynik można określić jako „pozytywny” lub „negatywny”. W przypadku potwierdzenia, że prezentowana tożsamość jest prawdziwą tożsamością, zostanie ona określona jako „pozytywna”. W przypadku potwierdzenia, że przedstawiona tożsamość jest sfałszowana, zostanie ona określona jako „negatywna”. Jednak nieudany wynik (np., weryfikacja nie powiodła się, lub nie można ustalić prawdziwości przedstawionej tożsamości) nie zostanie opisany jako „pozytywny” lub „negatywny”. Zamiast tego nieudany wynik zostałby opisany po prostu jako niezweryfikowany. Gdy nie zostanie podjęta żadna próba weryfikacji tożsamości przedstawionej przez żądanie, żądanie zostanie również opisane jako niezweryfikowane. Terminy mają sens tylko w kontekście, w którym rozpoznawana jest tożsamość przedstawiona w żądaniu, a zatem tam, gdzie możliwa jest weryfikacja. W przypadku, gdy przedstawiona tożsamość nie pasuje do opcji przedstawionych powyżej, lub gdy tożsamość nie jest przedstawiona, opcje podane powyżej stają się nieistotne."
  "Czym są „obejście pojedynczych trafień”?": "W niektórych przypadkach pozytywnie zweryfikowane żądanie może nadal zostać zablokowane z powodu plików podpis, modułów, lub innych warunków żądania, i obejścia mogą być konieczne w celu uniknięcia fałszywych pozytywów. W przypadku, gdy obejście ma na celu zajęcie się dokładnie jednym wykroczeniem, ni mniej, ni więcej, takie obejście można opisać jako „obejście pojedynczego trafienia”."
 hints_want_to_block: "!! Większość użytkowników prawdopodobnie będzie chciała, aby to zostało zablokowane, niezależnie od tego, czy jest prawdziwe, czy sfałszowane. Można to osiągnąć, nie zaznaczając opcji „próbować zweryfikować” i zaznaczając opcję „blokować niezweryfikowane żądania”. Ponieważ jednak niektórzy użytkownicy mogą chcieć mieć możliwość weryfikacji takich żądań (w celu blokowania negatywnych przy jednoczesnym dopuszczaniu pozytywów), zamiast blokowania takich żądań za pomocą modułów, dostępne są tutaj opcje obsługi takich żądań."
 info_cli_by_default_ips: |
@@ -548,6 +549,7 @@ label:
  307 Temporary Redirect: "307 Temporary Redirect (Tymczasowe przekierowanie)\nInstruuje klienta, że przekierowanie jest TYMCZASOWE, oraz że metoda żądania użyta do przekierowania NIE może być inna niż metoda żądania użyta do pierwotnego żądania."
  308 Permanent Redirect: "308 Permanent Redirect (Stałe przekierowanie)\nInstruuje klienta, że przekierowanie jest STAŁE, oraz że metoda żądania użyta do przekierowania NIE może być inna niż metoda żądania użyta do pierwotnego żądania."
  403 Forbidden: "403 Forbidden (Zakazana)\nBardziej solidny, ale mniej przyjazny dla użytkownika. Zalecany w większości ogólnych okoliczności."
+ 409 Conflict: "409 Konflikt\nZalecane w przypadku konfliktów zasobów (np., konfliktów scalania, konfliktów dostępu do plików, itp). Niezalecane w innych kontekstach."
  410 Gone: "410 Gone (Odszedł)\nMoże powodować problemy podczas rozwiązywania fałszywych pozytywów, ponieważ niektóre przeglądarki buforują ten komunikat o stanie i nie wysyłają kolejnych żądań, nawet po odblokowaniu. Może być najbardziej preferowany w niektórych kontekstach, dla niektórych rodzajów ruchu."
  418 I_m a teapot: "418 I'm a teapot (Jestem czajnikiem)\nOdniesienia do żartu primaaprilisowego ({{Links.RFC2324}}). Jest bardzo mało prawdopodobne, że zostanie zrozumiany przez żadnego klienta, bota, przeglądarkę, lub w inny sposób. Przewidziane dla rozrywki i wygody, ale ogólnie nie polecane."
  429 Too Many Requests: "429 Too Many Requests (Zbyt dużo próśb)\nZalecany do ograniczania, w przypadku ataków DDoS, i do zapobiegania powodziom. Niezalecane w innych kontekstach."
@@ -597,6 +599,7 @@ label:
   - "Wyświetlanie %s wpis."
   - "Wyświetlanie %s wpisy."
   - "Wyświetlanie %s wpisów."
+ Don_t block the request: "Nie blokuj żądania.\nJeśli wolisz aby żądania były blokowane tylko wtedy, gdy masz pewność że są złośliwe, lub chcesz zachować ostrożność w przypadku fałszywych pozytywów (z ryzykiem, że niechciany ruch będzie czasami przejeżdżał), wybierz to. Jeśli wolisz aby żądania były blokowane jeśli nie masz pewności czy są niezłośliwe, lub jeśli wolisz zachować czujność (z ryzykiem okazjonalnych fałszywie pozytywów), wybierz jedną z pozostałych dostępnych opcji."
  Empty, unfamiliar, and others: "Puste, nieznane, i inne."
  Entries per page: "Wpisy na stronie:"
  Every request: "Każde żądanie.\nBardziej rygorystyczne i dokładne, ale z większym prawdopodobieństwem skutkuje znacznie szybszym osiągnięciem limitów i kontyngentów, co może skutkować zablokowaniem usługi, gdy jest to najbardziej potrzebne. Ponadto, chociaż wyniki wyszukiwania są zawsze zapisywane w pamięci podręcznej, w niektórych przypadkach może to jednak negatywnie wpłynąć na wydajność witryny. Może być konieczne w niektórych przypadkach, ale ogólnie nie jest zalecane."

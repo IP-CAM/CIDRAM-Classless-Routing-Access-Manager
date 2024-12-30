@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data for the front-end (last modified: 2024.11.25).
+# This file: Dutch language data for the front-end (last modified: 2024.12.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -51,7 +51,7 @@ Abuse category:
  Web spam: "Webspam (commentaar-/forumspam, HTTP-verwijzerspam, of andere CMS-spam)."
  Webapp attacks: "Webapp-aanvallen (zoeken naar kwetsbaarheden of exploits, of proberen geïnstalleerde webapps, CMS, of e-commerceoplossingen te misbruiken, b.v., WordPress, Drupal, phpMyAdmin, enz)."
 Extended Description:
- AbuseIPDB module: "Blokkeert aanvragen van IP's die worden vermeld op AbuseIPDB."
+ AbuseIPDB module: "Blokkeert verzoeken van IP's die worden vermeld op AbuseIPDB."
  BGPView module: "Maakt gebruik van de {{Links.BGPView}} API om ASN en landcode op te zoeken voor CIDRAM, waardoor ASN's en landen kunnen worden geblokkeerd of op de witte lijst kunnen worden gezet via de CIDRAM-configuratie, en het verschaffen van een middel voor sociale netwerkverificatie om Facebook-verzoeken te verifiëren. (Als u deze module gebruikt, hoeft u de IP-API-module niet te gebruiken, omdat deze hetzelfde doel dienen)."
  Bad TLDs blocker module: "Blokkeert hosts van TLD's die vaak worden gebruikt door spammers, hackers en andere kwaadwillige entiteiten."
  Bad hosts blocker module: "Blokkeert hosts die vaak worden gebruikt door spammers, hackers en andere kwaadwillige entiteiten."
@@ -71,9 +71,9 @@ Extended Description:
  IPv6-ISPs: *ExtDesISPs
  IPv6-Nonblocking: *ExtDesNonblocking
  IPv6-Other: *ExtDesOther
- Optional security extras module: "Biedt een beperkte bescherming tegen verschillende aanvalsvectoren vaak gebruikt in aanvragen."
+ Optional security extras module: "Biedt een beperkte bescherming tegen verschillende aanvalsvectoren vaak gebruikt in verzoeken."
  PHPMailer: "Vereist voor het gebruik van functionaliteit die het verzenden van e-mail vereisen.<br />{{Links.PHPMailer.PHPMailer}} is beschikbaar via de {{Links.PHPMailer.License}}-licentie."
- Project Honeypot module: "Blokkeert aanvragen van IP's die worden vermeld op Project Honeypot."
+ Project Honeypot module: "Blokkeert verzoeken van IP's die worden vermeld op Project Honeypot."
  Protocol blocker module: "Biedt de mogelijkheid om specifieke verzoekprotocollen te blokkeren via de configuratie (b.v., HTTP/0.9, HTTP/1.1, SPDY/3.0, enz). Opmerking: Heeft geen enkel effect op websites die via services routeren die verzoeken herschrijven om allemaal exact hetzelfde protocol te gebruiken, zoals Cloudflare."
  Referrer spam module: "Blokkering op basis van verwijzende spam levert over het algemeen geen betekenisvol beveiligingsvoordeel op, maar in sommige gevallen kan het nuttig zijn voor sommige gebruikers, voor het verzamelen van meer informatie over verzoeken en erover te rapporteren."
  Stop Forum Spam module: "Beschermt registratie en login tegen IP's die door SFS worden vermeld."
@@ -291,6 +291,7 @@ config:
  recaptcha_usemode: *CaptchaUseMode
  sfs: "Configuratie voor de Stop Forum Spam module."
  signatures: "Configuratie voor signatures, signatuurbestanden, modules, enz."
+ signatures_conflict_response: "Wanneer er te veel gelijktijdige pogingen worden gedaan om toegang te krijgen tot dezelfde bronnen (b.v., gelijktijdige verzoeken aan meerdere PHP-processen op dezelfde machine voor dezelfde bronnen), kunnen sommige van die pogingen mislukken. In het zeldzame en onwaarschijnlijke geval dat dit gevolgen heeft voor signatuurbestanden of modules, kan CIDRAM mogelijk geen effectieve beslissing nemen over het verzoek. Als dit gebeurt, moet het verzoek dan worden geblokkeerd, en welk HTTP-statusbericht moet CIDRAM verzenden?"
  signatures_default_tracktime: "De duur dat IP-adressen moeten worden gevolgd. Standaard = 7d0°0′0″ (1 week)."
  signatures_infraction_limit: "Maximum aantal overtredingen een IP mag worden gesteld voordat hij wordt verbannen door IP-tracking. Standaard = 10."
  signatures_shorthand: "Controles voor wat te doen met een verzoek wanneer er een positieve overeenkomst is met een signature die de gegeven stenowoorden gebruikt."
@@ -429,7 +430,7 @@ hints_shorthand:
  4.: "Verwijst naar gevallen waarin stenowoorden helemaal niet worden gebruikt, of niet worden herkend door CIDRAM."
  Eén per signature.: "Een signature kan meerdere profielen oproepen, maar kan slechts één stenowoord gebruiken. Het is mogelijk dat meerdere stenowoorden geschikt zijn, maar aangezien er maar één kan worden gebruikt, we streven ernaar altijd alleen de meest geschikte te gebruiken."
  Prioriteit.: "Een geselecteerde optie heeft altijd voorrang op een niet geselecteerde optie. B.v., als er meerdere stenowoorden in het spel zijn, maar slechts één ervan als geblokkeerd is ingesteld, wordt het verzoek nog steeds geblokkeerd."
- Menselijke eindpunten en cloud services.: "Cloud service kan verwijzen naar webhosting providers, server farms, data centers of een aantal andere dingen. Menselijk eindpunt verwijst naar de manier waarop een mens toegang krijgt tot internet, b.v., via een internetprovider. Een netwerk biedt meestal slechts een of het ander, maar kan soms beide bieden. We streven ernaar om potentiële menselijke eindpunten nooit als cloudservices te identificeren. Daarom een cloud service kan worden geïdentificeerd als iets anders als het bereik wordt gedeeld door bekende menselijke eindpunten. Evenzo, we streven ernaar om cloud services, waarvan het bereik niet wordt gedeeld door bekende menselijke eindpunten, altijd als cloud services te identificeren. Daarom een aanvraag dat expliciet als een cloud service wordt geïdentificeerd waarschijnlijk niet deelt het bereik met bekende menselijke eindpunten. Evenzo, een verzoek dat expliciet wordt geïdentificeerd door aanvallen of spam risico waarschijnlijk deelt het bereik. Het internet is echter altijd in beweging, de doeleinden van netwerken veranderen in de loop van de tijd, en bereik worden altijd gekocht of verkocht, dus blijf bewust en waakzaam met betrekking tot valse positieven."
+ Menselijke eindpunten en cloud services.: "Cloud service kan verwijzen naar webhosting providers, server farms, data centers of een aantal andere dingen. Menselijk eindpunt verwijst naar de manier waarop een mens toegang krijgt tot internet, b.v., via een internetprovider. Een netwerk biedt meestal slechts een of het ander, maar kan soms beide bieden. We streven ernaar om potentiële menselijke eindpunten nooit als cloudservices te identificeren. Daarom een cloud service kan worden geïdentificeerd als iets anders als het bereik wordt gedeeld door bekende menselijke eindpunten. Evenzo, we streven ernaar om cloud services, waarvan het bereik niet wordt gedeeld door bekende menselijke eindpunten, altijd als cloud services te identificeren. Daarom een verzoek dat expliciet als een cloud service wordt geïdentificeerd waarschijnlijk niet deelt het bereik met bekende menselijke eindpunten. Evenzo, een verzoek dat expliciet wordt geïdentificeerd door aanvallen of spam risico waarschijnlijk deelt het bereik. Het internet is echter altijd in beweging, de doeleinden van netwerken veranderen in de loop van de tijd, en bereik worden altijd gekocht of verkocht, dus blijf bewust en waakzaam met betrekking tot valse positieven."
 hints_time_format: |
  <strong><em>Tijdelijke aanduiding – Uitleg – Voorbeeld gebaseerd op 2024-04-30T18:27:49+08:00.</em></strong><br />
  <code class="s">{yyyy}</code> – Het jaartal – B.v., 2024.<br />
@@ -541,6 +542,7 @@ label:
  307 Temporary Redirect: "307 Temporary Redirect (Tijdelijke omleiding)\nInstrueert de client dat de omleiding TIJDELIJK is, en dat de verzoekmethode die wordt gebruikt voor de omleiding NIET mag verschillen van de verzoekmethode die wordt gebruikt voor het oorspronkelijke verzoek."
  308 Permanent Redirect: "308 Permanent Redirect (Permanente omleiding)\nInstrueert de client dat de omleiding PERMANENT is, en dat de verzoekmethode die wordt gebruikt voor de omleiding NIET mag verschillen van de verzoekmethode die wordt gebruikt voor het oorspronkelijke verzoek."
  403 Forbidden: "403 Forbidden (Verboden)\nRobuuster, maar minder gebruiksvriendelijk. Aanbevolen voor de meeste algemene omstandigheden."
+ 409 Conflict: "409 Conflict\nAanbevolen bij resourceconflicten (b.v., conflicten bij samenvoegingen, conflicten bij bestandstoegang, enz). Niet aanbevolen in andere contexten."
  410 Gone: "410 Gone (Weg)\nKan problemen veroorzaken bij het oplossen van valse positieven, omdat sommige browsers dit statusbericht in de cache opslaan en geen volgende verzoeken verzenden, zelfs niet nadat de blokkering is opgeheven. Kan in sommige contexten, voor bepaalde soorten verkeer, de meeste voorkeur hebben."
  418 I_m a teapot: "418 I'm a teapot (Ik ben een theepot)\nVerwijst naar een 1-aprilgrap ({{Links.RFC2324}}). Het is zeer onwaarschijnlijk dat deze door een client, bot, browser, of anderszins wordt begrepen. Geleverd voor amusement en gemak, maar over het algemeen niet aanbevolen."
  429 Too Many Requests: "429 Too Many Requests (Te veel verzoeken)\nAanbevolen voor de tarieflimiet, bij het omgaan met DDoS-aanvallen, en voor het voorkomen van overstromingen. Niet aanbevolen in andere contexten."
@@ -588,6 +590,7 @@ label:
  Displaying %s entry:
   - "%s item weergeven."
   - "%s items weergeven."
+ Don_t block the request: "Blokkeer het verzoek niet.\nAls u liever wilt dat verzoeken alleen worden geblokkeerd als u zeker weet dat ze kwaadaardig zijn, of als u voorzichtig wilt zijn met vals-positieve (ten koste van ongewenste verkeer dat af en toe doorkomt), kies dit. Als u liever wilt dat verzoeken worden geblokkeerd als u niet zeker weet of ze goedaardig zijn, of als u liever waakzaam wilt blijven (ten koste van de incidentele vals-positieve), kiest u een van de andere beschikbare opties."
  Empty, unfamiliar, and others: "Leeg, onbekend, en andere."
  Entries per page: "Inzendingen per pagina:"
  Every request: "Elk verzoek.\nStrenger en grondiger, maar het is ook waarschijnlijker dat limieten en quota veel sneller worden gehaald, wat kan leiden dat de service wordt buitengesloten wanneer dat het meest nodig is. Ook, hoewel opzoekresultaten altijd in de cache worden opgeslagen, dit kan in sommige gevallen toch een negatieve invloed hebben op de prestaties van de website. Kan in sommige gevallen nodig zijn, maar wordt het over algemeen niet aanbevolen."

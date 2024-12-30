@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Romanian language data for the front-end (last modified: 2024.11.25).
+# This file: Romanian language data for the front-end (last modified: 2024.12.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ config:
  recaptcha_usemode: *CaptchaUseMode
  sfs: "Configurare pentru modulul Stop Forum Spam."
  signatures: "Configurare pentru semnături, fișiere de semnătură, module, etc."
+ signatures_conflict_response: "Când există prea multe încercări simultane de a accesa aceleași resurse (de exemplu, solicitări simultane către mai multe procese PHP de la aceeași mașină pentru aceleași resurse), unele dintre aceste încercări pot eșua. În cazul rar și puțin probabil în care acest lucru afectează fișierele de semnătură sau modulele, CIDRAM poate fi împiedicat să ia o decizie eficientă cu privire la solicităre. Dacă se întâmplă acest lucru, solicitărea ar trebui să fie blocată, și ce mesaj de stare HTTP ar trebui să trimită CIDRAM?"
  signatures_default_tracktime: "Durata pentru care trebuie urmărite adresele IP. Implicit = 7d0°0′0″ (1 săptămână)."
  signatures_infraction_limit: "Numărul maxim de infracțiuni pe care un IP este permis să obțină înainte de a fi interzis prin urmărirea IP. Implicit = 10."
  signatures_shorthand: "Controlează ce să faci cu o solicitare atunci când există o potrivire pozitivă cu o semnătură care utilizează cuvintele prescurtate date."
@@ -552,6 +553,7 @@ label:
  307 Temporary Redirect: "307 Temporary Redirect (Redirecționare temporară)\nInstruiește clientul că redirecționarea este TEMPORARĂ, și că metoda de solicitare utilizată pentru redirecționare NU poate fi diferită de metoda de solicitare utilizată pentru solicitărea inițială."
  308 Permanent Redirect: "308 Permanent Redirect (Redirecționare permanentă)\nInstruiește clientul că redirecționarea este PERMANENTĂ, și că metoda de solicitare utilizată pentru redirecționare NU poate fi diferită de metoda de solicitare utilizată pentru solicitărea inițială."
  403 Forbidden: "403 Forbidden (Interzis)\nMai robust, dar mai puțin ușor de utilizat. Recomandat pentru majoritatea circumstanțelor generale."
+ 409 Conflict: "409 Conflict\nRecomandat pentru conflicte de resurse (de exemplu, conflicte de îmbinare, conflicte de acces la fișiere, etc). Nu este recomandat în alte contexte."
  410 Gone: "410 Gone (A dispărut)\nAr putea cauza probleme la rezolvarea rezultatelor false pozitive, deoarece unele browsere vor stoca în cache acest mesaj de stare și nu vor trimite solicitări ulterioare, chiar și după ce au fost deblocate. Poate fi cel mai de preferat în anumite contexte, pentru anumite tipuri de trafic."
  418 I_m a teapot: "418 I'm a teapot (Sunt un ceainic)\nFace referire la o glumă a lui April Fools ({{Links.RFC2324}}). Este foarte puțin probabil să fie înțeles de vreun client, bot, browser, sau de alt fel. Este oferit pentru distracție și comoditate, dar nu este recomandat în general."
  429 Too Many Requests: "429 Too Many Requests (Prea multe solicitări)\nRecomandat pentru limitarea ratei, atunci când se confruntă cu atacuri DDoS, și pentru prevenirea inundațiilor. Nu este recomandat în alte contexte."
@@ -601,6 +603,7 @@ label:
   - "Se afișează %s intrare."
   - "Se afișează %s intrări."
   - "Se afișează %s de intrări."
+ Don_t block the request: "Nu blocați solicitărea.\nDacă preferați ca solicitările să fie blocate numai atunci când sunteți sigur că sunt nefaste, sau să greșiți din partea precauției cu privire la fals pozitive (cu prețul traficului nedorit care trece ocazional), alegeți aceasta. Dacă preferați ca solicitările să fie blocate dacă nu sunteți sigur că sunt benigne, sau să greșiți din partea vigilenței (cu prețul unor fals pozitive ocazionale), alegeți una dintre celelalte opțiuni disponibile."
  Empty, unfamiliar, and others: "Gol, necunoscut, și altele."
  Entries per page: "Intrări pe pagină:"
  Every request: "Fiecare solicităre.\nMai riguros și amănunțit, dar și mai probabil să aibă ca rezultat îndeplinirea mult mai rapidă a limitelor și a cotelor, ceea ce poate duce la blocarea serviciului atunci când este cel mai necesar. De asemenea, deși rezultatele căutării sunt întotdeauna memorate în cache, în unele cazuri ar putea totuși să aibă un impact negativ asupra performanței site-ului. Poate fi necesar în unele cazuri, dar nu este recomandat în general."

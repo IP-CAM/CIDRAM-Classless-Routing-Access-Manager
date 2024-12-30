@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Swedish language data for the front-end (last modified: 2024.11.25).
+# This file: Swedish language data for the front-end (last modified: 2024.12.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ config:
  recaptcha_usemode: *CaptchaUseMode
  sfs: "Konfiguration för modulen Stop Forum Spam."
  signatures: "Konfiguration för signaturer, signaturfiler, moduler, osv."
+ signatures_conflict_response: "När det finns för många samtidiga försök att komma åt samma resurser (t.ex., samtidiga förfrågningar till flera PHP-processer på samma maskin för samma resurser), kan vissa av dessa försök misslyckas. I den sällsynta och osannolika händelsen att detta påverkar signaturfiler eller moduler, kan CIDRAM förhindras från att göra ett effektivt beslut om begäran. Om detta händer, ska begäran blockeras, och vilket HTTP-statusmeddelande ska CIDRAM skicka?"
  signatures_default_tracktime: "Varaktigheten som IP-adresser ska spåras för. Standard = 7d0°0′0″ (1 vecka)."
  signatures_infraction_limit: "Maximalt antal infraktions som en IP får medföra innan den är förbjuden av IP-spårning. Standard = 10."
  signatures_shorthand: "Kontrollerar vad som ska göras med en förfrågan när det finns en positiv matchning mot en signatur som använder de givna förkortningsorden."
@@ -545,6 +546,7 @@ label:
  307 Temporary Redirect: "307 Temporary Redirect (Tillfällig omdirigering)\nInstruerar klienten att omdirigeringen är TILLFÄLLIG, och att förfrågningsmetoden som används för omdirigeringen INTE får vara annorlunda än den förfrågningsmetod som användes för den initiala begäran."
  308 Permanent Redirect: "308 Permanent Redirect (Permanent omdirigering)\nInstruerar klienten att omdirigeringen är PERMANENT, och att förfrågningsmetoden som används för omdirigeringen INTE får vara annorlunda än den förfrågningsmetod som användes för den initiala begäran."
  403 Forbidden: "403 Forbidden (Förbjuden)\nMer robust, men mindre användarvänlig. Rekommenderas för de flesta allmänna omständigheter."
+ 409 Conflict: "409 Konflikt\nRekommenderas för resurskonflikter (t.ex., sammanslagningskonflikter, filåtkomstkonflikter, osv). Rekommenderas inte i andra sammanhang."
  410 Gone: "410 Gone (Borta)\nKan orsaka problem när man löser falska positiva resultat, eftersom vissa webbläsare cachelagrar detta statusmeddelande och inte skickar efterföljande förfrågningar, även efter att ha avblockerats. Kan vara det mest föredragna i vissa sammanhang, för vissa typer av trafik."
  418 I_m a teapot: "418 I'm a teapot (Jag är en tekanna)\nRefererar till ett aprilskämt ({{Links.RFC2324}}). Mycket osannolikt att förstås av någon klient, bot, webbläsare, eller annat. Tillhandahålls för underhållning och bekvämlighet, men rekommenderas inte generellt."
  429 Too Many Requests: "429 Too Many Requests (För många förfrågningar)\nRekommenderas för hastighetsbegränsning, vid hantering av DDoS-attacker, och för att förebygga översvämningar. Rekommenderas inte i andra sammanhang."
@@ -592,6 +594,7 @@ label:
  Displaying %s entry:
   - "%s föremål visas."
   - "%s föremålen visas."
+ Don_t block the request: "Blockera inte begäran.\nOm du föredrar att förfrågningar bara blockeras när du är säker på att de är elakartade, eller om du vill vara försiktig när det gäller falska positiva (på bekostnad av att oönskad trafik ibland kommer igenom), välj detta. Om du föredrar att förfrågningar blockeras om du inte är säker på att de är godartade, eller om du vill vara vaksam (på bekostnad av enstaka falska positiva), välj ett av de andra tillgängliga alternativen."
  Empty, unfamiliar, and others: "Tom, obekant, och andra."
  Entries per page: "Inlägg per sida:"
  Every request: "Varje förfrågan.\nMer strängt och noggrant, men också mer sannolikt att gränser och kvoter uppfylls mycket snabbare, vilket kan leda till att man blir utelåst från tjänsten när det som bäst behövs. Även om sökresultat alltid cachelagras oavsett, det kan ändå påverka webbplatsens prestanda negativt i vissa fall. Kan vara nödvändigt i vissa fall, men generellt rekommenderas inte."
