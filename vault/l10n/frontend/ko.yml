@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data for the front-end (last modified: 2024.11.25).
+# This file: Korean language data for the front-end (last modified: 2024.12.31).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ config:
  recaptcha_usemode: *CaptchaUseMode
  sfs: "Stop Forum Spam 모듈에 대한 구성입니다."
  signatures: "서명, 서명 파일, 모듈, 등의 설정."
+ signatures_conflict_response: "같은 리소스에 동시에 액세스하려는 시도가 너무 많은 경우 (예, 동일한 리소스에 대해 동일한 머신에서 여러 PHP 프로세스에 동시 요청), 일부 시도는 실패할 수 있습니다. 이것이 서명 파일이나 모듈에 영향을 미치는 경우, CIDRAM이 요청에 대해 효과적인 결정을 내리지 못할 수 있습니다. 이런 일이 발생하면, 요청을 차단해야 할까요? 그리고 CIDRAM은 어떤 HTTP 상태 메시지를 보내야 할까요?"
  signatures_default_tracktime: "IP 주소를 추적해야 하는 기간입니다. Default (기본값) = 7d0°0′0″ (1 주)."
  signatures_infraction_limit: "IP가 IP 추적에 의해 금지되기 전에 발생하는 것이 허용된다 위반의 최대 수. Default (기본값) = 10."
  signatures_shorthand: "주어진 속기 단어를 사용하는 서명에 대해 긍정적인 일치가 있을 때 요청을 처리하는 방법을 제어합니다."
@@ -536,6 +537,7 @@ label:
  307 Temporary Redirect: "307 Temporary Redirect (임시 리다이렉션)\n리디렉션이 일시적임을 클라이언트에 지시합니다. 리디렉션 및 초기 요청의 요청 방법은 다를 수 없습니다."
  308 Permanent Redirect: "308 Permanent Redirect (영구 리다이렉션)\n리디렉션이 영구적임을 클라이언트에 지시합니다. 리디렉션 및 초기 요청의 요청 방법은 다를 수 없습니다."
  403 Forbidden: "403 Forbidden (금지)\n더 강력하지만, 사용자 친화성은 떨어집니다. 대부분의 일반적인 상황에 권장됩니다."
+ 409 Conflict: "409 Conflict (충돌)\n리소스 충돌에 (예\_: 병합 충돌, 파일 액세스 충돌, 등등) 권장됩니다. 다른 상황에서는 권장되지 않습니다."
  410 Gone: "410 Gone (갔다)\n일부 브라우저는 차단 해제된 후에도 이 상태 메시지를 캐시하고 후속 요청을 보내지 않기 때문에 가 양성을 해결할 때 문제를 일으킬 수 있습니다. 어떤 상황에서는 특정 종류의 트래픽에 대해 가장 선호될 수 있습니다."
  418 I_m a teapot: "418 I'm a teapot (나는 찻주전자)\n만우절 농담을 참고하여 ({{Links.RFC2324}}). 클라이언트, 로봇, 브라우저, 등이 이해하지 못할 가능성이 매우 높습니다. 오락과 편의를 위해 제공되지만, 일반적으로 권장되지 않습니다."
  429 Too Many Requests: "429 Too Many Requests (너무 많은 요청)\n속도 제한, DDoS 공격 처리, 및 홍수 방지에 권장됩니다. 다른 상황에서는 권장되지 않습니다."
@@ -579,6 +581,7 @@ label:
  Difference: "차이"
  Displaying %s entry that cites %s: ""%2$s"라고 표시된 %1$s 개의 항목이 표시됩니다."
  Displaying %s entry: "%s 항목이 표시됩니다."
+ Don_t block the request: "요청을 차단하지 마세요.\n악성인 것으로 확신할 때만 요청을 차단하거나, 거짓 양성 반응에 대해 신중하게 대처하려는 경우 이 (원치 않는 교통이 가끔 통과하는 대가를 치르면서), 옵션을 선택하세요. 무해한 요청인지 확실하지 않을 때 경계를 유지하고 요청을 차단하려면 (가끔씩 거짓 양성 반응이 나올 수 있다는 대가를 치르며), 사용 가능한 다른 옵션 중 하나를 선택하세요."
  Empty, unfamiliar, and others: "비어 있고, 익숙하지 않은, 다른."
  Entries per page: "페이지당 항목 수\_:"
  Every request: "모든 요청.\n더 엄격하고 철저하지만, 제한 및 할당량이 훨씬 더 빨리 충족될 가능성이 높아, 가장 필요할 때 서비스가 잠길 가능성이 있습니다. 또한, 조회 결과는 관계없이 항상 캐시 되지만, 어떤 경우에는 여전히 웹 사이트 성능에 부정적인 영향을 미칠 수 있습니다. 때에 따라 필요할 수 있지만, 일반적으로 권장되지는 않습니다."
