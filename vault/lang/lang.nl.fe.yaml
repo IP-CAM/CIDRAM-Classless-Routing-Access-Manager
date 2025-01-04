@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Dutch language data for the front-end (last modified: 2024.07.23).
+# This file: Dutch language data for the front-end (last modified: 2024.12.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -39,16 +39,16 @@ Extended Description IPv6-Other: *ExtDesOther
 Extended Description PHPMailer: "Vereist voor het gebruik van functionaliteit die het verzenden van e-mail vereisen.<br />{{Links.PHPMailer.PHPMailer}} is beschikbaar via de {{Links.PHPMailer.License}}-licentie."
 Extended Description Search engines blocker module: "Biedt de mogelijkheid om zoekmachines te blokkeren, wat voor sommige websites problematisch kan zijn (b.v., Baidu, Sogou, Yandex, enz)."
 Extended Description flags.css: "Voegt vlagondersteuning toe aan de front-end logboekpagina."
-Extended Description module_abuseipdb.php: "Blokkeert aanvragen van IP's die worden vermeld op AbuseIPDB."
+Extended Description module_abuseipdb.php: "Blokkeert verzoeken van IP's die worden vermeld op AbuseIPDB."
 Extended Description module_badhosts.php: "Blokkeert hosts die vaak worden gebruikt door spammers, hackers en andere kwaadwillige entiteiten."
 Extended Description module_badhosts_isps.php: "Blokkeert hosts van ISP's die vaak worden gebruikt door spammers, hackers en andere kwaadwillige entiteiten."
 Extended Description module_badtlds.php: "Blokkeert hosts van TLD's die vaak worden gebruikt door spammers, hackers en andere kwaadwillige entiteiten."
 Extended Description module_bgpview.php: "Maakt gebruik van de {{Links.BGPView}} API om ASN en landcode op te zoeken voor CIDRAM, waardoor ASN's en landen kunnen worden geblokkeerd of op de witte lijst kunnen worden gezet via de CIDRAM-configuratie, en het verschaffen van een middel voor sociale netwerkverificatie om Facebook-verzoeken te verifiëren."
 Extended Description module_botua.php: "Blokkeert gebruikersagenten die zijn gekoppeld aan ongewenste bots en schadelijke activiteiten."
 Extended Description module_cookies.php: "Biedt een beperkte bescherming tegen gevaarlijke cookies."
-Extended Description module_extras.php: "Biedt een beperkte bescherming tegen verschillende aanvalsvectoren vaak gebruikt in aanvragen."
+Extended Description module_extras.php: "Biedt een beperkte bescherming tegen verschillende aanvalsvectoren vaak gebruikt in verzoeken."
 Extended Description module_httpver.php: "Maakt het mogelijk om specifieke protocollen en HTTP-versies te blokkeren via de CIDRAM-configuratie."
-Extended Description module_projecthoneypot.php: "Blokkeert aanvragen van IP's die worden vermeld op Project Honeypot."
+Extended Description module_projecthoneypot.php: "Blokkeert verzoeken van IP's die worden vermeld op Project Honeypot."
 Extended Description module_refspam.php: "Blokkering op basis van verwijzende spam levert over het algemeen geen betekenisvol beveiligingsvoordeel op, maar in sommige gevallen kan het nuttig zijn voor sommige gebruikers, voor het verzamelen van meer informatie over verzoeken en erover te rapporteren."
 Extended Description module_sfs.php: "Beschermt registratie en login tegen IP's die door SFS worden vermeld."
 Name Bypasses: "Standaard signature bypasses."
@@ -132,11 +132,11 @@ config_general_numbers: "Hoe verkiest u nummers die worden weergegeven? Selectee
 config_general_other_verification: "Probeer waar mogelijk andere soorten verzoeken te verifiëren (b.v., AdSense, SEO-checkers, enz)? Als ze worden gedetecteerd, worden vervalste verzoeken geblokkeerd. True = Inschakelen [Standaard]; False = Uitschakelen."
 config_general_outbound_request_log: "Een bestand voor het loggen van de resultaten van eventuele uitgaande verzoeken. Geef een bestandsnaam, of laat leeg om uit te schakelen."
 config_general_protect_frontend: "Geeft aan of de bescherming die gewoonlijk door CIDRAM is voorzien moet worden toegepast op de frontend. True = Ja [Standaard]; False = Nee."
-config_general_search_engine_verification: "Poging om aanvragen van zoekmachines te bevestigen? Verificatie van zoekmachines zorgt ervoor dat ze niet zullen worden verbannen als gevolg van het overschrijden van de overtreding limiet (verbod op zoekmachines van uw website zal meestal een negatief effect hebben op uw zoekmachine ranking, SEO, enz). Wanneer geverifieerd, zoekmachines kunnen worden geblokkeerd als per normaal, maar zal niet worden verbannen. Wanneer niet geverifieerd, het is mogelijk dat zij worden verbannen ten gevolge van het overschrijden van de overtreding limiet. Bovendien, het verifiëren van zoekmachines biedt bescherming tegen nep-zoekmachine aanvragen en tegen de mogelijk schadelijke entiteiten vermomd als zoekmachines (dergelijke aanvragen zal worden geblokkeerd wanneer het verifiëren van zoekmachines is ingeschakeld). True = Inschakelen het verifiëren van zoekmachines [Standaard]; False = Uitschakelen het verifiëren van zoekmachines."
+config_general_search_engine_verification: "Poging om verzoeken van zoekmachines te bevestigen? Verificatie van zoekmachines zorgt ervoor dat ze niet zullen worden verbannen als gevolg van het overschrijden van de overtreding limiet (verbod op zoekmachines van uw website zal meestal een negatief effect hebben op uw zoekmachine ranking, SEO, enz). Wanneer geverifieerd, zoekmachines kunnen worden geblokkeerd als per normaal, maar zal niet worden verbannen. Wanneer niet geverifieerd, het is mogelijk dat zij worden verbannen ten gevolge van het overschrijden van de overtreding limiet. Bovendien, het verifiëren van zoekmachines biedt bescherming tegen nep-zoekmachine verzoeken en tegen de mogelijk schadelijke entiteiten vermomd als zoekmachines (dergelijke verzoeken zal worden geblokkeerd wanneer het verifiëren van zoekmachines is ingeschakeld). True = Inschakelen het verifiëren van zoekmachines [Standaard]; False = Uitschakelen het verifiëren van zoekmachines."
 config_general_signatures_update_event_log: "Een bestand om te loggen wanneer signatures worden bijgewerkt via de frontend. Geef een bestandsnaam, of laat leeg om uit te schakelen."
 config_general_silent_mode: "Moet CIDRAM stilletjes omleiden geblokkeerd toegang pogingen in plaats van het weergeven van de "toegang geweigerd" pagina? Als ja, geef de locatie te omleiden geblokkeerd toegang pogingen. Als nee, verlaat deze variabele leeg."
 config_general_silent_mode_response_header_code: "Welk HTTP-statusbericht moet CIDRAM verzenden bij het stilzwijgend omleiden van geblokkeerde toegangspogingen?"
-config_general_social_media_verification: "Poging om aanvragen voor sociale media te verifiëren? Verificatie van sociale media biedt bescherming tegen nep-aanvragen voor sociale media (dergelijke aanvragen worden geblokkeerd). True = Inschakelen verificatie van sociale media [Standaard]; False = Uitschakelen verificatie van sociale media."
+config_general_social_media_verification: "Poging om verzoeken voor sociale media te verifiëren? Verificatie van sociale media biedt bescherming tegen nep-verzoeken voor sociale media (dergelijke verzoeken worden geblokkeerd). True = Inschakelen verificatie van sociale media [Standaard]; False = Uitschakelen verificatie van sociale media."
 config_general_statistics: "Track CIDRAM gebruiksstatistieken? True = Ja; False = Nee [Standaard]."
 config_general_time_format: "De datum notatie gebruikt door CIDRAM. Extra opties kunnen worden toegevoegd op aanvraag."
 config_general_time_offset: "Tijdzone offset in minuten."

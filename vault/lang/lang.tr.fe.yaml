@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data for the front-end (last modified: 2024.07.23).
+# This file: Turkish language data for the front-end (last modified: 2024.12.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -423,7 +423,7 @@ label_expected: "Beklenen"
 label_expires: "Son Geçerlilik Tarihi:"
 label_export: "Dışa aktar"
 label_extension: "Uzantısı"
-label_false_positive_risk: "Yalancı pozitif risk:"
+label_false_positive_risk: "Yanlış pozitif risk:"
 label_fmgr_cache_data: "Önbellek verileri ve geçici dosyalar"
 label_fmgr_disk_usage: "CIDRAM disk kullanımı:"
 label_fmgr_free_space: "Boş disk alanı:"
