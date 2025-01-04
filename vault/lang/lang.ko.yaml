@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Korean language data (last modified: 2024.12.20).
+# This file: Korean language data (last modified: 2024.12.31).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -46,7 +46,7 @@ Short_BadIP: "잘못된 IP"
 Short_Banned: "금지 된"
 Short_Bogon: "보곤 IP"
 Short_Cloud: "클라우드 서비스"
-Short_Conflict: "갈등"
+Short_Conflict: "충돌"
 Short_Fake_UA: "가짜 %s"
 Short_Generic: "일반"
 Short_Legal: "적법한"

@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Chinese (traditional) language data for the front-end (last modified: 2024.08.14).
+# This file: Chinese (traditional) language data for the front-end (last modified: 2025.01.04).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -38,7 +38,7 @@ Extended Description IPv6-ISPs: *ExtDesISPs
 Extended Description IPv6-Nonblocking: *ExtDesNonblocking
 Extended Description IPv6-Other: *ExtDesOther
 Extended Description PHPMailer: "使用涉及發送電子郵件的任何功能時需要。<br />{{Links.PHPMailer.PHPMailer}}可通過{{Links.PHPMailer.License}}許可證獲得。"
-Extended Description Search engines blocker module: "搜索引擎（例如，百度、搜狗、Yandex 、等等）可能會導致某些網站出現問題。​這個模塊可以阻止那些搜索引擎。"
+Extended Description Search engines blocker module: "搜索引擎（例如，百度、搜狗、Yandex 、等等）可能會導致某些網站出現問題。​這個模組可以阻止那些搜索引擎。"
 Extended Description flags.css: "向前端日誌頁面添加旗支持。"
 Extended Description module_abuseipdb.php: "阻止來自AbuseIPDB列出的IP的請求。"
 Extended Description module_badhosts.php: "阻止垃圾郵件發送者，黑客，和其他惡意實體經常使用的主機。"
@@ -57,26 +57,26 @@ Name IPv4: "IPv4（雲和託管服務）。"
 Name IPv4-Bogons: "IPv4（bogon）。"
 Name IPv4-ISPs: "IPv4（垃圾郵件ISP）。"
 Name IPv4-Nonblocking: "IPv4非阻止簽名。"
-Name IPv4-Other: "IPv4（代理，VPN，等等）。"
+Name IPv4-Other: "IPv4（代理、VPN、等等）。"
 Name IPv6: "IPv6（雲和託管服務）。"
 Name IPv6-Bogons: "IPv6（bogon）。"
 Name IPv6-ISPs: "IPv6（垃圾郵件ISP）。"
 Name IPv6-Nonblocking: "IPv6非阻止簽名。"
-Name IPv6-Other: "IPv6（代理，VPN，等等）。"
+Name IPv6-Other: "IPv6（代理、VPN、等等）。"
 Name KR_cidram.inc: "南韓IPv4阻止清單。"
-Name Search engines blocker module: "搜索引擎阻塞模塊。"
+Name Search engines blocker module: "搜索引擎阻塞模組。"
 Name compat_bunnycdn.php: "BunnyCDN兼容模块。"
-Name module_abuseipdb.php: "AbuseIPDB 模塊。"
-Name module_badhosts.php: "壞主機阻塞模塊。"
-Name module_badhosts_isps.php: "壞主機阻塞模塊（ISP）。"
-Name module_badtlds.php: "壞TLD阻塞模塊。"
-Name module_botua.php: "機器人用戶代理模塊。"
-Name module_cookies.php: "可選cookie掃描器模塊。"
-Name module_extras.php: "可選安全附加模塊。"
-Name module_httpver.php: "HTTP版本檢查器模塊。"
-Name module_projecthoneypot.php: "Project Honeypot 模塊。"
-Name module_refspam.php: "引薦來源垃圾郵件模塊。"
-Name module_sfs.php: "Stop Forum Spam 模塊。"
+Name module_abuseipdb.php: "AbuseIPDB 模組。"
+Name module_badhosts.php: "壞主機阻塞模組。"
+Name module_badhosts_isps.php: "壞主機阻塞模組（ISP）。"
+Name module_badtlds.php: "壞TLD阻塞模組。"
+Name module_botua.php: "機器人用戶代理模組。"
+Name module_cookies.php: "可選cookie掃描器模組。"
+Name module_extras.php: "可選安全附加模組。"
+Name module_httpver.php: "HTTP版本檢查器模組。"
+Name module_projecthoneypot.php: "Project Honeypot 模組。"
+Name module_refspam.php: "引薦來源垃圾郵件模組。"
+Name module_sfs.php: "Stop Forum Spam 模組。"
 checkbox_label_sensitive: "作為敏感請求進行測試"
 config_PHPMailer: "PHPMailer的配置（用於雙因素身份驗證）。"
 config_PHPMailer_Enable2FA: "該指令確定是否將2FA用於前端帳戶。"
@@ -106,7 +106,7 @@ config_general_default_timeout: "用於外部請求的默認超時？ 標準 = 1
 config_general_disable_cli: "關閉CLI模式嗎？​CLI模式是按說激活作為標準，​但可以有時干擾某些測試工具（例如PHPUnit，​為例子）和其他基於CLI應用。​如果您沒有需要關閉CLI模式，​您應該忽略這個指令。​False（假）=激活CLI模式【標準】；True（真）=關閉CLI模式。"
 config_general_disable_frontend: "關閉前端訪問嗎？​前端訪問可以使CIDRAM更易於管理，​但也可能是潛在的安全風險。​建議管理CIDRAM通過後端只要有可能，​但前端訪問提供當不可能。​保持關閉除非您需要它。​False（假）=激活前端訪問；True（真）=關閉前端訪問【標準】。"
 config_general_disable_webfonts: "關閉網絡字體嗎？​True（真）=關閉【標準】；False（假）=不關閉。"
-config_general_disabled_channels: "這可用於防止CIDRAM在發送請求時使用特定通道（例如，在更新時，在獲取組件元數據時，等等）。"
+config_general_disabled_channels: "這可用於防止CIDRAM在發送請求時使用特定通道（例如，在更新時、在獲取組件元數據時、等等）。"
 config_general_emailaddr: "如果您希望，​您可以提供電子郵件地址這裡要給予用戶當他們被阻止，​他們使用作為接觸點為支持和/或幫助在的情況下他們錯誤地阻止。​警告:您提供的任何電子郵件地址，​它肯定會被獲得通過垃圾郵件機器人和鏟運機，​所以，​它強烈推薦如果選擇提供一個電子郵件地址這裡，​您保證它是一次性的和/或不是很重要（換一種說法，​您可能不希望使用您的主電子郵件地址或您的企業電子郵件地址）。"
 config_general_emailaddr_display_style: "您希望如何將電子郵件地址呈現給用戶？"
 config_general_empty_fields: "在記錄和顯示阻止事件信息時，CIDRAM如何處理空字段？ 『include』 = 包括空字段。 『omit』 = 省略空字段【標準】。"
@@ -129,7 +129,7 @@ config_general_logfileSerialized: "連載的文件用於記錄所有被攔截的
 config_general_maintenance_mode: "啟用維護模式？​True（真）=關閉；​False（假）=不關閉【標準】。​它停用一切以外前端。​有時候在更新CMS，框架，等時有用。"
 config_general_max_login_attempts: "最大前端登錄嘗試次數。​標準=5。"
 config_general_numbers: "您如何喜歡顯示數字？​選擇最適合示例。"
-config_general_other_verification: "若有可能，嘗試驗證其他類型的請求（例如，AdSense，SEO檢查器，等等）？​當檢測到時，偽造的請求將被阻止。​True（真）=啟用【標準】；​False（假）=禁用。"
+config_general_other_verification: "若有可能，嘗試驗證其他類型的請求（例如，AdSense、SEO檢查器、等等）？​當檢測到時，偽造的請求將被阻止。​True（真）=啟用【標準】；​False（假）=禁用。"
 config_general_outbound_request_log: "用於記錄任何出站請求結果的文件。​指定一個文件名，​或留空以禁用。"
 config_general_protect_frontend: "指定是否應將CIDRAM通常提供的保護應用於前端。​True（真）=是【標準】；False（假）=不是。"
 config_general_search_engine_verification: "嘗試驗證來自搜索引擎的請求？​驗證搜索引擎確保他們不會因超過違規限製而被禁止 （禁止在您的網站上使用搜索引擎通常會有產生負面影響對您的搜索引擎排名，​SEO，​等等）。​當被驗證，​搜索引擎可以被阻止，​但不會被禁止。​當不被驗證，​他們可以由於超過違規限製而被禁止。​另外，​搜索引擎驗證提供保護針對假搜索引擎請求和針對潛在的惡意實體偽裝成搜索引擎（當搜索引擎驗證是啟用，​這些請求將被阻止）。​True（真）=搜索引擎驗證是啟用【標準】；False（假）=搜索引擎驗證是禁用。"
@@ -140,7 +140,7 @@ config_general_social_media_verification: "嘗試驗證社交媒體請求？​�
 config_general_statistics: "跟踪CIDRAM使用情況統計？​True（真）=跟踪；False（假）=不跟踪【標準】。"
 config_general_timeFormat: "CIDRAM使用的日期符號格式。​可根據要求增加附加選項。"
 config_general_timeOffset: "時區偏移量（分鐘）。"
-config_general_timezone: "這用於指定要使用的時區​（例如，Africa/Cairo，America/New_York，Asia/Tokyo，Australia/Perth，Europe/Berlin，Pacific/Guam，等等）。​指定『SYSTEM』使PHP自動為您處理。"
+config_general_timezone: "這用於指定要使用的時區​（例如，Africa/Cairo、America/New_York、Asia/Tokyo、Australia/Perth、Europe/Berlin、Pacific/Guam、等等）。​指定『SYSTEM』使PHP自動為您處理。"
 config_general_truncate: "截斷日誌文件當他們達到一定的大小嗎？​值是在B/KB/MB/GB/TB，​是日誌文件允許的最大大小直到它被截斷。​默認值為『0KB』將禁用截斷（日誌文件可以無限成長）。​注意：適用於單個日誌文件！​日誌文件大小不被算集體的。"
 config_hcaptcha: "HCaptcha的配置（為人們提供了一種在受阻時重新獲得訪問權限的方法）。"
 config_hcaptcha_api: &CaptchaAPI "使用哪個API？"
@@ -182,22 +182,22 @@ config_recaptcha_show_cookie_warning: *ShowCookieWarning
 config_recaptcha_signature_limit: *CaptchaSignatureLimit
 config_recaptcha_sitekey: *CaptchaDashboard
 config_recaptcha_usemode: *CaptchaUseMode
-config_signatures: "簽名，簽名文件，模塊，等的配置。"
+config_signatures: "簽名，簽名文件，模組，等的配置。"
 config_signatures_block_attacks: "阻止攻擊和其他異常流量相關的CIDR嗎？​例如，端口掃描、黑客攻擊、漏洞探測、等等。​除非您遇到問題當這樣做，​通常，​這應該被設置為『true』（真）。"
 config_signatures_block_bogons: "阻止bogon(『ㄅㄡㄍㄛㄋ』)/martian（​『火星』）CIDR嗎？​如果您希望連接到您的網站從您的本地網絡/本地主機/localhost/LAN/等等，​這應該被設置為『false』（假）。​如果不，​這應該被設置為『true』（真）。"
 config_signatures_block_cloud: "阻止CIDR認定為屬於虛擬主機或云服務嗎？​如果您操作一個API服務從您的網站或如果您預計其他網站連接到您的網站，​這應該被設置為『false』（假）。​如果不，​這應該被設置為『true』（真）。"
 config_signatures_block_generic: "阻止CIDR一般建議對於黑名單嗎？​這包括簽名不標記為的一章节任何其他更具體簽名類別。"
-config_signatures_block_legal: "阻止CIDR因為法律義務嗎？​這個指令通常不應該有任何作用，因為CIDRAM默認情況下不會將任何CIDR與『法律義務』相關聯，​但它作為一個額外的控制措施存在，以利於任何可能因法律原因而存在的自定義簽名文件或模塊。"
-config_signatures_block_malware: "阻止與惡意軟體相關的CIDR嗎？​這包括C&C服務器，受感染的機器，涉及惡意軟體分發的機器，等等。"
+config_signatures_block_legal: "阻止CIDR因為法律義務嗎？​這個指令通常不應該有任何作用，因為CIDRAM默認情況下不會將任何CIDR與『法律義務』相關聯，​但它作為一個額外的控制措施存在，以利於任何可能因法律原因而存在的自定義簽名文件或模組。"
+config_signatures_block_malware: "阻止與惡意軟體相關的CIDR嗎？​這包括C&C服務器、受感染的機器、涉及惡意軟體分發的機器、等等。"
 config_signatures_block_proxies: "阻止CIDR認定為屬於代理服務或VPN嗎？​如果您需要該用戶可以訪問您的網站從代理服務和VPN，​這應該被設置為『false』（假）。​除此以外，​如果您不需要代理服務或VPN，​這應該被設置為『true』（真）作為一個方式以提高安全性。"
 config_signatures_block_spam: "阻止高風險垃圾郵件CIDR嗎？​除非您遇到問題當這樣做，​通常，​這應該被設置為『true』（真）。"
-config_signatures_default_tracktime: "多少秒鐘來跟踪模塊禁止的IP。 標準 = 604800 （1週）。"
+config_signatures_default_tracktime: "多少秒鐘來跟踪模組禁止的IP。 標準 = 604800 （1週）。"
 config_signatures_infraction_limit: "從IP最大允許違規數量之前它被禁止。​標準=10。"
 config_signatures_ipv4: "列表的IPv4簽名文件，​CIDRAM應該嘗試使用，​用逗號分隔。"
 config_signatures_ipv6: "列表的IPv6簽名文件，​CIDRAM應該嘗試使用，​用逗號分隔。"
-config_signatures_modules: "模塊文件要加載的列表以後檢查簽名IPv4/IPv6，​用逗號分隔。"
-config_signatures_track_mode: "何時應該記錄違規？​False（假）=當IP被模塊阻止時。​True（真）=當IP由於任何原因阻止時。 默認 = False。"
-config_signatures_tracking_override: "允許模塊覆蓋跟踪選項嗎？​True（真）=允許【標準】；False（假）=不允許。"
+config_signatures_modules: "模組文件要加載的列表以後檢查簽名IPv4/IPv6，​用逗號分隔。"
+config_signatures_track_mode: "何時應該記錄違規？​False（假）=當IP被模組阻止時。​True（真）=當IP由於任何原因阻止時。 默認 = False。"
+config_signatures_tracking_override: "允許模組覆蓋跟踪選項嗎？​True（真）=允許【標準】；False（假）=不允許。"
 config_supplementary_cache_options: "補充緩存選項。"
 config_supplementary_cache_options_enable_apcu: "指定是否嘗試使用APCu進行緩存。 默認 = False。"
 config_supplementary_cache_options_enable_memcached: "指定是否嘗試使用Memcached進行緩存。 默認 = False。"
@@ -313,21 +313,21 @@ hints_pdo_dsn:
 info_some_useful_links: |+
  一些有用的链接：<br />
      <ul class="pieul">
-       <li><span class="comCat">CIDRAM的工具，資源，等等。</span>
+       <li><span class="comCat">CIDRAM的工具、資源、等等。</span>
          <ul class="comSub">
-           <li>{{Links.CIDRAM.Issues}} – CIDRAM問題頁面（支持，​協助，​等等）。</li>
+           <li>{{Links.CIDRAM.Issues}} – CIDRAM問題頁面（支持、協助、等等）。</li>
            <li>{{Links.CIDRAM.WordPress}} – CIDRAM WordPress外掛。</li>
            <li><a href="https://www.oschina.net/p/CIDRAM" hreflang="zh-CN" rel="noopener noreferrer external">CIDRAM＠開源中國社區</a> – CIDRAM頁面託管在開源中國社區。</li>
            <li>{{Links.CIDRAM.Extras}} – 各種附加功能。</li>
          </ul>
        </li>
-       <li><span class="comCat">團體，論壇，社區，等等。</span>
+       <li><span class="comCat">團體、論壇、社區、等等。</span>
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Facebook}} – PHP學習資源和討論。</li>
            <li><a href="https://www.stopforumspam.com/forum/" rel="noopener noreferrer external">論壇 ＠ Stop Forum Spam</a> – 有用的討論論壇關於停止論壇垃圾郵件。</li>
          </ul>
        </li>
-       <li><span class="comCat">其他有用的工具，資源，服務，等等</span>
+       <li><span class="comCat">其他有用的工具、資源、服務、等等</span>
          <ul class="comSub">
            <li>{{Links.SFS}} – 維護已知論壇垃圾郵件發送者的數據庫。有用的保護網站和論壇免受垃圾郵件發送者的攻。</li>
            <li><a href="https://bgp.he.net/" hreflang="en-US" rel="noopener noreferrer external">Hurricane Electric BGP Toolkit</a> – 從ASN獲取CIDR，​確定ASN關係，​基於網絡名稱發現ASN，​等等。</li>
@@ -342,8 +342,8 @@ info_some_useful_links: |+
          <ul class="comSub">
            <li>{{Links.PHP.Earth.Website}} – PHP學習資源和討論。</li>
            <li>{{Links.MDN.Homepage}} – 由開發人員，為開發人員提供的資源。這是學習HTML、CSS、JavaScript、輔助功能、等知識的絕佳資源。</li>
-           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">脆弱性圖表</a> – 列出各種軟件包的安全/不安全版本（HHVM，PHP，phpMyAdmin，Python，等等）。</li>
-           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">兼容性圖表</a> – 列出各種軟件包的兼容性信息（CIDRAM，phpMussel，等等）。</li>
+           <li><a href="https://maikuolan.github.io/Vulnerability-Charts/" hreflang="en-AU" rel="noopener noreferrer external">脆弱性圖表</a> – 列出各種軟件包的安全/不安全版本（HHVM、PHP、phpMyAdmin、Python、等等）。</li>
+           <li><a href="https://maikuolan.github.io/Compatibility-Charts/" hreflang="en-AU" rel="noopener noreferrer external">兼容性圖表</a> – 列出各種軟件包的兼容性信息（CIDRAM、phpMussel、等等）。</li>
          </ul>
        </li>
      </ul>
@@ -402,7 +402,7 @@ label_blocked: "請求已阻止"
 label_branch: "分支最新穩定："
 label_captcha: "CAPTCHA嘗試"
 label_check_aux: "也用輔助規則進行測試。"
-label_check_modules: "也用模塊進行測試。"
+label_check_modules: "也用模組進行測試。"
 label_check_verification: "也用搜索引擎和社交媒體驗證進行測試。"
 label_checkbox: "選框"
 label_cidram: "目前使用CIDRAM版本："
@@ -424,7 +424,7 @@ label_false_positive_risk: "假陽性風險："
 label_fmgr_cache_data: "緩存數據和臨時文件"
 label_fmgr_disk_usage: "CIDRAM使用的磁盤空間："
 label_fmgr_free_space: "可用磁盤空間："
-label_fmgr_other_sig: "其他規則，簽名文件，等等"
+label_fmgr_other_sig: "其他規則、簽名文件、等等"
 label_fmgr_safety: "安全機制"
 label_fmgr_total_disk_usage: "總共使用的磁盤空間："
 label_fmgr_total_space: "總磁盤空間："
@@ -453,7 +453,7 @@ label_os: "目前使用操作系統："
 label_other: "其他"
 label_other-ActiveIPv4: "活動IPv4簽名文件"
 label_other-ActiveIPv6: "活動IPv6簽名文件"
-label_other-ActiveModules: "活動模塊"
+label_other-ActiveModules: "活動模組"
 label_other-Since: "開始日期"
 label_paginate: "分頁"
 label_passed: "允許的請求"
@@ -487,7 +487,7 @@ label_textmode: "文字格式："
 label_textmode_fancy: "漂亮"
 label_textmode_simple: "簡單"
 label_textmode_tally: "理貨"
-label_timeout_limit: "該模塊執行外部請求。​您可以在此處指定這些請求的超時限制（以秒為單位）。"
+label_timeout_limit: "該模組執行外部請求。​您可以在此處指定這些請求的超時限制（以秒為單位）。"
 label_total: "總"
 label_unignore: "不要忽略這個"
 label_unstable: "最新不穩定："
@@ -588,7 +588,7 @@ response_login_wrong_endpoint: "錯誤的端點！"
 response_no: "不是"
 response_not_satisfied: "不滿意。"
 response_passed: "成功"
-response_please_check_config: "請檢查您的配置，以確保新安裝的模塊按您的意願運行。"
+response_please_check_config: "請檢查您的配置，以確保新安裝的模組按您的意願運行。"
 response_ready_to_install: "準備安裝。"
 response_redirected: "重定向"
 response_rename_error: "無法改名！"
@@ -702,7 +702,7 @@ tip_sections_list: "你好，{username}。<br />此頁面列出當前活動簽�
 tip_see_the_documentation: "請參閱<a href="https://github.com/CIDRAM/Docs/blob/master/v2-and-earlier/readme.zh-Hant.md\#user-content-SECTION6" hreflang="zh-TW" rel="noopener external">文檔</a>以獲取有關各種配置指令的信息和他們的目的。"
 tip_statistics: "你好，{username}。<br />此頁面顯示了有關CIDRAM安裝的一些基本使用統計信息。"
 tip_statistics_disabled: "注意：統計跟踪目前已被禁用，但可以通過配置頁面啟用。"
-tip_updates: "你好，{username}。<br />更新頁面允許您安裝，卸載，和更新CIDRAM的各種組件（核心包，簽名，L10N文件，等等）。"
+tip_updates: "你好，{username}。<br />更新頁面允許您安裝，卸載，和更新CIDRAM的各種組件（核心包、簽名、L10N文件、等等）。"
 title_login: "登錄"
 warning_file_php: "警告：一些虛擬主機在檢測到請求中的PHP標記時會自動禁止IP位址（例如，當試圖通過瀏覽器修改PHP文件時）。 CIDRAM無法知道您的虛擬主機是否這樣做。 為了避免出現問題，建議盡可能不要以這種方式編輯PHP文件。"
 warning_file_overwritten: "警告：您當前正在編輯的文件屬於組件『%s』。對該文件所做的任何更改很可能會在下次更新該組件時被覆蓋。"

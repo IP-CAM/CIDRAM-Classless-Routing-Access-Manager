@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Turkish language data (last modified: 2024.12.20).
+# This file: Turkish language data (last modified: 2024.12.28).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -46,7 +46,7 @@ Short_BadIP: "Geçersiz IP"
 Short_Banned: "Yasaklandı"
 Short_Bogon: "Bogon IP"
 Short_Cloud: "Bulut hizmeti"
-Short_Conflict: "Anlaşmazlık"
+Short_Conflict: "Çakışma"
 Short_Fake_UA: "Sahte %s"
 Short_Generic: "Genel"
 Short_Legal: "Yasal"
