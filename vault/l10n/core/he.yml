@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hebrew language data (last modified: 2024.12.20).
+# This file: Hebrew language data (last modified: 2025.01.06).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -43,7 +43,7 @@ Short_BadIP: "IP לא חוקי"
 Short_Banned: "אָסוּר"
 Short_Bogon: "בוגון IP"
 Short_Cloud: "שירות ענן"
-Short_Conflict: "סתירה"
+Short_Conflict: "התנגשות"
 Short_Fake_UA: "%s מזויף"
 Short_Generic: "גנרית"
 Short_Legal: "משפטי"

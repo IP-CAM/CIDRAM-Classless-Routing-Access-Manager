@@ -781,11 +781,11 @@ l10n/core/gu:
    Checksum: "fea65dfc8ceab147041968c02ee7ce5e66f3f5dd6e215832f2cdd0616f9c1f12:14705"
 l10n/core/he:
  Extended Description: "לוקליזציה עברית"
- Version: "2024.358.0"
+ Version: "2025.5.0"
  Files:
   l10n/core/he.yml:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/l10n/core/he.yml"
-   Checksum: "d2740079817c1e3620c8ccac38194ebce60e0297b47094f2c75e5871e02e6480:9074"
+   Checksum: "f794f08ddbc602b6c1ee5957b433d74ebb208ff4c7f5e32502a5b70c45bed2cc:9078"
 l10n/core/hi:
  Extended Description: "हिंदी भाषा स्थानीयकरण"
  Version: "2024.358.0"
@@ -935,11 +935,11 @@ l10n/core/sv:
    Checksum: "579d5f6fd96093f49167eebcc57927a642746b51b01fe25c8d11b04066c2e88d:8189"
 l10n/core/ta:
  Extended Description: "தமிழ் உள்ளூர்மயமாக்கல்"
- Version: "2024.358.0"
+ Version: "2025.5.0"
  Files:
   l10n/core/ta.yml:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/l10n/core/ta.yml"
-   Checksum: "44b48c40fce76eb8051623d5ad1425540d93a5ee8ffd0b37cddda117c24e58ef:16758"
+   Checksum: "5fd01c796156d87020afc6454f61497ea843086a904dc8573e8ba31eafddcf39:16770"
 l10n/core/th:
  Extended Description: "การแปลภาษาไทย"
  Version: "2024.358.0"
@@ -1102,11 +1102,11 @@ l10n/frontend/gu:
    Checksum: "e763311c166f3b8a8da1e95a0ddd52365be7381c7f7754acb3f7e982f528e79d:171280"
 l10n/frontend/he:
  Extended Description: "לוקליזציה עברית"
- Version: "2024.329.0"
+ Version: "2025.5.0"
  Files:
   l10n/frontend/he.yml:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/l10n/frontend/he.yml"
-   Checksum: "b56c789f6dfbb19bca9c0bb36854ad54b56d75cc6b0c05c7f06ae5db8421b784:104530"
+   Checksum: "bfabb9ddfd6418b002c57737ca39e850b66a65f779a93f9ca5f8a63a0b64950e:105977"
 l10n/frontend/hi:
  Extended Description: "हिंदी भाषा स्थानीयकरण"
  Version: "2024.329.0"
@@ -1245,11 +1245,11 @@ l10n/frontend/ta:
    Checksum: "2c320924f2063ec267a47534ed85f240b81a5b6e8bd96a83d28ccc6421536183:201292"
 l10n/frontend/th:
  Extended Description: "การแปลภาษาไทย"
- Version: "2024.329.0"
+ Version: "2025.5.0"
  Files:
   l10n/frontend/th.yml:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/l10n/frontend/th.yml"
-   Checksum: "7321c43126a7ae5412da05f18e544af9b5ad36757867ed2884241eef9d85cee7:158798"
+   Checksum: "a3a21e3ad3079833839d467fc924df14d9766249c9d334497bd06615fc88b01a:161579"
 l10n/frontend/tr:
  Extended Description: "Türkçe yerelleştirme"
  Version: "2024.364.0"
@@ -1280,7 +1280,7 @@ l10n/frontend/vi:
    Checksum: "99ca7b3b8f7e39ca47c63b0da9abe951cfd226e410e827406d7f15521c052402:108146"
 l10n/frontend/zh:
  Extended Description: "中文本地化"
- Version: "2024.329.0"
+ Version: "2025.5.0"
  Dependencies:
   CIDRAM Core: "^3.6"
  When Update Succeeds:
@@ -1288,7 +1288,7 @@ l10n/frontend/zh:
  Files:
   l10n/frontend/zh.yml:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/l10n/frontend/zh.yml"
-   Checksum: "3132ddf0fa645568173e8d38275a7417bc29d9d32b2e1e9521d1671b3083715d:151798"
+   Checksum: "1809b34749749c7be67d77e02e797083b941c6c4aef64d7dd6f49ccd8f30e4db:153714"
 AbuseIPDB module:
  False Positive Risk: "Medium"
  Version: "2024.260.0"
