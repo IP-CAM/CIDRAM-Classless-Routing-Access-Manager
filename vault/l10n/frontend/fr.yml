@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: French language data for the front-end (last modified: 2024.11.25).
+# This file: French language data for the front-end (last modified: 2025.01.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -291,6 +291,7 @@ config:
  recaptcha_usemode: *CaptchaUseMode
  sfs: "Configuration du module Stop Forum Spam."
  signatures: "Configuration pour les signatures, fichiers de signatures, modules, etc."
+ signatures_conflict_response: "Lorsqu'il y a trop de tentatives simultanées pour accéder aux mêmes ressources (par exemple, des requêtes simultanées à plusieurs processus PHP sur la même machine pour les mêmes ressources), certaines de ces tentatives peuvent échouer. Dans le cas rare et peu probable où cela affecte les fichiers de signature ou les modules, CIDRAM peut être empêché de prendre une décision efficace concernant la requête. Dans un tel cas, la requête doit-elle être bloquée, et quel message d’état HTTP CIDRAM doit-il envoyer\_?"
  signatures_default_tracktime: "La durée pendant laquelle les adresses IP doivent être suivies. Défaut = 7d0°0′0″ (1 semaine)."
  signatures_infraction_limit: "Nombre maximal d'infractions qu'une IP est autorisée à engager avant d'être interdite par la surveillance des IPs. Défaut = 10."
  signatures_shorthand: "Contrôle ce qu'il faut faire avec une requête lorsqu'il y a une correspondance positive avec une signature qui utilise les mots abrégés donnés."
@@ -437,7 +438,7 @@ hints_shorthand:
  3.: "L'utilisation directe dans les signatures n'est pas supporté, mais elle peut être invoqué par d'autres moyens dans des circonstances particulières."
  4.: "Fait référence aux cas où les mots abrégés ne sont pas du tout utilisés, ou ne sont pas reconnus par le CIDRAM."
  Un par signature.: "Une signature peut invoquer plusieurs profils, mais ne peut utiliser qu'un seul mot abrégé. Il est possible que plusieurs mots abrégés sont appropriés, mais comme un seul peut être utilisé, nous efforçons de toujours n'utiliser que le plus approprié."
- Priorité.: "Une option sélectionnée est toujours prioritaire sur une option non sélectionnée. Par exemple, si plusieurs mots abrégés sont en jeu mais qu'un seul d'entre eux est défini comme étant bloqué, la demande sera toujours bloqué."
+ Priorité.: "Une option sélectionnée est toujours prioritaire sur une option non sélectionnée. Par exemple, si plusieurs mots abrégés sont en jeu mais qu'un seul d'entre eux est défini comme étant bloqué, la requête sera toujours bloqué."
  Points de terminaison humains et services de cloud.: "Service de cloud peut faire référence aux fournisseurs d'hébergement Web, aux fermes de serveurs, aux centres de données, ou à un certain nombre d'autres choses. Point de terminaison humain fait référence aux moyens par lesquels un humain accède à internet, par exemple, par le biais d'un fournisseur de services internet. Un réseau ne fournit généralement que l'un ou l'autre, mais peut parfois fournir les deux. Nous visons à ne jamais identifier les points de terminaison humains potentiels comme des services de cloud. Par conséquent, un service de cloud peut être identifié comme autre chose si sa gamme est partagé par des points de terminaison humains connus. À l'inverse, nous visons à toujours identifier les services de cloud, dont les gammes ne sont partagés par aucun point de terminaison humain connu, comme des services de cloud. Par conséquent, une requête identifié explicitement comme un service de cloud ne partage probablement pas sa gamme avec des points de terminaison humains connus. De même, une requête identifié explicitement par des attaques ou des spam risque les partage probablement. Cela dit, l'internet est toujours en mouvement, les objectifs des réseaux changent avec le temps, et les gammes sont toujours achetés ou vendues, alors restez conscient et vigilant en ce qui concerne les faux positifs."
 hints_time_format: |
  <strong><em>Espace réservé – Explication – Exemple basé sur 2024-04-30T18:27:49+08:00.</em></strong><br />
@@ -555,6 +556,7 @@ label:
  307 Temporary Redirect: "307 Temporary Redirect (Redirection temporaire)\nIndique au client que la redirection est TEMPORAIRE, et que la méthode de requête utilisé pour la redirection ne peut PAS être différente de la méthode de requête utilisé pour la requête initiale."
  308 Permanent Redirect: "308 Permanent Redirect (Redirection permanente)\nIndique au client que la redirection est PERMANENTE, et que la méthode de requête utilisé pour la redirection ne peut PAS être différente de la méthode de requête utilisé pour la requête initiale."
  403 Forbidden: "403 Forbidden (Interdit)\nPlus robuste, mais moins convivial. Recommandé pour la plupart des circonstances générales."
+ 409 Conflict: "409 Conflit\nRecommandé pour les conflits de ressources (par exemple, conflits de fusion, conflits d'accès aux fichiers, etc). Non recommandé dans d'autres contextes."
  410 Gone: "410 Gone (Parti)\nPeut causer des problèmes lors de la résolution des faux positifs, car certains navigateurs mettront en cache ce message d'état et n'enverront pas de requêtes ultérieures, même après avoir été débloqués. Peut être le plus préférable dans certains contextes, pour certains types de trafic."
  418 I_m a teapot: "418 I'm a teapot (Je suis une théière)\nFait référence à une blague du poisson d'avril ({{Links.RFC2324}}). Il est très peu probable qu'il soit compris par un client, un bot, un navigateur, ou autre. Fourni pour le divertissement et la commodité, mais généralement pas recommandé."
  429 Too Many Requests: "429 Too Many Requests (Trop de requêtes)\nRecommandé pour la limitation du débit, en cas d'attaques DDoS, et pour la prévention des inondations. Non recommandé dans d'autres contextes."
@@ -602,6 +604,7 @@ label:
  Displaying %s entry:
   - "%s entrée affichée."
   - "%s entrées affichées."
+ Don_t block the request: "Ne bloquez pas la requête.\nSi vous préférez que les requêtes ne soient bloquées que lorsque vous êtes certain qu'elles sont malveillantes, ou que vous préfériez faire preuve de prudence concernant les faux positifs (au prix d'un trafic indésirable qui passe occasionnellement), choisissez cette option. Si vous préférez que les requêtes soient bloquées si vous n'êtes pas certain qu'elles sont bénignes, ou faire preuve de vigilance (au prix de faux positifs occasionnels), choisissez l'une des autres options disponibles."
  Empty, unfamiliar, and others: "Vide, inconnu, et autres."
  Entries per page: "Entrées par page\_:"
  Every request: "Chaque requête.\nPlus rigoureux et minutieux, mais aussi plus susceptible d'atteindre les limites et les quotas beaucoup plus rapidement, ce qui peut entraîner le blocage du service au moment où il est le plus nécessaire. De plus, bien que les résultats de la recherche soient toujours mis en cache, cela pourrait néanmoins avoir un impact négatif sur les performances du site Web dans certains cas. Peut être nécessaire dans certains cas, mais généralement pas recommandé."
