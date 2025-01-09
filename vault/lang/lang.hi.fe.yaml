@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Hindi language data for the front-end (last modified: 2024.07.23).
+# This file: Hindi language data for the front-end (last modified: 2025.01.08).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -27,11 +27,11 @@
 Extended Description Bypasses: "डिफ़ॉल्ट हस्ताक्षर बाईपास फाइलों को सामान्यतः मुख्य पैकेज के साथ शामिल किया गया था।"
 Extended Description CIDRAM: "मुख्य पैकेज (हस्ताक्षर, डॉक्यूमेंटेशन, और कॉन्फ़िगरेशन के बिना)।"
 Extended Description Chart.js: "पाई चार्ट उत्पन्न करने के लिए सामने के अंत सक्षम करता है।<br />{{Links.Chart.js}} {{Links.MIT}} लाइसेंस के माध्यम से उपलब्ध है।"
-Extended Description IPv4: &ExtDesCloud "अवांछित क्लाउड सेवाओं और गैर-मानव समापन बिंदुओं को ब्लॉक करता है।"
-Extended Description IPv4-Bogons: &ExtDesBogons "ब्लॉक बोगोन/मार्टिन CIDR।"
-Extended Description IPv4-ISPs: &ExtDesISPs "खतरनाक और स्पैम ISP ब्लॉक करता है (मल्टीप्ले नेटवर्क शामिल हैं, जिसमें मानव और गैर-मानव दोनों समापन बिंदु शामिल हो सकते हैं)।"
+Extended Description IPv4: &ExtDesCloud "अवांछित क्लाउड सेवाओं और गैर-मानव समापन बिंदुओं को अवरुद्ध करता है।"
+Extended Description IPv4-Bogons: &ExtDesBogons "CIDR के लिए बोगोन/मार्टिन को अवरुद्ध करता।"
+Extended Description IPv4-ISPs: &ExtDesISPs "खतरनाक और स्पैम ISP अवरुद्ध करता है (मल्टीप्ले नेटवर्क शामिल हैं, जिसमें मानव और गैर-मानव दोनों समापन बिंदु शामिल हो सकते हैं)।"
 Extended Description IPv4-Nonblocking: &ExtDesNonblocking "प्रोफाइलिंग के लिए उपयोगी है, लेकिन अपने आप में कुछ भी ब्लॉक नहीं करता है।"
-Extended Description IPv4-Other: &ExtDesOther "प्रॉक्सी, VPN, और अन्य विविध अवांछित सेवाओं के लिए CIDR ब्लॉक करता है।"
+Extended Description IPv4-Other: &ExtDesOther "प्रॉक्सी, VPN, और अन्य विविध अवांछित सेवाओं के लिए CIDR अवरुद्ध करता है।"
 Extended Description IPv6: *ExtDesCloud
 Extended Description IPv6-Bogons: *ExtDesBogons
 Extended Description IPv6-ISPs: *ExtDesISPs
@@ -40,15 +40,15 @@ Extended Description IPv6-Other: *ExtDesOther
 Extended Description PHPMailer: "ईमेल भेजने में शामिल किसी भी कार्यक्षमता का उपयोग करने के लिए आवश्यक है।<br />{{Links.PHPMailer.PHPMailer}} {{Links.PHPMailer.License}} लाइसेंस के माध्यम से उपलब्ध है।"
 Extended Description Search engines blocker module: "खोज इंजन को ब्लॉक करने की क्षमता प्रदान करता है जो कुछ वेबसाइटों के लिए समस्याग्रस्त हो सकता है (जैसे., Baidu, Sogou, Yandex, आदि)।"
 Extended Description flags.css: "फ्रंट-एंड लॉग पृष्ठ पर ध्वज समर्थन जोड़ता है।"
-Extended Description module_abuseipdb.php: "AbuseIPDB पर सूचीबद्ध IP से अनुरोध ब्लॉक करता है।"
+Extended Description module_abuseipdb.php: "AbuseIPDB पर सूचीबद्ध IP से अनुरोध अवरुद्ध करता है।"
 Extended Description module_badhosts.php: "यह ब्लॉक होस्ट करता है, अक्सर स्पैमर, हैकर्स, और अन्य नेफ़ायस संस्थाओं द्वारा उपयोग किया जाता है।"
 Extended Description module_badhosts_isps.php: "यह ब्लॉक ISP के स्वामित्व वाली होस्ट करता है, अक्सर स्पैमर, हैकर्स, और अन्य नेफ़ायस संस्थाओं द्वारा उपयोग किया जाता है।"
 Extended Description module_badtlds.php: "यह ब्लॉक TLD के स्वामित्व वाली होस्ट करता है, अक्सर स्पैमर, हैकर्स, और अन्य नेफ़ायस संस्थाओं द्वारा उपयोग किया जाता है।"
 Extended Description module_botua.php: "अवांछित बॉट और घृणित गतिविधि से जुड़े उपयोगकर्ता एजेंट ब्लॉक।"
 Extended Description module_cookies.php: "खतरनाक कुकीज़ के विरुद्ध कुछ सीमित सुरक्षा प्रदान करता है।"
 Extended Description module_extras.php: "आम तौर पर अनुरोधों में उपयोग किए गए विभिन्न हमले वाले वैक्टर के खिलाफ कुछ सीमित सुरक्षा प्रदान करता है।"
-Extended Description module_httpver.php: "CIDRAM कॉन्फ़िगरेशन के माध्यम से विशिष्ट प्रोटोकॉल और HTTP संस्करणों को ब्लॉक करना संभव बनाता है।"
-Extended Description module_projecthoneypot.php: "Project Honeypot पर सूचीबद्ध IP से अनुरोध ब्लॉक करता है।"
+Extended Description module_httpver.php: "CIDRAM कॉन्फ़िगरेशन के माध्यम से विशिष्ट प्रोटोकॉल और HTTP संस्करणों को अवरुद्ध करना संभव बनाता है।"
+Extended Description module_projecthoneypot.php: "Project Honeypot पर सूचीबद्ध IP से अनुरोध अवरुद्ध करता है।"
 Extended Description module_refspam.php: "रेफरल स्पैम पर आधारित ब्लॉकिंग आम तौर पर कोई सार्थक सुरक्षा लाभ प्रदान नहीं करेगा, लेकिन कुछ मामलों में, कुछ उपयोगकर्ताओं के लिए उपयोगी हो सकता है, अनुरोधों के बारे में अधिक जानकारी इकट्ठा करने के लिए, और इसे रिपोर्ट करने में सक्षम होने के लिए।"
 Extended Description module_sfs.php: "एसएफएस द्वारा सूचीबद्ध IP पते से पंजीकरण और लॉगिन पृष्ठ की सुरक्षा करता है।"
 Name Bypasses: "डिफ़ॉल्ट हस्ताक्षर बाईपास।"
@@ -183,11 +183,11 @@ config_recaptcha_signature_limit: *CaptchaSignatureLimit
 config_recaptcha_sitekey: *CaptchaDashboard
 config_recaptcha_usemode: *CaptchaUseMode
 config_signatures: "हस्ताक्षर, हस्ताक्षर फाइलें, मॉड्यूल, आदि के लिए कॉन्फ़िगरेशन।"
-config_signatures_block_attacks: "हमलों और अन्य असामान्य ट्रैफ़िक से जुड़े CIDRs को ब्लॉक करें? जैसे., पोर्ट स्कैन, हैकिंग, कमजोरियों की जांच, आदि। ऐसा करने जब आप समस्याओं का सामना होता है जब तक आम तौर पर, यह हमेशा सच के लिए निर्धारित किया जाना चाहिए।"
+config_signatures_block_attacks: "हमलों और अन्य असामान्य ट्रैफ़िक से जुड़े CIDRs को अवरुद्ध करें? जैसे., पोर्ट स्कैन, हैकिंग, कमजोरियों की जांच, आदि। ऐसा करने जब आप समस्याओं का सामना होता है जब तक आम तौर पर, यह हमेशा सच के लिए निर्धारित किया जाना चाहिए।"
 config_signatures_block_bogons: "अवरुद्ध bogon/martian की CIDRs? आप स्थानीय होस्ट, या अपने LAN अपने स्थानीय नेटवर्क के भीतर से अपनी वेबसाइट पर कनेक्शन, उम्मीद है, यह नुस्खा के गलत पर सेट किया जाना चाहिए। आप उनमें ऐसे कनेक्शनों की उम्मीद नहीं है, तो यह नुस्खा सही पर सेट किया जाना चाहिए।"
 config_signatures_block_cloud: "अवरुद्ध CIDRs webhosting के/बादल सेवाओं से संबंधित के रूप में पहचान? आप अपनी वेबसाइट से एक API सेवा संचालित या आप अन्य वेब साइटों को अपनी वेबसाइट से कनेक्ट करने की उम्मीद है, तो इस झूठ के लिए निर्धारित किया जाना चाहिए। आप ऐसा नहीं करते, तो, यह नुस्खा सही पर सेट किया जाना चाहिए।"
 config_signatures_block_generic: "अवरुद्ध CIDRs आमतौर पर काली सूची सिफारिश? यह अन्य अधिक विशिष्ट हस्ताक्षर प्रकार से किसी का हिस्सा होने के रूप में चिह्नित नहीं है कि किसी भी हस्ताक्षर के कवर।"
-config_signatures_block_legal: "कानूनी दायित्वों के जवाब में CIDRs ब्लॉक करें? इस निर्देश का सामान्य रूप से कोई प्रभाव नहीं होना चाहिए, क्योंकि CIDRAM किसी भी CIDRs को डिफ़ॉल्ट रूप से "कानूनी दायित्वों" से संबद्ध नहीं करता है, लेकिन यह कानूनी कारणों से मौजूद किसी भी कस्टम हस्ताक्षर फाइलों या मॉड्यूल के लिए अतिरिक्त नियंत्रण उपाय के रूप में वैसे भी मौजूद है।"
+config_signatures_block_legal: "कानूनी दायित्वों के जवाब में CIDRs अवरुद्ध करें? इस निर्देश का सामान्य रूप से कोई प्रभाव नहीं होना चाहिए, क्योंकि CIDRAM किसी भी CIDRs को डिफ़ॉल्ट रूप से "कानूनी दायित्वों" से संबद्ध नहीं करता है, लेकिन यह कानूनी कारणों से मौजूद किसी भी कस्टम हस्ताक्षर फाइलों या मॉड्यूल के लिए अतिरिक्त नियंत्रण उपाय के रूप में वैसे भी मौजूद है।"
 config_signatures_block_malware: "मैलवेयर से जुड़े ब्लॉक CIDRs? इसमें C&C सर्वर, संक्रमित मशीनें, मैलवेयर वितरण आदि में शामिल मशीनें शामिल हैं।"
 config_signatures_block_proxies: "अवरुद्ध CIDRs प्रॉक्सी सेवाओं या VPN से संबंधित के रूप में पहचान? अपने उपयोगकर्ताओं प्रॉक्सी सेवाओं या VPN आप साइट तक पहुँचने के लिए सक्षम होने की आवश्यकता है, तो उसके गलत पर सेट किया जाना चाहिए। अन्यथा, अगर आपको प्रॉक्सी सेवाओं या VPN की आवश्यकता नहीं है, यह विकल्प सच सुधार सुरक्षा का एक साधन के रूप में सेट किया जाना चाहिए।"
 config_signatures_block_spam: "अवरुद्ध CIDRs स्पैम के लिए उच्च जोखिम के रूप में पहचाना? ऐसा करने जब आप समस्याओं का सामना होता है जब तक आम तौर पर, यह हमेशा सच के लिए निर्धारित किया जाना चाहिए।"
@@ -350,7 +350,7 @@ info_some_useful_links: |+
      </ul>
 label_active_config_file: "सक्रिय कॉन्फ़िगरेशन फाइल:"
 label_actual: "वास्तविक"
-label_aux_actBlk: "ब्लॉक"
+label_aux_actBlk: "अवरुद्ध"
 label_aux_actByp: "बाईपास"
 label_aux_actGrl: "धूसर सूची"
 label_aux_actLog: "लॉग न करें"
@@ -698,7 +698,7 @@ tip_file_manager: "नमस्ते, {username}।<br />फाइल प्र
 tip_fixer: "नमस्ते, {username}।<br />यहां आप हस्ताक्षर फाइलों में संभावित समस्याओं का पता लगा सकते हैं और उन्हें ठीक कर सकते हैं।"
 tip_home: "नमस्ते, {username}।<br />यह CIDRAM सामने के अंत के होमपेज है। जारी रखने के लिए बाईं ओर नेविगेशन मेनू से एक लिंक का चयन करें।"
 tip_ip_aggregator: "नमस्ते, {username}।<br />IP एग्रीगेटर आपको कम से कम संभव तरीके से IP और CIDR को व्यक्त करने की अनुमति देता है। इकट्ठा करने के लिए डेटा दर्ज करें और "ओके" दबाएं।"
-tip_ip_test: "नमस्ते, {username}।<br />IP परीक्षण पृष्ठ आपको यह जांचने की अनुमति देता है कि वर्तमान में स्थापित हस्ताक्षरों द्वारा IP पते ब्लॉक किए गए हैं या नहीं।"
+tip_ip_test: "नमस्ते, {username}।<br />IP परीक्षण पृष्ठ आपको यह जांचने की अनुमति देता है कि वर्तमान में स्थापित हस्ताक्षरों द्वारा IP पते अवरुद्ध किए गए हैं या नहीं।"
 tip_ip_test_switches: "(चयनित न होने पर, केवल हस्ताक्षर फाइलों को इसके खिलाफ परीक्षण किया जाएगा)।"
 tip_ip_tracking: "नमस्ते, {username}।<br />IP ट्रैकिंग पृष्ठ आपको IP पते की ट्रैकिंग स्थिति की जांच करने की अनुमति देता है। आप जांच सकते हैं कि किस पर प्रतिबंध लगा दिया गया है, और जब आवश्यक हो, आप प्रतिबंधों को रद्द कर सकते हैं।"
 tip_logs: "नमस्ते, {username}।<br />इसकी सामग्री देखने के लिए नीचे दी गई सूची से एक लॉग फाइल चुनें।"

@@ -582,7 +582,7 @@ l10n/fr:
 l10n/hi:
  Name: "L10N: हिंदी"
  Extended Description: "हिंदी भाषा डाटा"
- Version: "2025.3.0"
+ Version: "2025.7.0"
  Dependencies:
   CIDRAM Core: "^1.10"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v1/vault/components.dat"
@@ -598,7 +598,7 @@ l10n/hi:
    - "lang/lang.hi.yaml"
   Checksum:
    - "0289fae6ce39256042b5ea066cbbe9bf7de4fb06a2d77a4b2df0d26529adafb6:7766"
-   - "01a69eb5a3c4bfa48a03b848ca992a38608ab279a7b27552b4efbf2ef1d84651:117317"
+   - "05bf5430a417df6e73d4df303fa2e4b289e5a15e077fac365b78215cc3e8bcd1:117420"
    - "8f1859da206a4cbcecae6914c5d823749ff3e8c557a1d9f6d89a9904fa83acda:10800"
  Reannotate: "components.dat"
 l10n/id:
