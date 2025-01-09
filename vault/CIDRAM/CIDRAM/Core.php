@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: The CIDRAM core (last modified: 2024.12.26).
+ * This file: The CIDRAM core (last modified: 2025.01.09).
  */
 
 namespace CIDRAM\CIDRAM;
@@ -574,30 +574,9 @@ class Core
             }
             if ($this->CIDRAM['FileCache'][$Files[$FileIndex]] === '') {
                 if ($this->CIDRAM['FileCacheErrors'][$Files[$FileIndex]] !== 0 && $this->Configuration['signatures']['conflict_response'] !== 0) {
-                    if ($this->Configuration['signatures']['conflict_response'] === 429) {
-                        $Signature = 'RL';
-                        $this->BlockInfo['ReasonMessage'] = sprintf($this->L10N->getString('ReasonMessage_RL'), sprintf($this->L10N->getPlural(3, '%s seconds'), $this->NumberFormatter->format(3)));
-                    } else {
-                        $Signature = 'Conflict';
-                        $this->BlockInfo['ReasonMessage'] = $this->L10N->getString('ReasonMessage_Conflict');
-                    }
-                    if (!empty($this->BlockInfo['WhyReason'])) {
-                        $this->BlockInfo['WhyReason'] .= ', ';
-                    }
-                    $this->BlockInfo['WhyReason'] .= $this->L10N->getString('Short_' . $Signature) . ' (F' . $FileIndex . ')';
-                    if (!empty($this->BlockInfo['Signatures'])) {
-                        $this->BlockInfo['Signatures'] .= ', ';
-                    }
-                    $this->BlockInfo['Signatures'] .= 'Conflict';
-                    $this->BlockInfo['SignatureCount']++;
+                    $this->conflictResponse('F' . $FileIndex);
                     if (isset($this->Stages['Tests:Tracking'])) {
                         $this->BlockInfo['Infractions']--;
-                    }
-                    $this->enactOptions('', ['ForciblyDisableReCAPTCHA' => true, 'ForciblyDisableHCAPTCHA' => true]);
-                    $this->CIDRAM['Other Status'] = $this->getStatusHTTP($this->Configuration['signatures']['conflict_response']);
-                    $this->CIDRAM['Other Status Code'] = $this->Configuration['signatures']['conflict_response'];
-                    if (isset($this->Shorthand[$Signature . ':Suppress'])) {
-                        $this->CIDRAM['Suppress output template'] = true;
                     }
                     break;
                 }
@@ -3371,5 +3350,37 @@ class Core
         }
         $Pair = $this->L10N->getString('pair_separator') ?: ': ';
         $this->BlockInfo['Inspection'] .= "\n- " . $Name . ' – ' . $Condition . $Pair . $State;
+    }
+
+    /**
+     * Conflict response (as method to avoid duplicated code).
+     *
+     * @param string $Source Cited in the block reason.
+     * @return void
+     */
+    private function conflictResponse(string $Source): void
+    {
+        if ($this->Configuration['signatures']['conflict_response'] === 429) {
+            $Signature = 'RL';
+            $this->BlockInfo['ReasonMessage'] = sprintf($this->L10N->getString('ReasonMessage_RL'), sprintf($this->L10N->getPlural(3, '%s seconds'), $this->NumberFormatter->format(3)));
+        } else {
+            $Signature = 'Conflict';
+            $this->BlockInfo['ReasonMessage'] = $this->L10N->getString('ReasonMessage_Conflict');
+        }
+        if (!empty($this->BlockInfo['WhyReason'])) {
+            $this->BlockInfo['WhyReason'] .= ', ';
+        }
+        $this->BlockInfo['WhyReason'] .= $this->L10N->getString('Short_' . $Signature) . ' (' . $Source . ')';
+        if (!empty($this->BlockInfo['Signatures'])) {
+            $this->BlockInfo['Signatures'] .= ', ';
+        }
+        $this->BlockInfo['Signatures'] .= 'Conflict';
+        $this->BlockInfo['SignatureCount']++;
+        $this->enactOptions('', ['ForciblyDisableReCAPTCHA' => true, 'ForciblyDisableHCAPTCHA' => true]);
+        $this->CIDRAM['Other Status'] = $this->getStatusHTTP($this->Configuration['signatures']['conflict_response']);
+        $this->CIDRAM['Other Status Code'] = $this->Configuration['signatures']['conflict_response'];
+        if (isset($this->Shorthand[$Signature . ':Suppress'])) {
+            $this->CIDRAM['Suppress output template'] = true;
+        }
     }
 }

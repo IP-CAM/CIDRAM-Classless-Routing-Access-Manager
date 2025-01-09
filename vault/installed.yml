@@ -1,6 +1,6 @@
 CIDRAM Core:
  Name: "CIDRAM Core"
- Version: "3.8.0-DEV+243601"
+ Version: "3.8.0"
  Dependencies:
   PHP: "^7.2|^8"
   CIDRAM Front-End: "Latest"
@@ -10,7 +10,7 @@ CIDRAM Core:
  Changelog: "https://github.com/CIDRAM/CIDRAM/blob/v3/Changelog.md"
  Release Notes For: ["3.2.0", "3.2.1", "3.3.0", "3.4.0", "3.4.1", "3.4.2", "3.5.0", "3.5.1", "3.6.0", "3.7.0", "3.8.0"]
  When Update Succeeds:
-  - "wpVer 4.8.0 6.7.1 3.7.0 7.2"
+  - "wpVer 4.8.0 6.7.1 3.8.0 7.2"
   - "foreach {Components.RemoteMeta.CIDRAM Core.Release Notes For} as Key => Value if {Components.Meta.CIDRAM Core.Version}<{Value}&&{Components.RemoteMeta.CIDRAM Core.Version}>={Value} then queue message response.release_notes https://github.com/CIDRAM/CIDRAM/releases/tag/v{Value} CIDRAM v{Value}"
   - "if {Components.Meta.CIDRAM Core.Version}<3.8.0-DEV+243600&&{Components.RemoteMeta.CIDRAM Core.Version}>=3.8.0-DEV+243600 then queue message <span dir="ltr" lang="en-AU">New configuration directive introduced with this update, <code>signatures➡conflict_response</code>.</span>"
  Uninstallable: false
@@ -29,7 +29,7 @@ CIDRAM Core:
    Checksum: "8bfa4d8f80d7adef8670529cd229de10682a538ae139b9af972d2cfe803476e2:4843"
   CIDRAM/CIDRAM/Core.php:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/CIDRAM/CIDRAM/Core.php"
-   Checksum: "f1bc1e44f4e53daddfa06cabbf29f0d978171991b1de9a1ffe5d4ae3991be811:142440"
+   Checksum: "039ef061c409cc9ffbcb861f82512012ccf457e3941e16ed49a23e7de2b9fca5:142470"
   CIDRAM/CIDRAM/Duration.php:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/CIDRAM/CIDRAM/Duration.php"
    Checksum: "2407aa5cd6fa8f1bfd789d4d8e4cd37cba050dc7bb1ecc9c8387f75f14049c7c:11651"
@@ -41,7 +41,7 @@ CIDRAM Core:
    Checksum: "f9db3c4a9fc6e55a8da6cdf8a766c4d417a9641b48bd7505ed10c8a7dea6355a:15725"
   CIDRAM/CIDRAM/Protect.php:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/CIDRAM/CIDRAM/Protect.php"
-   Checksum: "c84ab1fbac62901d94e595473df320a84a37ed72c0594d5ceed184d7fe05c6aa:68548"
+   Checksum: "be10369fcbcbd07630ad7c6fb963fb514d99cad49a790cbccbe5ba8d245306be:68923"
   CIDRAM/CIDRAM/ReCaptcha.php:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/CIDRAM/CIDRAM/ReCaptcha.php"
    Checksum: "1e2a1b78daddce7bdb7583d6aff68ebe85d93d9b3f7efb4403d5a9f9bbd50225:15183"
@@ -65,13 +65,13 @@ CIDRAM Core:
    Checksum: "72f56765fe158539ee0ca1b9a44720ebb588e9789f102aa30c189498ce62988f:12801"
 CIDRAM Front-End:
  Name: "CIDRAM Front-End"
- Version: "3.8.0-DEV+243601"
+ Version: "3.8.0"
  Dependencies:
   PHP: "^7.2|^8"
   CIDRAM Core: "Latest"
   Common Classes Package: "^2.12.2"
   l10n/core/{lang}: ">=2024.358"
-  l10n/frontend/{lang}: ">=2024.261"
+  l10n/frontend/{lang}: ">=2024.360"
  Changelog: "https://github.com/CIDRAM/CIDRAM/blob/v3/Changelog.md"
  Uninstallable: false
  Files:

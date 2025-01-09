@@ -8,7 +8,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Protect traits (last modified: 2024.12.26).
+ * This file: Protect traits (last modified: 2025.01.09).
  */
 
 namespace CIDRAM\CIDRAM;
@@ -227,14 +227,23 @@ trait Protect
                 if (!empty($this->CIDRAM['Whitelisted'])) {
                     return;
                 }
+                $OK = true;
                 $Module = (strpos($Module, ':') === false) ? $Module : substr($Module, strpos($Module, ':') + 1);
                 $Before = $this->BlockInfo['SignatureCount'];
                 if (isset($this->CIDRAM['ModuleResCache'][$Module]) && is_object($this->CIDRAM['ModuleResCache'][$Module])) {
                     $this->CIDRAM['ModuleResCache'][$Module]();
                 } elseif (!$this->isReserved($Module) && is_readable($this->ModulesPath . $Module)) {
-                    require $this->ModulesPath . $Module;
+                    try {
+                        require $this->ModulesPath . $Module;
+                    } catch (\Throwable $e) {
+                        $OK = false;
+                    }
+                } elseif ($this->Configuration['signatures']['conflict_response'] !== 0) {
+                    $OK = false;
                 }
-                if (isset($this->Stages['Modules:Tracking']) && $this->BlockInfo['SignatureCount'] !== $Before) {
+                if (!$OK) {
+                    $this->conflictResponse($Module);
+                } elseif (isset($this->Stages['Modules:Tracking']) && $this->BlockInfo['SignatureCount'] !== $Before) {
                     $this->BlockInfo['Infractions'] += $this->BlockInfo['SignatureCount'] - $Before;
                 }
             });
