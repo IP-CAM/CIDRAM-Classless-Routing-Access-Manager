@@ -595,7 +595,7 @@ l10n/fr:
 l10n/hi:
  Name: "L10N: हिंदी"
  Extended Description: "हिंदी भाषा डाटा"
- Version: "2025.3.0"
+ Version: "2025.7.0"
  Dependencies:
   CIDRAM Core: "^2"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v2/vault/components.dat"
@@ -608,7 +608,7 @@ l10n/hi:
    - "lang/lang.hi.fe.yaml"
    - "lang/lang.hi.yaml"
   Checksum:
-   - "5232f9f04159aa523f17046349ac435f88a56d605e4ca01a191e761cfcbfe75b:117027"
+   - "614240e2abf1a4db32ed6c3d54910a6106adddbce2203a736e2cc9a8d81510d6:117130"
    - "8f1859da206a4cbcecae6914c5d823749ff3e8c557a1d9f6d89a9904fa83acda:10800"
  Reannotate: "components.dat"
 l10n/id:
@@ -823,7 +823,7 @@ l10n/sv:
 l10n/ta:
  Name: "L10N: தமிழ்"
  Extended Description: "தமிழ் மொழி தரவு"
- Version: "2025.3.0"
+ Version: "2025.7.0"
  Dependencies:
   CIDRAM Core: "^2"
  Remote: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v2/vault/components.dat"
@@ -837,7 +837,7 @@ l10n/ta:
    - "lang/lang.ta.yaml"
   Checksum:
    - "6b0359ff63fa25921aa54c930b7e56c4c99002458d5451c4ac5600265c98b5e9:136470"
-   - "ec52ff61fc88e5a3f6498b0b96e8d4f436041a061d4d9cbc50c73ab8c920f6a0:13110"
+   - "4fc599a79adade4f2d0609971235c8cf6490af56f3bbfcc5ef25df7285b3959f:13122"
  Reannotate: "components.dat"
 l10n/th:
  Name: "L10N: ภาษาไทย"

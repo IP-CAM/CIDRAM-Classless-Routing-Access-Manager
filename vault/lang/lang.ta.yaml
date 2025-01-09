@@ -7,7 +7,7 @@
 # License: GNU/GPLv2
 # @see LICENSE.txt
 #
-# This file: Tamil language data (last modified: 2024.12.20).
+# This file: Tamil language data (last modified: 2025.01.06).
 #
 # Regarding translations: My native language is English. Because this is a free
 # and open-source hobby project which generates zero income, and translatable
@@ -46,7 +46,7 @@ Short_BadIP: "தவறான ஐபி"
 Short_Banned: "தடை செய்யப்பட்ட"
 Short_Bogon: "பொகோன் ஐபி"
 Short_Cloud: "கிளவுட் சேவை"
-Short_Conflict: "மோதல்"
+Short_Conflict: "முரண்பாடு"
 Short_Fake_UA: "போலி %s"
 Short_Generic: "பொதுவான"
 Short_Legal: "சட்ட"
