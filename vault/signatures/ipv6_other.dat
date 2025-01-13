@@ -1,8 +1,8 @@
 # IPv6 signatures file (CIDRs for proxies, VPNs and other miscellaneous unwanted services).
 # Canonical link to the online version of this file: https://github.com/CIDRAM/CIDRAM/blob/v3/vault/signatures/ipv6_other.dat
 
-# Version: 2024.339.0
-# Last modified: 2024.12.05
+# Version: 2025.12.0
+# Last modified: 2025.01.13
 
 # False positive risk (an approximate, rough estimate only):
 # Standard usage (i.e., used with standard CIDRAM features, default bypasses, etc): « [x]Low [ ]Medium [ ]High »
@@ -51,7 +51,7 @@ Tag: Emerald Onion
 # you are not allowed to redistribute the feed to other networks. The export of
 # these feeds/prefixes to other networks is prohibited.
 # Excerpt from: https://www.spamhaus.org/bgpf/
-# Updated: 2024.11.04
+# Updated: 2025.01.12
 
 2001:678:6c4::/48 Deny Spam
 2001:678:724::/48 Deny Spam
@@ -73,7 +73,6 @@ Tag: Emerald Onion
 2405:b480::/32 Deny Spam
 2405:e880::/32 Deny Spam
 2602:f915:1::/48 Deny Spam
-2602:f91d::/40 Deny Spam
 2602:ffa0::/36 Deny Spam
 2607:d100::/32 Deny Spam
 2607:f2d0::/32 Deny Spam
@@ -115,10 +114,10 @@ Tag: Emerald Onion
 2a0e:b107:1574::/48 Deny Spam
 2a0e:b107:1a10::/44 Deny Spam
 2a0e:d601:7220::/48 Deny Spam
-2a0e:fa00::/29 Deny Spam
 2a10:2f01:215::/48 Deny Spam
 2a10:9700::/29 Deny Spam
 2a10:cc45:100::/44 Deny Spam
+2a11:9c00::/40 Deny Spam
 2a12:2640::/29 Deny Spam
 2a12:6740::/30 Deny Spam
 2a12:dd47:8500::/40 Deny Spam
@@ -129,6 +128,7 @@ Tag: Emerald Onion
 2a13:ef45::/32 Deny Spam
 2a14:7c0:1e00::/40 Deny Spam
 2a14:7c2::/31 Deny Spam
+2c0f:6c0::/28 Deny Spam
 Profile: Third-party sourced
 Tag: Spamhaus DROPv6
 
@@ -136,7 +136,7 @@ Tag: Spamhaus DROPv6
 # Octopusnet VPN (mostly from AS44724, but we'll update via announces instead,
 # because we don't need to block the entire ASN, and there could be stray CIDRs
 # too). Proxy service with a history of spam events.
-# Updated: 2024.06.09
+# Updated: 2024.06.09 / Checked: 2025.01.13
 
 2a04:db80::/32 Deny Proxy
 Origin: RU
