@@ -8,11 +8,10 @@ CIDRAM Core:
   l10n/core/{lang}: ">=2024.358"
   l10n/frontend/{lang}: ">=2024.183"
  Changelog: "https://github.com/CIDRAM/CIDRAM/blob/v3/Changelog.md"
- Release Notes For: ["3.2.0", "3.2.1", "3.3.0", "3.4.0", "3.4.1", "3.4.2", "3.5.0", "3.5.1", "3.6.0", "3.7.0", "3.8.0"]
+ Release Notes For: ["3.3.0", "3.4.0", "3.4.1", "3.4.2", "3.5.0", "3.5.1", "3.6.0", "3.7.0", "3.8.0", "3.8.1"]
  When Update Succeeds:
   - "wpVer 4.8.0 6.7.1 3.8.0 7.2"
   - "foreach {Components.RemoteMeta.CIDRAM Core.Release Notes For} as Key => Value if {Components.Meta.CIDRAM Core.Version}<{Value}&&{Components.RemoteMeta.CIDRAM Core.Version}>={Value} then queue message response.release_notes https://github.com/CIDRAM/CIDRAM/releases/tag/v{Value} CIDRAM v{Value}"
-  - "if {Components.Meta.CIDRAM Core.Version}<3.8.0-DEV+243600&&{Components.RemoteMeta.CIDRAM Core.Version}>=3.8.0-DEV+243600 then queue message <span dir="ltr" lang="en-AU">New configuration directive introduced with this update, <code>signatures➡conflict_response</code>.</span>"
  Uninstallable: false
  Files:
   assets/core/captcha_default.html:
@@ -1018,13 +1017,13 @@ l10n/frontend/bn:
    Checksum: "4ca169fa7bdfed53c26787af8f3dff1cf32566ad7e4022535f459f944d1f794b:177064"
 l10n/frontend/bs:
  Extended Description: "Bosanska lokalizacija"
- Version: "2024.364.0"
+ Version: "2025.20.0"
  Dependencies:
   CIDRAM Core: "^3.5.1"
  Files:
   l10n/frontend/bs.yml:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/l10n/frontend/bs.yml"
-   Checksum: "8d0c198bd9ba994f2c8be0b5b1f0b151c2d8bbfe5c9d019c4e468efcc5a52515:47514"
+   Checksum: "0c9a5ebb40db03c8dca69f0c9db57fc5bd19f3fa71447cce2aa8d94cc6dea1b7:52412"
 l10n/frontend/ca:
  Extended Description: "Localització catalana"
  Version: "2024.364.0"
@@ -1116,13 +1115,13 @@ l10n/frontend/hi:
    Checksum: "3e19c3375df806e822e49b4332be6d25c37c789346bbdf324df7f02d9d9e28b5:178352"
 l10n/frontend/hr:
  Extended Description: "Hrvatska lokalizacija"
- Version: "2024.364.0"
+ Version: "2025.20.0"
  Dependencies:
   CIDRAM Core: "^3.5.1"
  Files:
   l10n/frontend/hr.yml:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/l10n/frontend/hr.yml"
-   Checksum: "595965e72c24f5bbf9a86714fa86fc10868302dd303052f9d4160899e26c8a72:47379"
+   Checksum: "2cfa06d35b734defeba98c2ef747ae4fca46c8402dd9d3a41ca80c485004ed97:52271"
 l10n/frontend/id:
  Extended Description: "Lokalisasi di Bahasa Indonesia"
  Version: "2024.360.0"
@@ -1158,6 +1157,24 @@ l10n/frontend/lv:
   l10n/frontend/lv.yml:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/l10n/frontend/lv.yml"
    Checksum: "37e819d210296700287196a139b40795947956147c4ec10bde176127639abb53:93589"
+l10n/frontend/ml:
+ Extended Description: "മലയാളം പ്രാദേശികവൽക്കരണം"
+ Version: "2025.20.0"
+ Dependencies:
+  CIDRAM Core: "^3.7"
+ Files:
+  l10n/frontend/ml.yml:
+   From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/l10n/frontend/ml.yml"
+   Checksum: "12de0c44d67fa0e7062ba7530a6521311937a8e1d9fde6ae298fe7b84492e99f:7746"
+l10n/frontend/mr:
+ Extended Description: "मराठी स्थानिकीकरण"
+ Version: "2025.20.0"
+ Dependencies:
+  CIDRAM Core: "^3.7"
+ Files:
+  l10n/frontend/mr.yml:
+   From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/l10n/frontend/mr.yml"
+   Checksum: "c95a70362a8a7494ea4695c678f8150d7c060c144a064a5f9d4ad754852c8ec1:6791"
 l10n/frontend/ms:
  Extended Description: "Penyetempatan Bahasa Melayu"
  Version: "2024.360.0"
@@ -1222,13 +1239,13 @@ l10n/frontend/ru:
    Checksum: "b1871f9f12b4f6ca53add8849ce545dbbdc05f451514b2e2c1422ef039de4911:142850"
 l10n/frontend/sr:
  Extended Description: "Српска локализација"
- Version: "2024.364.0"
+ Version: "2025.20.0"
  Dependencies:
   CIDRAM Core: "^3.5.1"
  Files:
   l10n/frontend/sr.yml:
    From: "https://raw.githubusercontent.com/CIDRAM/CIDRAM/v3/vault/l10n/frontend/sr.yml"
-   Checksum: "f53bc5e240d93db01bf6b2f4977f6672d631e5204332e3ba65cf4bf244551906:73632"
+   Checksum: "b2070b8363d063b337f9988f9eaa85b0e57d0900e85f3d2593c83692ab4a7662:80968"
 l10n/frontend/sv:
  Extended Description: "Svensk lokalisering"
  Version: "2024.364.0"

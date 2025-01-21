@@ -1,0 +1,42 @@
+##\
+# This file is a part of the CIDRAM package.
+# Homepage: https://cidram.github.io/
+#
+# CIDRAM COPYRIGHT 2016 and beyond by Caleb Mazalevskis (Maikuolan).
+#
+# License: GNU/GPLv2
+# @see LICENSE.txt
+#
+# This file: Malayalam language data for the front-end (last modified: 2025.01.21).
+#
+# Regarding translations: My native language is English. Because this is a free
+# and open-source hobby project which generates zero income, and translatable
+# content is likely to change as the features and functionality supported by
+# the project changes, it doesn't make sense for me to spend money for
+# translations. Because I'm the sole author/developer/maintainer for the
+# project and I'm not a ployglot, any translations I produce are very likely to
+# contain errors. Sorry, but realistically, that won't ever change. If you find
+# any such errors/typos/mistakes/etc, your assistance to correct them would be
+# very much appreciated. Pull requests are invited and encouraged. Otherwise,
+# if you find these errors too much to handle, just stick with the original
+# English source. If a translation is irredeemably incomprehensible, let me
+# know which, and I can delete it. If you're not sure how to perform pull
+# requests, ask. I can help.
+##/
+
+warning:
+ API_Rate_Limited: "മുന്നറിയിപ്പ്: %s API-യിലേക്കുള്ള ആക്‌സസ് നിലവിൽ നിരക്ക് പരിമിതമാണെന്ന് തോന്നുന്നു."
+ Cookies: "കുറിപ്പ്: ലോഗിനുകൾ പ്രാമാണീകരിക്കുന്നതിന് CIDRAM ഒരു കുക്കി ഉപയോഗിക്കുന്നു. ലോഗിൻ ചെയ്യുന്നതിലൂടെ, നിങ്ങളുടെ ബ്രൗസർ ഒരു കുക്കി സൃഷ്ടിക്കുന്നതിനും സംഭരിക്കുന്നതിനും നിങ്ങൾ സമ്മതം നൽകുന്നു."
+ Editing PHP files: "മുന്നറിയിപ്പ്: ചില വെബ്‌ഹോസ്റ്റിംഗ് സുരക്ഷാ പരിഹാരങ്ങൾ അഭ്യർത്ഥനകൾക്കുള്ളിൽ PHP ടാഗുകൾ കണ്ടെത്തുമ്പോൾ IP വിലാസങ്ങൾ യാന്ത്രികമായി നിരോധിക്കുന്നതായി അറിയപ്പെടുന്നു (ഉദാഹരണത്തിന്, ഒരു ബ്രൗസർ വഴി PHP ഫയലുകൾ പരിഷ്കരിക്കാൻ ശ്രമിക്കുമ്പോൾ). നിങ്ങളുടെ വെബ്‌ഹോസ്റ്റിംഗ് സേവനം അത്തരമൊരു സുരക്ഷാ പരിഹാരം ഉപയോഗിക്കുന്നുണ്ടോ എന്ന് അറിയാൻ CIDRAM-ന് ഒരു മാർഗവുമില്ല. അത്തരം പ്രശ്നങ്ങൾ ഒഴിവാക്കാൻ, സാധ്യമാകുമ്പോഴെല്ലാം PHP ഫയലുകൾ അത്തരത്തിൽ എഡിറ്റ് ചെയ്യാതിരിക്കുന്നതാണ് നല്ലത്."
+ IP tests are disabled: "മുന്നറിയിപ്പ്: IP പരിശോധനകൾ പ്രവർത്തനരഹിതമാക്കി! ഇത് പരിഹരിക്കുന്നതുവരെ ഒപ്പ് ഫയലുകൾ ഉപയോഗിക്കാൻ കഴിയില്ല."
+ JavaScript required: "മുന്നറിയിപ്പ്: ചില ഫ്രണ്ട്-എൻഡ് ഫംഗ്ഷണാലിറ്റികൾക്ക് ജാവാസ്ക്രിപ്റ്റ് ആവശ്യമാണ്. മുഴുവൻ ഫ്രണ്ട്-എൻഡും പ്രതീക്ഷിച്ചതുപോലെ പ്രവർത്തിക്കുന്നുവെന്ന് ഉറപ്പാക്കാൻ, JavaScript പ്രവർത്തനക്ഷമമാക്കാൻ ശുപാർശ ചെയ്യുന്നു."
+ Likely to be overwritten: "മുന്നറിയിപ്പ്: നിങ്ങൾ നിലവിൽ എഡിറ്റ് ചെയ്യുന്ന ഫയൽ "%s" എന്ന ഘടകത്തിൽ പെട്ടതാണ്. ഈ ഫയലിൽ വരുത്തുന്ന ഏതൊരു മാറ്റവും അടുത്ത തവണ ആ ഘടകം അപ്‌ഡേറ്റ് ചെയ്യുമ്പോൾ തിരുത്തിയെഴുതപ്പെടാൻ സാധ്യതയുണ്ട്."
+ Modules are disabled: "മുന്നറിയിപ്പ്: മൊഡ്യൂളുകൾ പ്രവർത്തനരഹിതമാക്കി! ഇത് പരിഹരിക്കുന്നതുവരെ മൊഡ്യൂളുകൾ ഉപയോഗിക്കാൻ കഴിയില്ല."
+ No modules are active: "മുന്നറിയിപ്പ്: മൊഡ്യൂളുകളൊന്നും സജീവമല്ല! കോൺഫിഗറേഷൻ അല്ലെങ്കിൽ അപ്ഡേറ്റ് പേജുകൾ ഉപയോഗിച്ച് മൊഡ്യൂളുകൾ സജീവമാക്കാം."
+ No signature files are active: "മുന്നറിയിപ്പ്: ഒപ്പ് ഫയലുകളൊന്നും സജീവമല്ല! കോൺഫിഗറേഷൻ അല്ലെങ്കിൽ അപ്ഡേറ്റ് പേജുകൾ ഉപയോഗിച്ച് ഒപ്പ് ഫയലുകൾ സജീവമാക്കാം."
+ Operating in dry run mode: "മുന്നറിയിപ്പ്: ഡ്രൈ റൺ മോഡിൽ പ്രവർത്തിക്കുന്നു! ഡ്രൈ റൺ മോഡിലായിരിക്കുമ്പോൾ, അഭ്യർത്ഥനകൾ പതിവുപോലെ ബ്ലോക്ക് ഇവന്റുകളായി പരിശോധിച്ച് ലോഗിൻ ചെയ്യുന്നു, പക്ഷേ ഒന്നും ബ്ലോക്ക് ചെയ്തിട്ടില്ല."
+ Operating in maintenance mode: "മുന്നറിയിപ്പ്: മെയിന്റനൻസ് മോഡിൽ പ്രവർത്തിക്കുന്നു! മെയിന്റനൻസ് മോഡിലായിരിക്കുമ്പോൾ, ഒന്നും പരിശോധിക്കുകയോ ലോഗ് ചെയ്യുകയോ തടയുകയോ ചെയ്യുന്നില്ല."
+ Page termination is disabled: "മുന്നറിയിപ്പ്: പേജ് അവസാനിപ്പിക്കൽ പ്രവർത്തനരഹിതമാക്കി! ഇത് പരിഹരിക്കുന്നതുവരെ അഭ്യർത്ഥനകൾ ശരിയായി തടയാൻ കഴിയില്ല."
+ Proceeding will log out all users: "മുന്നറിയിപ്പ്: മുന്നോട്ട് പോകുന്നത് എല്ലാ ഉപയോക്താക്കളെയും ലോഗ് ഔട്ട് ചെയ്യും."
+ This account is not using a valid password: "മുന്നറിയിപ്പ്: ഈ അക്കൗണ്ട് സാധുവായ ഒരു പാസ്‌വേഡ് ഉപയോഗിക്കുന്നില്ല!"
+ Using the default password: "മുന്നറിയിപ്പ്: ഡിഫോൾട്ട് പാസ്‌വേഡ് ഉപയോഗിക്കുന്നു!"
